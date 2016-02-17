@@ -1,0 +1,10 @@
+Wed Feb 17 19:29:11 2 || Software router starting... 
+Wed Feb 17 19:29:11 2 || libpcap version 1.5.3 - Apple version 54 
+Wed Feb 17 19:29:11 2 || pcap_setdirection failed 
+Wed Feb 17 19:29:11 2 || Handle activated for en0 
+Wed Feb 17 19:29:11 2 || pcap_setdirection failed 
+Wed Feb 17 19:29:11 2 || Handle activated for lo0 
+Wed Feb 17 19:29:11 2 || Creating threads... 
+Wed Feb 17 19:29:11 2 || Hello from thread on lo0 
+Wed Feb 17 19:29:11 2 || Hello from thread on lo0 
+Wed Feb 17 19:50:58 2 || Ctrl C - cya ;)  
