@@ -2,26 +2,19 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int forward_packet(Port * interface, Frame * f) {
+int forward_packet(Route * route, Frame * f) {
 	// if (!apply_rules(f, ppp, R_OUT)) {
 	// 	sprintf(log_b, "\tPort %i (%s) OUTbound rules blocked this frame", ppp->id, ppp->name);
 	// 	my_log(log_b);
 	// 	return 0;
 	// }
-	update_source_mac(f);
+	//update_source_mac(f);
 	// destination mac via arp
-	// arp -i en0 192.168.1.1 | cut -d " " -f4
-	// next hop ??
-	
-	int sent_bytes = pcap_inject(interface->handle, f->eth_header, f->length);
-	if (sent_bytes == f->length) {
-		//update_stats(f, interface, R_OUT);
-		sprintf(log_b, "\t< -- Port %i (%s) sending %i bytes", interface->id, interface->name, sent_bytes);
-		my_log(log_b);
-	} else {
-		my_log("Failed to send frame with specific size :(");
-	}
-	return sent_bytes;
+	// arp -i en0 192.168.1.1 | cut -d " " -f4 , can use?
+	// next hop ?? set manually ?
+
+	//inject_frame(f, port);
+	return 0;
 }
 
 void * port_listener(void * arg) {
@@ -77,5 +70,5 @@ void * port_listener(void * arg) {
 }
 
 void print_interface_details(Port * p){
-	printf("Interface p%i (%s): %s\\%i\n", p->id, p->name, ip_to_string(p->ip), p->mask);
+	printf("Interface p%i (%s): %s\\%i %s\n", p->id, p->name, ip_to_string(p->ip), p->mask, get_hex(p->mac, 6, ':'));
 }

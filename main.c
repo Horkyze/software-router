@@ -44,7 +44,9 @@ char log_b[1024];
 // custom includes
 #include "functions.h"
 #include "stats.h"
+#include "injector.h"
 #include "eth_parser.h"
+#include "arp.h"
 #include "l3_parser.h"
 #include "l4_parser.h"
 #include "l5_parser.h"
@@ -201,6 +203,7 @@ int main(int argc, char *argv[])
 		// render here
 		system("clear");
 		print_routing_table();
+		print_arp_cache();
 		print_interface_details(p1);
 		print_interface_details(p2);
 		sleep(1);

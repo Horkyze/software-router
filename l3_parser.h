@@ -14,6 +14,7 @@ void parse_l3(Frame * f){
 		}
 		if( EthII->eth_type == ARP_TYPE){
 			f->l3 = ARP_TYPE;
+			incoming_arp(f);
 		}
 	}
 

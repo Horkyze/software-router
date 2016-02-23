@@ -30,6 +30,7 @@ typedef struct Port {
 	pthread_t thread;
 	u_int ip;
 	int mask;
+	u_char mac[6];
 	Stats * in;
 	Stats * out;
 }Port;
@@ -68,6 +69,9 @@ Port * create_port_struct(int i){
 	p->thread = 0;
 	p->in = create_stats_struct();
 	p->out = create_stats_struct();
+	p->ip = string_to_ip("192.168.1.4");
+	p->mask = 24;
+	strcpy((char *)p->mac, "\xac\xbc\x32\xb9\x1b\xb3");
 	return p;
 }
 

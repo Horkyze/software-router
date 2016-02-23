@@ -252,6 +252,15 @@ char * get_line() {
     return linep;
 }
 
+void memswap(void * a, void * b, int size){
+	void * temp = malloc(size);
+	// dst, src
+	memcpy(temp, a, size);
+	memcpy(a, b, size);
+	memcpy(b, a, size);
+	free(temp);
+}
+
 
 /*===================================
 =            Linked List            =

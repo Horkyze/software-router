@@ -2,6 +2,7 @@ const u_char eth_max[] = {0x06, 0x00}; // 1536
 
 // macro for referencing eth II header
 #define EthII ((eth_2_h*)f->eth_header)
+#define BROADCAST_MAC "\xff\xff\xff\xff\xff\xff"
 
 /*==========  Ethernet Headers Definitions  ==========*/
 typedef	struct eth_2_h
