@@ -44,8 +44,9 @@ char log_b[1024];
 // custom includes
 #include "functions.h"
 #include "stats.h"
-#include "injector.h"
+
 #include "eth_parser.h"
+#include "injector.h"
 #include "arp.h"
 #include "l3_parser.h"
 #include "l4_parser.h"

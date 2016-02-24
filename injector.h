@@ -1,5 +1,5 @@
 
-int inject_frame(Port * p, Frame * f){
+int inject_frame( Frame * f, Port * p){
 
 
     memcpy(EthII->src_addr , p->mac, 6 );

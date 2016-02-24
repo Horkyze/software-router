@@ -141,7 +141,7 @@ u_char * arp_get(u_int ip, Port * out){
         ARP(f)->hlen = 0x06;
         ARP(f)->plen = 0x04;
         ARP(f)->oc = 0x01;
-        strcpy(ARP(f)->sha, out->mac);
+        strcpy((char *)ARP(f)->sha, (char *)out->mac);
         ARP(f)->spa = out->ip;
         //ARP(f)->tha = 00:00:00:00:00:00;
         ARP(f)->tpa = ip;
@@ -149,7 +149,6 @@ u_char * arp_get(u_int ip, Port * out){
         inject_frame(f, out);
 
         time_t send_time = time(0);
-        char * mac;
         while(1){
             mac = arp_cache_search(ip);
             if (time(0) - send_time > ARP_TIMEOUT) {

@@ -3,3 +3,5 @@ bin/
 .git/
 a.out*
 log.txt
+.idea/
+CMake*

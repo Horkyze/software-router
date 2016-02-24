@@ -36,8 +36,23 @@ int main()
     // belongs_to_subnet(string_to_ip("192.168.1.5"), string_to_ip("192.168.2.0"), 24) );
 
 
-    printf("Is valid IP (234.0.23.0) = %i\n", is_valid_ip("234.0.23.0"));
+    //printf("Is valid IP (234.0.23.0) = %i\n", is_valid_ip("234.0.23.0"));
     //printf("Is valid IP (562.21.14.01) = %i\n", is_valid_ip("562.21.14.01"));
+
+    char a[6] = "123456";
+    char * b = (char *) malloc(6);
+    printf("a: '%p' \nb: '%p'\n\n", a, b);
+
+    printf("a: '%s' \nb: '%s'\n\n", a, b);
+
+    strcpy(b, a);
+    printf("a: '%s' \nb: '%s'\n\n", a, b);
+
+    strcpy(b, "abcdef");
+    printf("a: '%s' \nb: '%s'\n\n", a, b);
+
+    strcpy(a, b);
+    printf("a: '%s' \nb: '%s'\n\n", a, b);
 
 
 	return 0;
