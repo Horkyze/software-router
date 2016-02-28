@@ -69,7 +69,7 @@ Port * create_port_struct(int i){
 	p->thread = 0;
 	p->in = create_stats_struct();
 	p->out = create_stats_struct();
-	p->ip = string_to_ip("192.168.1.4");
+	p->ip = string_to_ip("10.0.0.1");
 	p->mask = 24;
 	strcpy((char *)p->mac, "\xac\xbc\x32\xb9\x1b\xb3");
 	return p;

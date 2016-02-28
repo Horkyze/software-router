@@ -257,7 +257,7 @@ void memswap(void * a, void * b, int size){
 	// dst, src
 	memcpy(temp, a, size);
 	memcpy(a, b, size);
-	memcpy(b, a, size);
+	memcpy(b, temp, size);
 	free(temp);
 }
 

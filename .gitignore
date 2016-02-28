@@ -1,6 +1,5 @@
 bin/
 .DS_Store
-.git/
 a.out*
 log.txt
 .idea/
