@@ -1,113 +1,1535 @@
-Sun Feb 28 12:34:08 2 || Software router starting... 
-Sun Feb 28 12:34:08 2 || libpcap version 1.5.3 
-Sun Feb 28 12:34:08 2 || pcap_setdirection failed 
-Sun Feb 28 12:34:08 2 || Handle activated for vboxnet1 
-Sun Feb 28 12:34:08 2 || pcap_setdirection failed 
-Sun Feb 28 12:34:08 2 || Handle activated for vboxnet2 
-Sun Feb 28 12:34:08 2 || Creating threads... 
-Sun Feb 28 12:34:08 2 || Hello from thread on vboxnet2 
-Sun Feb 28 12:34:08 2 || Hello from thread on vboxnet2 
-Sun Feb 28 12:34:09 2 || incoming_arp 
-Sun Feb 28 12:34:09 2 || for me 
-Sun Feb 28 12:34:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:09 2 || incoming_arp 
-Sun Feb 28 12:34:09 2 || found entry 
-Sun Feb 28 12:34:09 2 || for me 
-Sun Feb 28 12:34:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:10 2 || incoming_arp 
-Sun Feb 28 12:34:10 2 || found entry 
-Sun Feb 28 12:34:10 2 || for me 
-Sun Feb 28 12:34:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:10 2 || incoming_arp 
-Sun Feb 28 12:34:10 2 || found entry 
-Sun Feb 28 12:34:10 2 || for me 
-Sun Feb 28 12:34:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:11 2 || incoming_arp 
-Sun Feb 28 12:34:11 2 || found entry 
-Sun Feb 28 12:34:11 2 || for me 
-Sun Feb 28 12:34:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:11 2 || incoming_arp 
-Sun Feb 28 12:34:11 2 || found entry 
-Sun Feb 28 12:34:11 2 || for me 
-Sun Feb 28 12:34:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:12 2 || incoming_arp 
-Sun Feb 28 12:34:12 2 || found entry 
-Sun Feb 28 12:34:12 2 || for me 
-Sun Feb 28 12:34:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:12 2 || incoming_arp 
-Sun Feb 28 12:34:12 2 || found entry 
-Sun Feb 28 12:34:12 2 || for me 
-Sun Feb 28 12:34:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:13 2 || incoming_arp 
-Sun Feb 28 12:34:13 2 || found entry 
-Sun Feb 28 12:34:13 2 || for me 
-Sun Feb 28 12:34:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:13 2 || incoming_arp 
-Sun Feb 28 12:34:13 2 || found entry 
-Sun Feb 28 12:34:13 2 || for me 
-Sun Feb 28 12:34:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:14 2 || incoming_arp 
-Sun Feb 28 12:34:14 2 || found entry 
-Sun Feb 28 12:34:14 2 || for me 
-Sun Feb 28 12:34:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:14 2 || incoming_arp 
-Sun Feb 28 12:34:14 2 || found entry 
-Sun Feb 28 12:34:14 2 || for me 
-Sun Feb 28 12:34:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:15 2 || incoming_arp 
-Sun Feb 28 12:34:15 2 || found entry 
-Sun Feb 28 12:34:15 2 || for me 
-Sun Feb 28 12:34:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:15 2 || incoming_arp 
-Sun Feb 28 12:34:15 2 || found entry 
-Sun Feb 28 12:34:15 2 || for me 
-Sun Feb 28 12:34:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:16 2 || incoming_arp 
-Sun Feb 28 12:34:16 2 || found entry 
-Sun Feb 28 12:34:16 2 || for me 
-Sun Feb 28 12:34:16 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:16 2 || incoming_arp 
-Sun Feb 28 12:34:16 2 || found entry 
-Sun Feb 28 12:34:16 2 || for me 
-Sun Feb 28 12:34:16 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:17 2 || incoming_arp 
-Sun Feb 28 12:34:17 2 || found entry 
-Sun Feb 28 12:34:17 2 || for me 
-Sun Feb 28 12:34:17 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:17 2 || incoming_arp 
-Sun Feb 28 12:34:17 2 || found entry 
-Sun Feb 28 12:34:17 2 || for me 
-Sun Feb 28 12:34:17 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:18 2 || incoming_arp 
-Sun Feb 28 12:34:18 2 || found entry 
-Sun Feb 28 12:34:18 2 || for me 
-Sun Feb 28 12:34:18 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:18 2 || incoming_arp 
-Sun Feb 28 12:34:18 2 || found entry 
-Sun Feb 28 12:34:18 2 || for me 
-Sun Feb 28 12:34:18 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:19 2 || incoming_arp 
-Sun Feb 28 12:34:19 2 || found entry 
-Sun Feb 28 12:34:19 2 || for me 
-Sun Feb 28 12:34:19 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:19 2 || incoming_arp 
-Sun Feb 28 12:34:19 2 || found entry 
-Sun Feb 28 12:34:19 2 || for me 
-Sun Feb 28 12:34:19 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:20 2 || incoming_arp 
-Sun Feb 28 12:34:20 2 || found entry 
-Sun Feb 28 12:34:20 2 || for me 
-Sun Feb 28 12:34:20 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:20 2 || incoming_arp 
-Sun Feb 28 12:34:20 2 || found entry 
-Sun Feb 28 12:34:20 2 || for me 
-Sun Feb 28 12:34:20 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:21 2 || incoming_arp 
-Sun Feb 28 12:34:21 2 || found entry 
-Sun Feb 28 12:34:21 2 || for me 
-Sun Feb 28 12:34:21 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:21 2 || incoming_arp 
-Sun Feb 28 12:34:21 2 || found entry 
-Sun Feb 28 12:34:21 2 || for me 
-Sun Feb 28 12:34:21 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Sun Feb 28 12:34:21 2 || Ctrl C - cya ;)  
+Mon Feb 29 19:41:04 2 || Software router starting... 
+Mon Feb 29 19:41:04 2 || libpcap version 1.5.3 
+Mon Feb 29 19:41:04 2 || pcap_setdirection failed 
+Mon Feb 29 19:41:04 2 || Handle activated for vboxnet1 
+Mon Feb 29 19:41:04 2 || pcap_setdirection failed 
+Mon Feb 29 19:41:04 2 || Handle activated for lo 
+Mon Feb 29 19:41:04 2 || Creating threads... 
+Mon Feb 29 19:41:04 2 || Hello from thread on lo 
+Mon Feb 29 19:41:04 2 || Creating LLs... 
+Mon Feb 29 19:41:04 2 || Hello from thread on lo 
+Mon Feb 29 19:41:04 2 || Waiting for data... 
+Mon Feb 29 19:41:05 2 || incoming_arp 
+Mon Feb 29 19:41:05 2 || for me 
+Mon Feb 29 19:41:05 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:06 2 || incoming_arp 
+Mon Feb 29 19:41:06 2 || found entry 
+Mon Feb 29 19:41:06 2 || for me 
+Mon Feb 29 19:41:06 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:07 2 || incoming_arp 
+Mon Feb 29 19:41:07 2 || found entry 
+Mon Feb 29 19:41:07 2 || for me 
+Mon Feb 29 19:41:07 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:08 2 || incoming_arp 
+Mon Feb 29 19:41:08 2 || found entry 
+Mon Feb 29 19:41:08 2 || for me 
+Mon Feb 29 19:41:08 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:09 2 || incoming_arp 
+Mon Feb 29 19:41:09 2 || found entry 
+Mon Feb 29 19:41:09 2 || for me 
+Mon Feb 29 19:41:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:10 2 || incoming_arp 
+Mon Feb 29 19:41:10 2 || found entry 
+Mon Feb 29 19:41:10 2 || for me 
+Mon Feb 29 19:41:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:11 2 || incoming_arp 
+Mon Feb 29 19:41:11 2 || found entry 
+Mon Feb 29 19:41:11 2 || for me 
+Mon Feb 29 19:41:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:12 2 || incoming_arp 
+Mon Feb 29 19:41:12 2 || found entry 
+Mon Feb 29 19:41:12 2 || for me 
+Mon Feb 29 19:41:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:13 2 || incoming_arp 
+Mon Feb 29 19:41:13 2 || found entry 
+Mon Feb 29 19:41:13 2 || for me 
+Mon Feb 29 19:41:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:13 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:41:13 2 || Data: get_arp_cache 
+ 
+Mon Feb 29 19:41:13 2 || Executing: get_arp_cache   
+Mon Feb 29 19:41:13 2 || Waiting for data... 
+Mon Feb 29 19:41:14 2 || incoming_arp 
+Mon Feb 29 19:41:14 2 || found entry 
+Mon Feb 29 19:41:14 2 || for me 
+Mon Feb 29 19:41:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:14 2 || Received packet from 127.0.0.1:34213
+ 
+Mon Feb 29 19:41:14 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:41:14 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:41:14 2 || Waiting for data... 
+Mon Feb 29 19:41:14 2 || Received packet from 127.0.0.1:34556
+ 
+Mon Feb 29 19:41:14 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:41:14 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:41:14 2 || Waiting for data... 
+Mon Feb 29 19:41:15 2 || incoming_arp 
+Mon Feb 29 19:41:15 2 || for me 
+Mon Feb 29 19:41:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:16 2 || incoming_arp 
+Mon Feb 29 19:41:16 2 || found entry 
+Mon Feb 29 19:41:16 2 || for me 
+Mon Feb 29 19:41:16 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:16 2 || Received packet from 127.0.0.1:58084
+ 
+Mon Feb 29 19:41:16 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:41:16 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:41:16 2 || Waiting for data... 
+Mon Feb 29 19:41:16 2 || Received packet from 127.0.0.1:59912
+ 
+Mon Feb 29 19:41:16 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:41:16 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:41:16 2 || Waiting for data... 
+Mon Feb 29 19:41:17 2 || incoming_arp 
+Mon Feb 29 19:41:17 2 || for me 
+Mon Feb 29 19:41:17 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:18 2 || incoming_arp 
+Mon Feb 29 19:41:18 2 || found entry 
+Mon Feb 29 19:41:18 2 || for me 
+Mon Feb 29 19:41:18 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:19 2 || incoming_arp 
+Mon Feb 29 19:41:19 2 || found entry 
+Mon Feb 29 19:41:19 2 || for me 
+Mon Feb 29 19:41:19 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:20 2 || incoming_arp 
+Mon Feb 29 19:41:20 2 || found entry 
+Mon Feb 29 19:41:20 2 || for me 
+Mon Feb 29 19:41:20 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:21 2 || incoming_arp 
+Mon Feb 29 19:41:21 2 || found entry 
+Mon Feb 29 19:41:21 2 || for me 
+Mon Feb 29 19:41:21 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:22 2 || incoming_arp 
+Mon Feb 29 19:41:22 2 || found entry 
+Mon Feb 29 19:41:22 2 || for me 
+Mon Feb 29 19:41:22 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:23 2 || incoming_arp 
+Mon Feb 29 19:41:23 2 || found entry 
+Mon Feb 29 19:41:23 2 || for me 
+Mon Feb 29 19:41:23 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:24 2 || incoming_arp 
+Mon Feb 29 19:41:24 2 || found entry 
+Mon Feb 29 19:41:24 2 || for me 
+Mon Feb 29 19:41:24 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:25 2 || incoming_arp 
+Mon Feb 29 19:41:25 2 || found entry 
+Mon Feb 29 19:41:25 2 || for me 
+Mon Feb 29 19:41:25 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:26 2 || incoming_arp 
+Mon Feb 29 19:41:26 2 || found entry 
+Mon Feb 29 19:41:26 2 || for me 
+Mon Feb 29 19:41:26 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:27 2 || incoming_arp 
+Mon Feb 29 19:41:27 2 || found entry 
+Mon Feb 29 19:41:27 2 || for me 
+Mon Feb 29 19:41:27 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:28 2 || incoming_arp 
+Mon Feb 29 19:41:28 2 || found entry 
+Mon Feb 29 19:41:28 2 || for me 
+Mon Feb 29 19:41:28 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:29 2 || incoming_arp 
+Mon Feb 29 19:41:29 2 || found entry 
+Mon Feb 29 19:41:29 2 || for me 
+Mon Feb 29 19:41:29 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:30 2 || incoming_arp 
+Mon Feb 29 19:41:30 2 || found entry 
+Mon Feb 29 19:41:30 2 || for me 
+Mon Feb 29 19:41:30 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:31 2 || incoming_arp 
+Mon Feb 29 19:41:31 2 || found entry 
+Mon Feb 29 19:41:31 2 || for me 
+Mon Feb 29 19:41:31 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:32 2 || incoming_arp 
+Mon Feb 29 19:41:32 2 || found entry 
+Mon Feb 29 19:41:32 2 || for me 
+Mon Feb 29 19:41:32 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:33 2 || incoming_arp 
+Mon Feb 29 19:41:33 2 || found entry 
+Mon Feb 29 19:41:33 2 || for me 
+Mon Feb 29 19:41:33 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:34 2 || incoming_arp 
+Mon Feb 29 19:41:34 2 || found entry 
+Mon Feb 29 19:41:34 2 || for me 
+Mon Feb 29 19:41:34 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:35 2 || incoming_arp 
+Mon Feb 29 19:41:35 2 || found entry 
+Mon Feb 29 19:41:35 2 || for me 
+Mon Feb 29 19:41:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:36 2 || incoming_arp 
+Mon Feb 29 19:41:36 2 || found entry 
+Mon Feb 29 19:41:36 2 || for me 
+Mon Feb 29 19:41:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:37 2 || incoming_arp 
+Mon Feb 29 19:41:37 2 || found entry 
+Mon Feb 29 19:41:37 2 || for me 
+Mon Feb 29 19:41:37 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:38 2 || incoming_arp 
+Mon Feb 29 19:41:38 2 || found entry 
+Mon Feb 29 19:41:38 2 || for me 
+Mon Feb 29 19:41:38 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:39 2 || incoming_arp 
+Mon Feb 29 19:41:39 2 || found entry 
+Mon Feb 29 19:41:39 2 || for me 
+Mon Feb 29 19:41:39 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:40 2 || incoming_arp 
+Mon Feb 29 19:41:40 2 || found entry 
+Mon Feb 29 19:41:40 2 || for me 
+Mon Feb 29 19:41:40 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:41 2 || incoming_arp 
+Mon Feb 29 19:41:41 2 || found entry 
+Mon Feb 29 19:41:41 2 || for me 
+Mon Feb 29 19:41:41 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:42 2 || incoming_arp 
+Mon Feb 29 19:41:42 2 || found entry 
+Mon Feb 29 19:41:42 2 || for me 
+Mon Feb 29 19:41:42 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:43 2 || incoming_arp 
+Mon Feb 29 19:41:43 2 || found entry 
+Mon Feb 29 19:41:43 2 || for me 
+Mon Feb 29 19:41:43 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:44 2 || incoming_arp 
+Mon Feb 29 19:41:44 2 || found entry 
+Mon Feb 29 19:41:44 2 || for me 
+Mon Feb 29 19:41:44 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:45 2 || incoming_arp 
+Mon Feb 29 19:41:45 2 || found entry 
+Mon Feb 29 19:41:45 2 || for me 
+Mon Feb 29 19:41:45 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:46 2 || incoming_arp 
+Mon Feb 29 19:41:46 2 || found entry 
+Mon Feb 29 19:41:46 2 || for me 
+Mon Feb 29 19:41:46 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:47 2 || incoming_arp 
+Mon Feb 29 19:41:47 2 || found entry 
+Mon Feb 29 19:41:47 2 || for me 
+Mon Feb 29 19:41:47 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:48 2 || incoming_arp 
+Mon Feb 29 19:41:48 2 || found entry 
+Mon Feb 29 19:41:48 2 || for me 
+Mon Feb 29 19:41:48 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:49 2 || incoming_arp 
+Mon Feb 29 19:41:49 2 || found entry 
+Mon Feb 29 19:41:49 2 || for me 
+Mon Feb 29 19:41:49 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:50 2 || incoming_arp 
+Mon Feb 29 19:41:50 2 || found entry 
+Mon Feb 29 19:41:50 2 || for me 
+Mon Feb 29 19:41:50 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:51 2 || incoming_arp 
+Mon Feb 29 19:41:51 2 || found entry 
+Mon Feb 29 19:41:51 2 || for me 
+Mon Feb 29 19:41:51 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:52 2 || incoming_arp 
+Mon Feb 29 19:41:52 2 || found entry 
+Mon Feb 29 19:41:52 2 || for me 
+Mon Feb 29 19:41:52 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:53 2 || incoming_arp 
+Mon Feb 29 19:41:53 2 || found entry 
+Mon Feb 29 19:41:53 2 || for me 
+Mon Feb 29 19:41:53 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:54 2 || incoming_arp 
+Mon Feb 29 19:41:54 2 || found entry 
+Mon Feb 29 19:41:54 2 || for me 
+Mon Feb 29 19:41:54 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:55 2 || Failed to get frame: pcpa_next_ex returned: 0 
+Mon Feb 29 19:41:55 2 || incoming_arp 
+Mon Feb 29 19:41:55 2 || found entry 
+Mon Feb 29 19:41:55 2 || for me 
+Mon Feb 29 19:41:55 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:56 2 || incoming_arp 
+Mon Feb 29 19:41:56 2 || found entry 
+Mon Feb 29 19:41:56 2 || for me 
+Mon Feb 29 19:41:56 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:57 2 || incoming_arp 
+Mon Feb 29 19:41:57 2 || found entry 
+Mon Feb 29 19:41:57 2 || for me 
+Mon Feb 29 19:41:57 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:58 2 || incoming_arp 
+Mon Feb 29 19:41:58 2 || found entry 
+Mon Feb 29 19:41:58 2 || for me 
+Mon Feb 29 19:41:58 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:41:59 2 || incoming_arp 
+Mon Feb 29 19:41:59 2 || found entry 
+Mon Feb 29 19:41:59 2 || for me 
+Mon Feb 29 19:41:59 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:00 2 || incoming_arp 
+Mon Feb 29 19:42:00 2 || found entry 
+Mon Feb 29 19:42:00 2 || for me 
+Mon Feb 29 19:42:00 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:01 2 || incoming_arp 
+Mon Feb 29 19:42:01 2 || found entry 
+Mon Feb 29 19:42:01 2 || for me 
+Mon Feb 29 19:42:01 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:02 2 || incoming_arp 
+Mon Feb 29 19:42:02 2 || found entry 
+Mon Feb 29 19:42:02 2 || for me 
+Mon Feb 29 19:42:02 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:03 2 || incoming_arp 
+Mon Feb 29 19:42:03 2 || found entry 
+Mon Feb 29 19:42:03 2 || for me 
+Mon Feb 29 19:42:03 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:04 2 || incoming_arp 
+Mon Feb 29 19:42:04 2 || found entry 
+Mon Feb 29 19:42:04 2 || for me 
+Mon Feb 29 19:42:04 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:05 2 || incoming_arp 
+Mon Feb 29 19:42:05 2 || found entry 
+Mon Feb 29 19:42:05 2 || for me 
+Mon Feb 29 19:42:05 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:06 2 || incoming_arp 
+Mon Feb 29 19:42:06 2 || found entry 
+Mon Feb 29 19:42:06 2 || for me 
+Mon Feb 29 19:42:06 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:07 2 || incoming_arp 
+Mon Feb 29 19:42:07 2 || found entry 
+Mon Feb 29 19:42:07 2 || for me 
+Mon Feb 29 19:42:07 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:08 2 || incoming_arp 
+Mon Feb 29 19:42:08 2 || found entry 
+Mon Feb 29 19:42:08 2 || for me 
+Mon Feb 29 19:42:08 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:09 2 || incoming_arp 
+Mon Feb 29 19:42:09 2 || found entry 
+Mon Feb 29 19:42:09 2 || for me 
+Mon Feb 29 19:42:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:10 2 || incoming_arp 
+Mon Feb 29 19:42:10 2 || found entry 
+Mon Feb 29 19:42:10 2 || for me 
+Mon Feb 29 19:42:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:11 2 || incoming_arp 
+Mon Feb 29 19:42:11 2 || found entry 
+Mon Feb 29 19:42:11 2 || for me 
+Mon Feb 29 19:42:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:12 2 || incoming_arp 
+Mon Feb 29 19:42:12 2 || found entry 
+Mon Feb 29 19:42:12 2 || for me 
+Mon Feb 29 19:42:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:13 2 || incoming_arp 
+Mon Feb 29 19:42:13 2 || found entry 
+Mon Feb 29 19:42:13 2 || for me 
+Mon Feb 29 19:42:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:14 2 || incoming_arp 
+Mon Feb 29 19:42:14 2 || found entry 
+Mon Feb 29 19:42:14 2 || for me 
+Mon Feb 29 19:42:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:15 2 || incoming_arp 
+Mon Feb 29 19:42:15 2 || found entry 
+Mon Feb 29 19:42:15 2 || for me 
+Mon Feb 29 19:42:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:16 2 || incoming_arp 
+Mon Feb 29 19:42:16 2 || found entry 
+Mon Feb 29 19:42:16 2 || for me 
+Mon Feb 29 19:42:16 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:17 2 || incoming_arp 
+Mon Feb 29 19:42:17 2 || found entry 
+Mon Feb 29 19:42:17 2 || for me 
+Mon Feb 29 19:42:17 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:18 2 || incoming_arp 
+Mon Feb 29 19:42:18 2 || found entry 
+Mon Feb 29 19:42:18 2 || for me 
+Mon Feb 29 19:42:18 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:19 2 || incoming_arp 
+Mon Feb 29 19:42:19 2 || found entry 
+Mon Feb 29 19:42:19 2 || for me 
+Mon Feb 29 19:42:19 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:20 2 || incoming_arp 
+Mon Feb 29 19:42:20 2 || found entry 
+Mon Feb 29 19:42:20 2 || for me 
+Mon Feb 29 19:42:20 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:21 2 || incoming_arp 
+Mon Feb 29 19:42:21 2 || found entry 
+Mon Feb 29 19:42:21 2 || for me 
+Mon Feb 29 19:42:21 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:22 2 || incoming_arp 
+Mon Feb 29 19:42:22 2 || found entry 
+Mon Feb 29 19:42:22 2 || for me 
+Mon Feb 29 19:42:22 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:23 2 || incoming_arp 
+Mon Feb 29 19:42:23 2 || found entry 
+Mon Feb 29 19:42:23 2 || for me 
+Mon Feb 29 19:42:23 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:24 2 || incoming_arp 
+Mon Feb 29 19:42:24 2 || found entry 
+Mon Feb 29 19:42:24 2 || for me 
+Mon Feb 29 19:42:24 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:26 2 || incoming_arp 
+Mon Feb 29 19:42:26 2 || found entry 
+Mon Feb 29 19:42:26 2 || for me 
+Mon Feb 29 19:42:26 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:27 2 || incoming_arp 
+Mon Feb 29 19:42:27 2 || found entry 
+Mon Feb 29 19:42:27 2 || for me 
+Mon Feb 29 19:42:27 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:28 2 || incoming_arp 
+Mon Feb 29 19:42:28 2 || found entry 
+Mon Feb 29 19:42:28 2 || for me 
+Mon Feb 29 19:42:28 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:29 2 || incoming_arp 
+Mon Feb 29 19:42:29 2 || found entry 
+Mon Feb 29 19:42:29 2 || for me 
+Mon Feb 29 19:42:29 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:30 2 || incoming_arp 
+Mon Feb 29 19:42:30 2 || found entry 
+Mon Feb 29 19:42:30 2 || for me 
+Mon Feb 29 19:42:30 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:31 2 || incoming_arp 
+Mon Feb 29 19:42:31 2 || found entry 
+Mon Feb 29 19:42:31 2 || for me 
+Mon Feb 29 19:42:31 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:31 2 || Failed to get frame: pcpa_next_ex returned: 0 
+Mon Feb 29 19:42:32 2 || incoming_arp 
+Mon Feb 29 19:42:32 2 || found entry 
+Mon Feb 29 19:42:32 2 || for me 
+Mon Feb 29 19:42:32 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:33 2 || incoming_arp 
+Mon Feb 29 19:42:33 2 || found entry 
+Mon Feb 29 19:42:33 2 || for me 
+Mon Feb 29 19:42:33 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:34 2 || incoming_arp 
+Mon Feb 29 19:42:34 2 || found entry 
+Mon Feb 29 19:42:34 2 || for me 
+Mon Feb 29 19:42:34 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:35 2 || incoming_arp 
+Mon Feb 29 19:42:35 2 || found entry 
+Mon Feb 29 19:42:35 2 || for me 
+Mon Feb 29 19:42:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:36 2 || incoming_arp 
+Mon Feb 29 19:42:36 2 || found entry 
+Mon Feb 29 19:42:36 2 || for me 
+Mon Feb 29 19:42:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:37 2 || incoming_arp 
+Mon Feb 29 19:42:37 2 || found entry 
+Mon Feb 29 19:42:37 2 || for me 
+Mon Feb 29 19:42:37 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:38 2 || incoming_arp 
+Mon Feb 29 19:42:38 2 || found entry 
+Mon Feb 29 19:42:38 2 || for me 
+Mon Feb 29 19:42:38 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:39 2 || incoming_arp 
+Mon Feb 29 19:42:39 2 || found entry 
+Mon Feb 29 19:42:39 2 || for me 
+Mon Feb 29 19:42:39 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:40 2 || incoming_arp 
+Mon Feb 29 19:42:40 2 || found entry 
+Mon Feb 29 19:42:40 2 || for me 
+Mon Feb 29 19:42:40 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:41 2 || incoming_arp 
+Mon Feb 29 19:42:41 2 || found entry 
+Mon Feb 29 19:42:41 2 || for me 
+Mon Feb 29 19:42:41 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:42 2 || incoming_arp 
+Mon Feb 29 19:42:42 2 || found entry 
+Mon Feb 29 19:42:42 2 || for me 
+Mon Feb 29 19:42:42 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:43 2 || incoming_arp 
+Mon Feb 29 19:42:43 2 || found entry 
+Mon Feb 29 19:42:43 2 || for me 
+Mon Feb 29 19:42:43 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:44 2 || incoming_arp 
+Mon Feb 29 19:42:44 2 || found entry 
+Mon Feb 29 19:42:44 2 || for me 
+Mon Feb 29 19:42:44 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:45 2 || incoming_arp 
+Mon Feb 29 19:42:45 2 || found entry 
+Mon Feb 29 19:42:45 2 || for me 
+Mon Feb 29 19:42:45 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:46 2 || incoming_arp 
+Mon Feb 29 19:42:46 2 || found entry 
+Mon Feb 29 19:42:46 2 || for me 
+Mon Feb 29 19:42:46 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:47 2 || incoming_arp 
+Mon Feb 29 19:42:47 2 || found entry 
+Mon Feb 29 19:42:47 2 || for me 
+Mon Feb 29 19:42:47 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:48 2 || incoming_arp 
+Mon Feb 29 19:42:48 2 || found entry 
+Mon Feb 29 19:42:48 2 || for me 
+Mon Feb 29 19:42:48 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:49 2 || incoming_arp 
+Mon Feb 29 19:42:49 2 || found entry 
+Mon Feb 29 19:42:49 2 || for me 
+Mon Feb 29 19:42:49 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:50 2 || incoming_arp 
+Mon Feb 29 19:42:50 2 || found entry 
+Mon Feb 29 19:42:50 2 || for me 
+Mon Feb 29 19:42:50 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:51 2 || incoming_arp 
+Mon Feb 29 19:42:51 2 || found entry 
+Mon Feb 29 19:42:51 2 || for me 
+Mon Feb 29 19:42:51 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:52 2 || incoming_arp 
+Mon Feb 29 19:42:52 2 || found entry 
+Mon Feb 29 19:42:52 2 || for me 
+Mon Feb 29 19:42:52 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:53 2 || incoming_arp 
+Mon Feb 29 19:42:53 2 || found entry 
+Mon Feb 29 19:42:53 2 || for me 
+Mon Feb 29 19:42:53 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:54 2 || incoming_arp 
+Mon Feb 29 19:42:54 2 || found entry 
+Mon Feb 29 19:42:54 2 || for me 
+Mon Feb 29 19:42:54 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:55 2 || incoming_arp 
+Mon Feb 29 19:42:55 2 || found entry 
+Mon Feb 29 19:42:55 2 || for me 
+Mon Feb 29 19:42:55 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:56 2 || incoming_arp 
+Mon Feb 29 19:42:56 2 || found entry 
+Mon Feb 29 19:42:56 2 || for me 
+Mon Feb 29 19:42:56 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:57 2 || incoming_arp 
+Mon Feb 29 19:42:57 2 || found entry 
+Mon Feb 29 19:42:57 2 || for me 
+Mon Feb 29 19:42:57 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:58 2 || incoming_arp 
+Mon Feb 29 19:42:58 2 || found entry 
+Mon Feb 29 19:42:58 2 || for me 
+Mon Feb 29 19:42:58 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:42:59 2 || incoming_arp 
+Mon Feb 29 19:42:59 2 || found entry 
+Mon Feb 29 19:42:59 2 || for me 
+Mon Feb 29 19:42:59 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:00 2 || incoming_arp 
+Mon Feb 29 19:43:00 2 || found entry 
+Mon Feb 29 19:43:00 2 || for me 
+Mon Feb 29 19:43:00 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:01 2 || incoming_arp 
+Mon Feb 29 19:43:01 2 || found entry 
+Mon Feb 29 19:43:01 2 || for me 
+Mon Feb 29 19:43:01 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:02 2 || incoming_arp 
+Mon Feb 29 19:43:02 2 || found entry 
+Mon Feb 29 19:43:02 2 || for me 
+Mon Feb 29 19:43:02 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:03 2 || incoming_arp 
+Mon Feb 29 19:43:03 2 || found entry 
+Mon Feb 29 19:43:03 2 || for me 
+Mon Feb 29 19:43:03 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:04 2 || incoming_arp 
+Mon Feb 29 19:43:04 2 || found entry 
+Mon Feb 29 19:43:04 2 || for me 
+Mon Feb 29 19:43:04 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:05 2 || incoming_arp 
+Mon Feb 29 19:43:05 2 || found entry 
+Mon Feb 29 19:43:05 2 || for me 
+Mon Feb 29 19:43:05 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:06 2 || incoming_arp 
+Mon Feb 29 19:43:06 2 || found entry 
+Mon Feb 29 19:43:06 2 || for me 
+Mon Feb 29 19:43:06 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:07 2 || incoming_arp 
+Mon Feb 29 19:43:07 2 || found entry 
+Mon Feb 29 19:43:07 2 || for me 
+Mon Feb 29 19:43:07 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:08 2 || incoming_arp 
+Mon Feb 29 19:43:08 2 || found entry 
+Mon Feb 29 19:43:08 2 || for me 
+Mon Feb 29 19:43:08 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:09 2 || incoming_arp 
+Mon Feb 29 19:43:09 2 || found entry 
+Mon Feb 29 19:43:09 2 || for me 
+Mon Feb 29 19:43:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:10 2 || incoming_arp 
+Mon Feb 29 19:43:10 2 || found entry 
+Mon Feb 29 19:43:10 2 || for me 
+Mon Feb 29 19:43:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:11 2 || incoming_arp 
+Mon Feb 29 19:43:11 2 || found entry 
+Mon Feb 29 19:43:11 2 || for me 
+Mon Feb 29 19:43:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:12 2 || incoming_arp 
+Mon Feb 29 19:43:12 2 || found entry 
+Mon Feb 29 19:43:12 2 || for me 
+Mon Feb 29 19:43:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:13 2 || incoming_arp 
+Mon Feb 29 19:43:13 2 || found entry 
+Mon Feb 29 19:43:13 2 || for me 
+Mon Feb 29 19:43:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:14 2 || incoming_arp 
+Mon Feb 29 19:43:14 2 || found entry 
+Mon Feb 29 19:43:14 2 || for me 
+Mon Feb 29 19:43:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:15 2 || incoming_arp 
+Mon Feb 29 19:43:15 2 || found entry 
+Mon Feb 29 19:43:15 2 || for me 
+Mon Feb 29 19:43:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:16 2 || incoming_arp 
+Mon Feb 29 19:43:16 2 || found entry 
+Mon Feb 29 19:43:16 2 || for me 
+Mon Feb 29 19:43:16 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:17 2 || incoming_arp 
+Mon Feb 29 19:43:17 2 || found entry 
+Mon Feb 29 19:43:17 2 || for me 
+Mon Feb 29 19:43:17 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:18 2 || incoming_arp 
+Mon Feb 29 19:43:18 2 || found entry 
+Mon Feb 29 19:43:18 2 || for me 
+Mon Feb 29 19:43:18 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:19 2 || incoming_arp 
+Mon Feb 29 19:43:19 2 || found entry 
+Mon Feb 29 19:43:19 2 || for me 
+Mon Feb 29 19:43:19 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:20 2 || incoming_arp 
+Mon Feb 29 19:43:20 2 || found entry 
+Mon Feb 29 19:43:20 2 || for me 
+Mon Feb 29 19:43:20 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:21 2 || incoming_arp 
+Mon Feb 29 19:43:21 2 || found entry 
+Mon Feb 29 19:43:21 2 || for me 
+Mon Feb 29 19:43:21 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:22 2 || incoming_arp 
+Mon Feb 29 19:43:22 2 || found entry 
+Mon Feb 29 19:43:22 2 || for me 
+Mon Feb 29 19:43:22 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:23 2 || incoming_arp 
+Mon Feb 29 19:43:23 2 || found entry 
+Mon Feb 29 19:43:23 2 || for me 
+Mon Feb 29 19:43:23 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:24 2 || incoming_arp 
+Mon Feb 29 19:43:24 2 || found entry 
+Mon Feb 29 19:43:24 2 || for me 
+Mon Feb 29 19:43:24 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:25 2 || incoming_arp 
+Mon Feb 29 19:43:25 2 || found entry 
+Mon Feb 29 19:43:25 2 || for me 
+Mon Feb 29 19:43:25 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:26 2 || incoming_arp 
+Mon Feb 29 19:43:26 2 || found entry 
+Mon Feb 29 19:43:26 2 || for me 
+Mon Feb 29 19:43:26 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:27 2 || incoming_arp 
+Mon Feb 29 19:43:27 2 || found entry 
+Mon Feb 29 19:43:27 2 || for me 
+Mon Feb 29 19:43:27 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:28 2 || incoming_arp 
+Mon Feb 29 19:43:28 2 || found entry 
+Mon Feb 29 19:43:28 2 || for me 
+Mon Feb 29 19:43:28 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:29 2 || incoming_arp 
+Mon Feb 29 19:43:29 2 || found entry 
+Mon Feb 29 19:43:29 2 || for me 
+Mon Feb 29 19:43:29 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:30 2 || incoming_arp 
+Mon Feb 29 19:43:30 2 || found entry 
+Mon Feb 29 19:43:30 2 || for me 
+Mon Feb 29 19:43:30 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:31 2 || incoming_arp 
+Mon Feb 29 19:43:31 2 || found entry 
+Mon Feb 29 19:43:31 2 || for me 
+Mon Feb 29 19:43:31 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:32 2 || incoming_arp 
+Mon Feb 29 19:43:32 2 || found entry 
+Mon Feb 29 19:43:32 2 || for me 
+Mon Feb 29 19:43:32 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:33 2 || incoming_arp 
+Mon Feb 29 19:43:33 2 || found entry 
+Mon Feb 29 19:43:33 2 || for me 
+Mon Feb 29 19:43:33 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:34 2 || incoming_arp 
+Mon Feb 29 19:43:34 2 || found entry 
+Mon Feb 29 19:43:34 2 || for me 
+Mon Feb 29 19:43:34 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:35 2 || incoming_arp 
+Mon Feb 29 19:43:35 2 || found entry 
+Mon Feb 29 19:43:35 2 || for me 
+Mon Feb 29 19:43:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:36 2 || incoming_arp 
+Mon Feb 29 19:43:36 2 || found entry 
+Mon Feb 29 19:43:36 2 || for me 
+Mon Feb 29 19:43:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:37 2 || incoming_arp 
+Mon Feb 29 19:43:37 2 || found entry 
+Mon Feb 29 19:43:37 2 || for me 
+Mon Feb 29 19:43:37 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:38 2 || incoming_arp 
+Mon Feb 29 19:43:38 2 || found entry 
+Mon Feb 29 19:43:38 2 || for me 
+Mon Feb 29 19:43:38 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:39 2 || incoming_arp 
+Mon Feb 29 19:43:39 2 || found entry 
+Mon Feb 29 19:43:39 2 || for me 
+Mon Feb 29 19:43:39 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:40 2 || incoming_arp 
+Mon Feb 29 19:43:40 2 || found entry 
+Mon Feb 29 19:43:40 2 || for me 
+Mon Feb 29 19:43:40 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:41 2 || incoming_arp 
+Mon Feb 29 19:43:41 2 || found entry 
+Mon Feb 29 19:43:41 2 || for me 
+Mon Feb 29 19:43:41 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:42 2 || incoming_arp 
+Mon Feb 29 19:43:42 2 || found entry 
+Mon Feb 29 19:43:42 2 || for me 
+Mon Feb 29 19:43:42 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:43 2 || incoming_arp 
+Mon Feb 29 19:43:43 2 || found entry 
+Mon Feb 29 19:43:43 2 || for me 
+Mon Feb 29 19:43:43 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:44 2 || incoming_arp 
+Mon Feb 29 19:43:44 2 || found entry 
+Mon Feb 29 19:43:44 2 || for me 
+Mon Feb 29 19:43:44 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:45 2 || incoming_arp 
+Mon Feb 29 19:43:45 2 || found entry 
+Mon Feb 29 19:43:45 2 || for me 
+Mon Feb 29 19:43:45 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:46 2 || incoming_arp 
+Mon Feb 29 19:43:46 2 || found entry 
+Mon Feb 29 19:43:46 2 || for me 
+Mon Feb 29 19:43:46 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:47 2 || incoming_arp 
+Mon Feb 29 19:43:47 2 || found entry 
+Mon Feb 29 19:43:47 2 || for me 
+Mon Feb 29 19:43:47 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:48 2 || incoming_arp 
+Mon Feb 29 19:43:48 2 || found entry 
+Mon Feb 29 19:43:48 2 || for me 
+Mon Feb 29 19:43:48 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:49 2 || incoming_arp 
+Mon Feb 29 19:43:49 2 || found entry 
+Mon Feb 29 19:43:49 2 || for me 
+Mon Feb 29 19:43:49 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:50 2 || incoming_arp 
+Mon Feb 29 19:43:50 2 || found entry 
+Mon Feb 29 19:43:50 2 || for me 
+Mon Feb 29 19:43:50 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:51 2 || incoming_arp 
+Mon Feb 29 19:43:51 2 || found entry 
+Mon Feb 29 19:43:51 2 || for me 
+Mon Feb 29 19:43:51 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:52 2 || incoming_arp 
+Mon Feb 29 19:43:52 2 || found entry 
+Mon Feb 29 19:43:52 2 || for me 
+Mon Feb 29 19:43:52 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:53 2 || incoming_arp 
+Mon Feb 29 19:43:53 2 || found entry 
+Mon Feb 29 19:43:53 2 || for me 
+Mon Feb 29 19:43:53 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:54 2 || incoming_arp 
+Mon Feb 29 19:43:54 2 || found entry 
+Mon Feb 29 19:43:54 2 || for me 
+Mon Feb 29 19:43:54 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:55 2 || incoming_arp 
+Mon Feb 29 19:43:55 2 || found entry 
+Mon Feb 29 19:43:55 2 || for me 
+Mon Feb 29 19:43:55 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:56 2 || incoming_arp 
+Mon Feb 29 19:43:56 2 || found entry 
+Mon Feb 29 19:43:56 2 || for me 
+Mon Feb 29 19:43:56 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:57 2 || incoming_arp 
+Mon Feb 29 19:43:57 2 || found entry 
+Mon Feb 29 19:43:57 2 || for me 
+Mon Feb 29 19:43:57 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:58 2 || incoming_arp 
+Mon Feb 29 19:43:58 2 || found entry 
+Mon Feb 29 19:43:58 2 || for me 
+Mon Feb 29 19:43:58 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:43:59 2 || incoming_arp 
+Mon Feb 29 19:43:59 2 || found entry 
+Mon Feb 29 19:43:59 2 || for me 
+Mon Feb 29 19:43:59 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:00 2 || incoming_arp 
+Mon Feb 29 19:44:00 2 || found entry 
+Mon Feb 29 19:44:00 2 || for me 
+Mon Feb 29 19:44:00 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:02 2 || incoming_arp 
+Mon Feb 29 19:44:02 2 || found entry 
+Mon Feb 29 19:44:02 2 || for me 
+Mon Feb 29 19:44:02 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:03 2 || incoming_arp 
+Mon Feb 29 19:44:03 2 || found entry 
+Mon Feb 29 19:44:03 2 || for me 
+Mon Feb 29 19:44:03 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:04 2 || incoming_arp 
+Mon Feb 29 19:44:04 2 || found entry 
+Mon Feb 29 19:44:04 2 || for me 
+Mon Feb 29 19:44:04 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:05 2 || incoming_arp 
+Mon Feb 29 19:44:05 2 || found entry 
+Mon Feb 29 19:44:05 2 || for me 
+Mon Feb 29 19:44:05 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:06 2 || incoming_arp 
+Mon Feb 29 19:44:06 2 || found entry 
+Mon Feb 29 19:44:06 2 || for me 
+Mon Feb 29 19:44:06 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:07 2 || incoming_arp 
+Mon Feb 29 19:44:07 2 || found entry 
+Mon Feb 29 19:44:07 2 || for me 
+Mon Feb 29 19:44:07 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:08 2 || incoming_arp 
+Mon Feb 29 19:44:08 2 || found entry 
+Mon Feb 29 19:44:08 2 || for me 
+Mon Feb 29 19:44:08 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:09 2 || incoming_arp 
+Mon Feb 29 19:44:09 2 || found entry 
+Mon Feb 29 19:44:09 2 || for me 
+Mon Feb 29 19:44:09 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:10 2 || incoming_arp 
+Mon Feb 29 19:44:10 2 || found entry 
+Mon Feb 29 19:44:10 2 || for me 
+Mon Feb 29 19:44:10 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:11 2 || incoming_arp 
+Mon Feb 29 19:44:11 2 || found entry 
+Mon Feb 29 19:44:11 2 || for me 
+Mon Feb 29 19:44:11 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:12 2 || incoming_arp 
+Mon Feb 29 19:44:12 2 || found entry 
+Mon Feb 29 19:44:12 2 || for me 
+Mon Feb 29 19:44:12 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:13 2 || incoming_arp 
+Mon Feb 29 19:44:13 2 || found entry 
+Mon Feb 29 19:44:13 2 || for me 
+Mon Feb 29 19:44:13 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:14 2 || incoming_arp 
+Mon Feb 29 19:44:14 2 || found entry 
+Mon Feb 29 19:44:14 2 || for me 
+Mon Feb 29 19:44:14 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:44:15 2 || incoming_arp 
+Mon Feb 29 19:44:15 2 || found entry 
+Mon Feb 29 19:44:15 2 || for me 
+Mon Feb 29 19:44:15 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:47:50 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:47:50 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:47:50 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:47:50 2 || Waiting for data... 
+Mon Feb 29 19:49:12 2 || Failed to get frame: pcpa_next_ex returned: 0 
+Mon Feb 29 19:51:05 2 || Received packet from 127.0.0.1:37655
+ 
+Mon Feb 29 19:51:05 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:05 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:05 2 || Waiting for data... 
+Mon Feb 29 19:51:06 2 || Received packet from 127.0.0.1:44509
+ 
+Mon Feb 29 19:51:06 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:06 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:06 2 || Waiting for data... 
+Mon Feb 29 19:51:07 2 || Received packet from 127.0.0.1:58060
+ 
+Mon Feb 29 19:51:07 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:07 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:07 2 || Waiting for data... 
+Mon Feb 29 19:51:08 2 || Received packet from 127.0.0.1:59261
+ 
+Mon Feb 29 19:51:08 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:08 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:08 2 || Waiting for data... 
+Mon Feb 29 19:51:08 2 || -- > Port 2 (lo)	got 59 bytes 
+Mon Feb 29 19:51:08 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:51:08 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:51:08 2 || Waiting for data... 
+Mon Feb 29 19:51:08 2 || Received packet from 127.0.0.1:55064
+ 
+Mon Feb 29 19:51:08 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:08 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:08 2 || Waiting for data... 
+Mon Feb 29 19:51:09 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:51:09 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:09 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:09 2 || Waiting for data... 
+Mon Feb 29 19:51:10 2 || Received packet from 127.0.0.1:58316
+ 
+Mon Feb 29 19:51:10 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:10 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:10 2 || Waiting for data... 
+Mon Feb 29 19:51:11 2 || Received packet from 127.0.0.1:50066
+ 
+Mon Feb 29 19:51:11 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:11 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:11 2 || Waiting for data... 
+Mon Feb 29 19:51:12 2 || Received packet from 127.0.0.1:46141
+ 
+Mon Feb 29 19:51:12 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:12 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:12 2 || Waiting for data... 
+Mon Feb 29 19:51:13 2 || Received packet from 127.0.0.1:50508
+ 
+Mon Feb 29 19:51:13 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:13 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:13 2 || Waiting for data... 
+Mon Feb 29 19:51:14 2 || Received packet from 127.0.0.1:58102
+ 
+Mon Feb 29 19:51:14 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:14 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:14 2 || Waiting for data... 
+Mon Feb 29 19:51:15 2 || Received packet from 127.0.0.1:43490
+ 
+Mon Feb 29 19:51:15 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:15 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:15 2 || Waiting for data... 
+Mon Feb 29 19:51:16 2 || Received packet from 127.0.0.1:56719
+ 
+Mon Feb 29 19:51:16 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:16 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:16 2 || Waiting for data... 
+Mon Feb 29 19:51:17 2 || Received packet from 127.0.0.1:52760
+ 
+Mon Feb 29 19:51:17 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:17 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:17 2 || Waiting for data... 
+Mon Feb 29 19:51:18 2 || Received packet from 127.0.0.1:55218
+ 
+Mon Feb 29 19:51:18 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:18 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:18 2 || Waiting for data... 
+Mon Feb 29 19:51:19 2 || Received packet from 127.0.0.1:57413
+ 
+Mon Feb 29 19:51:19 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:19 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:19 2 || Waiting for data... 
+Mon Feb 29 19:51:20 2 || Received packet from 127.0.0.1:60071
+ 
+Mon Feb 29 19:51:20 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:20 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:20 2 || Waiting for data... 
+Mon Feb 29 19:51:21 2 || Received packet from 127.0.0.1:33955
+ 
+Mon Feb 29 19:51:21 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:51:21 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:51:21 2 || Waiting for data... 
+Mon Feb 29 19:51:21 2 || Received packet from 127.0.0.1:46874
+ 
+Mon Feb 29 19:51:21 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:21 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:21 2 || Waiting for data... 
+Mon Feb 29 19:51:21 2 || Received packet from 127.0.0.1:60251
+ 
+Mon Feb 29 19:51:21 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:21 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:21 2 || Waiting for data... 
+Mon Feb 29 19:51:22 2 || Received packet from 127.0.0.1:57648
+ 
+Mon Feb 29 19:51:22 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:22 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:22 2 || Waiting for data... 
+Mon Feb 29 19:51:23 2 || Received packet from 127.0.0.1:42198
+ 
+Mon Feb 29 19:51:23 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:23 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:23 2 || Waiting for data... 
+Mon Feb 29 19:51:24 2 || Received packet from 127.0.0.1:47623
+ 
+Mon Feb 29 19:51:24 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:24 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:24 2 || Waiting for data... 
+Mon Feb 29 19:51:25 2 || Received packet from 127.0.0.1:54411
+ 
+Mon Feb 29 19:51:25 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:25 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:25 2 || Waiting for data... 
+Mon Feb 29 19:51:26 2 || Received packet from 127.0.0.1:54748
+ 
+Mon Feb 29 19:51:26 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:26 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:26 2 || Waiting for data... 
+Mon Feb 29 19:51:27 2 || Received packet from 127.0.0.1:56591
+ 
+Mon Feb 29 19:51:27 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:27 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:27 2 || Waiting for data... 
+Mon Feb 29 19:51:28 2 || Received packet from 127.0.0.1:49060
+ 
+Mon Feb 29 19:51:28 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:28 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:28 2 || Waiting for data... 
+Mon Feb 29 19:51:29 2 || Received packet from 127.0.0.1:37602
+ 
+Mon Feb 29 19:51:29 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:29 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:29 2 || Waiting for data... 
+Mon Feb 29 19:51:30 2 || Received packet from 127.0.0.1:33786
+ 
+Mon Feb 29 19:51:30 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:30 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:30 2 || Waiting for data... 
+Mon Feb 29 19:51:31 2 || Received packet from 127.0.0.1:34369
+ 
+Mon Feb 29 19:51:31 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:31 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:31 2 || Waiting for data... 
+Mon Feb 29 19:51:32 2 || Received packet from 127.0.0.1:48824
+ 
+Mon Feb 29 19:51:32 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:32 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:32 2 || Waiting for data... 
+Mon Feb 29 19:51:33 2 || Received packet from 127.0.0.1:39272
+ 
+Mon Feb 29 19:51:33 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:33 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:33 2 || Waiting for data... 
+Mon Feb 29 19:51:34 2 || Received packet from 127.0.0.1:52015
+ 
+Mon Feb 29 19:51:34 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:34 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:34 2 || Waiting for data... 
+Mon Feb 29 19:51:35 2 || Received packet from 127.0.0.1:58169
+ 
+Mon Feb 29 19:51:35 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:35 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:35 2 || Waiting for data... 
+Mon Feb 29 19:51:36 2 || Received packet from 127.0.0.1:52426
+ 
+Mon Feb 29 19:51:36 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:36 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:36 2 || Waiting for data... 
+Mon Feb 29 19:51:37 2 || Received packet from 127.0.0.1:45664
+ 
+Mon Feb 29 19:51:37 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:37 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:37 2 || Waiting for data... 
+Mon Feb 29 19:51:38 2 || Received packet from 127.0.0.1:38217
+ 
+Mon Feb 29 19:51:38 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:51:38 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:51:38 2 || Waiting for data... 
+Mon Feb 29 19:54:09 2 || Received packet from 127.0.0.1:47331
+ 
+Mon Feb 29 19:54:09 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:09 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:09 2 || Waiting for data... 
+Mon Feb 29 19:54:10 2 || Received packet from 127.0.0.1:49887
+ 
+Mon Feb 29 19:54:10 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:10 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:10 2 || Failed to get frame: pcpa_next_ex returned: 0 
+Mon Feb 29 19:54:10 2 || Waiting for data... 
+Mon Feb 29 19:54:11 2 || Received packet from 127.0.0.1:44288
+ 
+Mon Feb 29 19:54:11 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:11 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:11 2 || Waiting for data... 
+Mon Feb 29 19:54:11 2 || -- > Port 2 (lo)	got 59 bytes 
+Mon Feb 29 19:54:11 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:11 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:11 2 || Waiting for data... 
+Mon Feb 29 19:54:11 2 || Received packet from 127.0.0.1:36772
+ 
+Mon Feb 29 19:54:11 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:11 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:11 2 || Waiting for data... 
+Mon Feb 29 19:54:12 2 || Received packet from 127.0.0.1:55515
+ 
+Mon Feb 29 19:54:12 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:12 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:12 2 || Waiting for data... 
+Mon Feb 29 19:54:13 2 || Received packet from 127.0.0.1:38587
+ 
+Mon Feb 29 19:54:13 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:13 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:13 2 || Waiting for data... 
+Mon Feb 29 19:54:14 2 || Received packet from 127.0.0.1:51490
+ 
+Mon Feb 29 19:54:14 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:14 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:14 2 || Waiting for data... 
+Mon Feb 29 19:54:15 2 || Received packet from 127.0.0.1:60136
+ 
+Mon Feb 29 19:54:15 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:15 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:15 2 || Waiting for data... 
+Mon Feb 29 19:54:16 2 || Received packet from 127.0.0.1:57151
+ 
+Mon Feb 29 19:54:16 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:16 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:16 2 || Waiting for data... 
+Mon Feb 29 19:54:16 2 || Received packet from 127.0.0.1:42535
+ 
+Mon Feb 29 19:54:16 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:16 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:16 2 || Waiting for data... 
+Mon Feb 29 19:54:16 2 || Received packet from 127.0.0.1:39611
+ 
+Mon Feb 29 19:54:16 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:16 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:16 2 || Waiting for data... 
+Mon Feb 29 19:54:17 2 || Received packet from 127.0.0.1:51551
+ 
+Mon Feb 29 19:54:17 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:17 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:17 2 || Waiting for data... 
+Mon Feb 29 19:54:18 2 || Received packet from 127.0.0.1:52004
+ 
+Mon Feb 29 19:54:18 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:18 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:18 2 || Waiting for data... 
+Mon Feb 29 19:54:19 2 || Received packet from 127.0.0.1:37821
+ 
+Mon Feb 29 19:54:19 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:19 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:19 2 || Waiting for data... 
+Mon Feb 29 19:54:20 2 || Received packet from 127.0.0.1:49251
+ 
+Mon Feb 29 19:54:20 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:20 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:20 2 || Waiting for data... 
+Mon Feb 29 19:54:21 2 || Received packet from 127.0.0.1:43013
+ 
+Mon Feb 29 19:54:21 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:21 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:21 2 || Waiting for data... 
+Mon Feb 29 19:54:22 2 || Received packet from 127.0.0.1:51127
+ 
+Mon Feb 29 19:54:22 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:22 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:22 2 || Waiting for data... 
+Mon Feb 29 19:54:23 2 || Received packet from 127.0.0.1:52350
+ 
+Mon Feb 29 19:54:23 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:23 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:23 2 || Waiting for data... 
+Mon Feb 29 19:54:24 2 || Received packet from 127.0.0.1:55976
+ 
+Mon Feb 29 19:54:24 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:24 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:24 2 || Waiting for data... 
+Mon Feb 29 19:54:25 2 || Received packet from 127.0.0.1:40349
+ 
+Mon Feb 29 19:54:25 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:25 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:25 2 || Waiting for data... 
+Mon Feb 29 19:54:26 2 || Received packet from 127.0.0.1:53611
+ 
+Mon Feb 29 19:54:26 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:26 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:26 2 || Waiting for data... 
+Mon Feb 29 19:54:26 2 || incoming_arp 
+Mon Feb 29 19:54:26 2 || for me 
+Mon Feb 29 19:54:26 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:26 2 || incoming_arp 
+Mon Feb 29 19:54:26 2 || found entry 
+Mon Feb 29 19:54:26 2 || for me 
+Mon Feb 29 19:54:26 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:27 2 || Received packet from 127.0.0.1:43167
+ 
+Mon Feb 29 19:54:27 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:27 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:27 2 || Waiting for data... 
+Mon Feb 29 19:54:27 2 || incoming_arp 
+Mon Feb 29 19:54:27 2 || found entry 
+Mon Feb 29 19:54:27 2 || for me 
+Mon Feb 29 19:54:27 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:28 2 || Received packet from 127.0.0.1:52420
+ 
+Mon Feb 29 19:54:28 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:28 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:28 2 || Waiting for data... 
+Mon Feb 29 19:54:28 2 || incoming_arp 
+Mon Feb 29 19:54:28 2 || found entry 
+Mon Feb 29 19:54:28 2 || for me 
+Mon Feb 29 19:54:28 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:29 2 || Received packet from 127.0.0.1:47302
+ 
+Mon Feb 29 19:54:29 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:29 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:29 2 || Waiting for data... 
+Mon Feb 29 19:54:29 2 || incoming_arp 
+Mon Feb 29 19:54:29 2 || found entry 
+Mon Feb 29 19:54:29 2 || for me 
+Mon Feb 29 19:54:29 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:30 2 || Received packet from 127.0.0.1:58052
+ 
+Mon Feb 29 19:54:30 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:30 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:30 2 || Waiting for data... 
+Mon Feb 29 19:54:30 2 || incoming_arp 
+Mon Feb 29 19:54:30 2 || found entry 
+Mon Feb 29 19:54:30 2 || for me 
+Mon Feb 29 19:54:30 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:31 2 || Received packet from 127.0.0.1:36655
+ 
+Mon Feb 29 19:54:31 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:31 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:31 2 || Waiting for data... 
+Mon Feb 29 19:54:31 2 || incoming_arp 
+Mon Feb 29 19:54:31 2 || found entry 
+Mon Feb 29 19:54:31 2 || for me 
+Mon Feb 29 19:54:31 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:32 2 || Received packet from 127.0.0.1:40587
+ 
+Mon Feb 29 19:54:32 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:32 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:32 2 || Waiting for data... 
+Mon Feb 29 19:54:32 2 || incoming_arp 
+Mon Feb 29 19:54:32 2 || found entry 
+Mon Feb 29 19:54:32 2 || for me 
+Mon Feb 29 19:54:32 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:33 2 || Received packet from 127.0.0.1:47825
+ 
+Mon Feb 29 19:54:33 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:33 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:33 2 || Waiting for data... 
+Mon Feb 29 19:54:33 2 || incoming_arp 
+Mon Feb 29 19:54:33 2 || found entry 
+Mon Feb 29 19:54:33 2 || for me 
+Mon Feb 29 19:54:33 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:34 2 || Received packet from 127.0.0.1:37223
+ 
+Mon Feb 29 19:54:34 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:34 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:34 2 || Waiting for data... 
+Mon Feb 29 19:54:34 2 || incoming_arp 
+Mon Feb 29 19:54:34 2 || found entry 
+Mon Feb 29 19:54:34 2 || for me 
+Mon Feb 29 19:54:34 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:35 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:54:35 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:35 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:35 2 || Waiting for data... 
+Mon Feb 29 19:54:35 2 || incoming_arp 
+Mon Feb 29 19:54:35 2 || found entry 
+Mon Feb 29 19:54:35 2 || for me 
+Mon Feb 29 19:54:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:36 2 || Received packet from 127.0.0.1:38940
+ 
+Mon Feb 29 19:54:36 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:36 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:36 2 || Waiting for data... 
+Mon Feb 29 19:54:36 2 || incoming_arp 
+Mon Feb 29 19:54:36 2 || found entry 
+Mon Feb 29 19:54:36 2 || for me 
+Mon Feb 29 19:54:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:37 2 || Received packet from 127.0.0.1:51707
+ 
+Mon Feb 29 19:54:37 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:37 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:37 2 || Waiting for data... 
+Mon Feb 29 19:54:37 2 || incoming_arp 
+Mon Feb 29 19:54:37 2 || found entry 
+Mon Feb 29 19:54:37 2 || for me 
+Mon Feb 29 19:54:37 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:38 2 || Received packet from 127.0.0.1:37121
+ 
+Mon Feb 29 19:54:38 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:38 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:38 2 || Waiting for data... 
+Mon Feb 29 19:54:38 2 || incoming_arp 
+Mon Feb 29 19:54:38 2 || found entry 
+Mon Feb 29 19:54:38 2 || for me 
+Mon Feb 29 19:54:38 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:39 2 || Received packet from 127.0.0.1:58800
+ 
+Mon Feb 29 19:54:39 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:39 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:39 2 || Waiting for data... 
+Mon Feb 29 19:54:39 2 || incoming_arp 
+Mon Feb 29 19:54:39 2 || found entry 
+Mon Feb 29 19:54:39 2 || for me 
+Mon Feb 29 19:54:39 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:39 2 || Received packet from 127.0.0.1:52423
+ 
+Mon Feb 29 19:54:39 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:39 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:39 2 || Waiting for data... 
+Mon Feb 29 19:54:39 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:54:39 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:39 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:39 2 || Waiting for data... 
+Mon Feb 29 19:54:40 2 || Received packet from 127.0.0.1:59704
+ 
+Mon Feb 29 19:54:40 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:40 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:40 2 || Waiting for data... 
+Mon Feb 29 19:54:40 2 || incoming_arp 
+Mon Feb 29 19:54:40 2 || for me 
+Mon Feb 29 19:54:40 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:41 2 || Received packet from 127.0.0.1:60642
+ 
+Mon Feb 29 19:54:41 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:54:41 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:41 2 || Waiting for data... 
+Mon Feb 29 19:54:41 2 || incoming_arp 
+Mon Feb 29 19:54:41 2 || found entry 
+Mon Feb 29 19:54:41 2 || for me 
+Mon Feb 29 19:54:41 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:42 2 || Received packet from 127.0.0.1:53559
+ 
+Mon Feb 29 19:54:42 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:42 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:42 2 || Waiting for data... 
+Mon Feb 29 19:54:42 2 || Received packet from 127.0.0.1:56866
+ 
+Mon Feb 29 19:54:42 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:42 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:42 2 || Waiting for data... 
+Mon Feb 29 19:54:42 2 || Received packet from 127.0.0.1:35728
+ 
+Mon Feb 29 19:54:42 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:42 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:42 2 || Waiting for data... 
+Mon Feb 29 19:54:42 2 || incoming_arp 
+Mon Feb 29 19:54:42 2 || for me 
+Mon Feb 29 19:54:42 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:43 2 || Received packet from 127.0.0.1:43078
+ 
+Mon Feb 29 19:54:43 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:43 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:43 2 || Waiting for data... 
+Mon Feb 29 19:54:43 2 || incoming_arp 
+Mon Feb 29 19:54:43 2 || found entry 
+Mon Feb 29 19:54:43 2 || for me 
+Mon Feb 29 19:54:43 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:44 2 || Received p2 (lo)	got 56 bytes 
+Mon Feb 29 19:54:44 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:44 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || Failed to get frame: pcpa_next_ex returned: 0 
+Mon Feb 29 19:54:44 2 || Received packet from 127.0.0.1:56033
+ 
+Mon Feb 29 19:54:44 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:44 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || Received packet from 127.0.0.1:42956
+ 
+Mon Feb 29 19:54:44 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:44 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || incoming_arp 
+Mon Feb 29 19:54:44 2 || for me 
+Mon Feb 29 19:54:44 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:44 2 || -- > Port 2 (lo)	got 59 bytes 
+Mon Feb 29 19:54:44 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:44 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || Received packet from 127.0.0.1:36309
+ 
+Mon Feb 29 19:54:44 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:44 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || Received packet from 127.0.0.1:59545
+ 
+Mon Feb 29 19:54:44 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:44 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:44 2 || Received packet from 127.0.0.1:52998
+ 
+Mon Feb 29 19:54:44 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:44 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:44 2 || Waiting for data... 
+Mon Feb 29 19:54:45 2 || Received packet from 127.0.0.1:40550
+ 
+Mon Feb 29 19:54:45 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:45 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:45 2 || Waiting for data... 
+Mon Feb 29 19:54:45 2 || incoming_arp 
+Mon Feb 29 19:54:45 2 || for me 
+Mon Feb 29 19:54:45 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:46 2 || Received packet from 127.0.0.1:41700
+ 
+Mon Feb 29 19:54:46 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:46 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:46 2 || Waiting for data... 
+Mon Feb 29 19:54:46 2 || -- > Port 2 (lo)	got 59 bytes 
+Mon Feb 29 19:54:46 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:46 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:46 2 || Waiting for data... 
+Mon Feb 29 19:54:46 2 || Received packet from 127.0.0.1:39097
+ 
+Mon Feb 29 19:54:46 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:46 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:46 2 || Waiting for data... 
+Mon Feb 29 19:54:46 2 || incoming_arp 
+Mon Feb 29 19:54:46 2 || for me 
+Mon Feb 29 19:54:46 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:47 2 || Received packet from 127.0.0.1:41388
+ 
+Mon Feb 29 19:54:47 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:47 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:47 2 || Waiting for data... 
+Mon Feb 29 19:54:47 2 || incoming_arp 
+Mon Feb 29 19:54:47 2 || found entry 
+Mon Feb 29 19:54:47 2 || for me 
+Mon Feb 29 19:54:47 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:47 2 || Received packet from 127.0.0.1:55407
+ 
+Mon Feb 29 19:54:47 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:47 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:47 2 || Waiting for data... 
+Mon Feb 29 19:54:47 2 || Received packet from 127.0.0.1:43943
+ 
+Mon Feb 29 19:54:47 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:47 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:47 2 || Waiting for data... 
+Mon Feb 29 19:54:48 2 || Received packet from 127.0.0.1:35027
+ 
+Mon Feb 29 19:54:48 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:48 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:48 2 || Waiting for data... 
+Mon Feb 29 19:54:48 2 || incoming_arp 
+Mon Feb 29 19:54:48 2 || for me 
+Mon Feb 29 19:54:48 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:49 2 || Received packet from 127.0.0.1:52177
+ 
+Mon Feb 29 19:54:49 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:49 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:49 2 || Waiting for data... 
+Mon Feb 29 19:54:49 2 || incoming_arp 
+Mon Feb 29 19:54:49 2 || found entry 
+Mon Feb 29 19:54:49 2 || for me 
+Mon Feb 29 19:54:49 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:49 2 || -- > Port 2 (lo)	got 59 bytes 
+Mon Feb 29 19:54:49 2 || Data: delete_arp_cache 
+ 
+Mon Feb 29 19:54:49 2 || Executing: delete_arp_cache   
+Mon Feb 29 19:54:49 2 || Waiting for data... 
+Mon Feb 29 19:54:49 2 || Received packet from 127.0.0.1:53880
+ 
+Mon Feb 29 19:54:49 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:49 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:49 2 || Waiting for data... 
+Mon Feb 29 19:54:50 2 || Received packet from 127.0.0.1:37764
+ 
+Mon Feb 29 19:54:50 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:50 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:50 2 || Waiting for data... 
+Mon Feb 29 19:54:50 2 || incoming_arp 
+Mon Feb 29 19:54:50 2 || for me 
+Mon Feb 29 19:54:50 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:51 2 || -- > Port 2 (lo)	got 56 bytes 
+Mon Feb 29 19:54:51 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:51 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:51 2 || Waiting for data... 
+Mon Feb 29 19:54:51 2 || incoming_arp 
+Mon Feb 29 19:54:51 2 || found entry 
+Mon Feb 29 19:54:51 2 || for me 
+Mon Feb 29 19:54:51 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:52 2 || Received packet from 127.0.0.1:57421
+ 
+Mon Feb 29 19:54:52 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:52 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:52 2 || Waiting for data... 
+Mon Feb 29 19:54:52 2 || incoming_arp 
+Mon Feb 29 19:54:52 2 || found entry 
+Mon Feb 29 19:54:52 2 || for me 
+Mon Feb 29 19:54:52 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:53 2 || Received packet from 127.0.0.1:56845
+ 
+Mon Feb 29 19:54:53 2 || Data: get_arp_cache he 
+ 
+Mon Feb 29 19:54:53 2 || Executing: get_arp_cache  he  
+Mon Feb 29 19:54:53 2 || Waiting for data... 
+Mon Feb 29 19:54:53 2 || incoming_arp 
+Mon Feb 29 19:54:53 2 || found entry 
+Mon Feb 29 19:54:53 2 || for me 
+Mon Feb 29 19:54:53 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:54 2 || incoming_arp 
+Mon Feb 29 19:54:54 2 || found entry 
+Mon Feb 29 19:54:54 2 || for me 
+Mon Feb 29 19:54:54 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:55 2 || incoming_arp 
+Mon Feb 29 19:54:55 2 || found entry 
+Mon Feb 29 19:54:55 2 || for me 
+Mon Feb 29 19:54:55 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:56 2 || incoming_arp 
+Mon Feb 29 19:54:56 2 || found entry 
+Mon Feb 29 19:54:56 2 || for me 
+Mon Feb 29 19:54:56 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:57 2 || incoming_arp 
+Mon Feb 29 19:54:57 2 || found entry 
+Mon Feb 29 19:54:57 2 || for me 
+Mon Feb 29 19:54:57 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
+Mon Feb 29 19:54:58 2 || Ctrl C - cya ;)  

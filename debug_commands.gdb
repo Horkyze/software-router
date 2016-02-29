@@ -1,1 +1,1 @@
-r -1 en0 -2 lo0
+r -1 vboxnet1 -2 lo

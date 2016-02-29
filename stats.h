@@ -54,6 +54,14 @@ typedef struct Frame {
 	int direction;
 } Frame;
 
+Frame * new_frame(){
+	Frame * f = (Frame * ) calloc(1, sizeof(Frame));
+	f->length = 60;
+	f->eth_header = malloc(f->length); // minimal eth size
+    f->network_header = (char *)f->eth_header + 0x0d; // size of eth_II 14
+	return f;
+}
+
 Stats * create_stats_struct(){
 	Stats * s;
 	s = (Stats *) calloc(sizeof(Stats), 1);

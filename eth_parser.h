@@ -101,7 +101,7 @@ Frame * add_frame(u_char * data, int length, Port * p, int d){
 
 	struct eth_2_h * hdr = (eth_2_h *) data;
 
-	Frame * frame = calloc(sizeof(Frame), 1);
+    Frame * frame = (Frame *) calloc(sizeof(Frame), 1);
 	frame->length = length;
 	frame->data = malloc(length);
 	frame->eth_header = frame->data;

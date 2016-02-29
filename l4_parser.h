@@ -26,7 +26,7 @@ char * get_dst_ip(Frame * f){
 
 void parse_l4(Frame * f){
     if (f->l3 == IP4_TYPE) {
-        f->transport_header = f->network_header + 20;
+        f->transport_header = (char *)f->network_header + 20;
 
     	if (IPv4->protocol == ICMP_TYPE){
     		f->l4 = ICMP_TYPE;

@@ -35,7 +35,7 @@ LL * arp_cache_ll = 0;
 
 typedef struct Arp{
 	u_int ip;
-  u_char mac[6];
+    u_char mac[6];
 	Port * outgoing_interface; // via this interface
 	time_t last_update;
 }Arp;
@@ -141,22 +141,15 @@ u_char * arp_get(u_int ip, Port * out){
     if (mac) {
         return mac;
     } else {
-        Frame * f = calloc(sizeof(Frame), 1);
-        f->length = sizeof(eth_2_h) + sizeof(arp_h);
-        u_char * packet = (u_char *) calloc(f->length, 1);
-
-        f->data = (void *)packet;
-        f->eth_header = (void *)packet;
-        f->network_header = (void *)packet + sizeof(eth_2_h);
+        Frame * f = new_frame();
         memcpy(EthII->src_addr, out->mac, 6);
         memcpy(EthII->dst_addr, BROADCAST_MAC, 6);
         EthII->eth_type = ARP_TYPE;
-
-        ARP(f)->htype = 0x01;
+        ARP(f)->htype = 0x0100;
         ARP(f)->ptype = IP4_TYPE;
-        ARP(f)->hlen = 0x06;
-        ARP(f)->plen = 0x04;
-        ARP(f)->oc = 0x01;
+        ARP(f)->hlen = 6;
+        ARP(f)->plen = 4;
+        ARP(f)->oc = ARP_REQUEST;
         strcpy((char *)ARP(f)->sha, (char *)out->mac);
         ARP(f)->spa = out->ip;
         //ARP(f)->tha = 00:00:00:00:00:00;

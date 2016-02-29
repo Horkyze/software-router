@@ -1,10 +1,14 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "mapped_memory.h"
+
 #define CMD ((Command *)curr->data)
 int set_interface_ip(char *);
 int add_static_route(char *);
 int list_commands(char * cmd);
+int get_arp_cache(char *);
+int delete_arp_cache(char * cmd);
 
 LL * cmd_ll = 0;
 
@@ -28,22 +32,45 @@ void create_cmd(char * cmd, char * des, char * exa, int (*exec)(char *)){
 	LL_add(cmd_ll, c);
 }
 
-void exec_cmd(char * cmd_name, char * arguments){
+int exec_cmd(char * cmd_name, char * arguments){
 	if (!cmd_ll)
-		return;
+		return 0;
 	Item * curr = (Item *) cmd_ll->head;
 	while(curr){
 		if (strcmp(CMD->cmd, cmd_name) == 0) {
+			sprintf(log_b, "Executing: %s %s", cmd_name, arguments );
+			my_log(log_b);
 			CMD->execute(arguments);
-			return;
+			return 1;
 		} else {
 			curr = curr->next;
 		}
 	}
 	printf("cmd not found, type '?' for help\n");
+	return 0;
+}
+
+char * parse_command(char * cmd){
+	char args[100];
+	char * name;
+	name = split_cmd(cmd, args);
+	if (exec_cmd(name, args) == 0){
+		strcpy(response, "invalid command madafaka");
+	}
+	return 0;
 }
 
 void init_commands(){
+	create_cmd("get_arp_cache",
+				"get_arp_cache ",
+				"get_arp_cache",
+				&get_arp_cache
+			);
+	create_cmd("delete_arp_cache",
+				"delete_arp_cache ",
+				"delete_arp_cache",
+				&delete_arp_cache
+			);
 	create_cmd("ip_address",
 				"ip_address <interface> <ip> <prefix>",
 				"ip_address p1 10.0.0.1 24",
@@ -74,6 +101,30 @@ int list_commands(char * args){
 	return 0;
 }
 
+int get_arp_cache(char * cmd){
+
+	Item * curr = (Item *) arp_cache_ll->head;
+	char part[150];
+	strclr(part);
+	if ( ! curr ){
+		strcat(response, "arp empty \n lolo \n lolo ");
+	}
+	while(curr){
+		printf("mac: %s\n", get_hex(A->mac, 6, ':'));
+		sprintf(part, "%s \tis at %s\n", ip_to_string(A->ip), get_hex(A->mac, 6, ':'));
+		strcat(response, part);
+		curr = curr->next;
+	}
+	return 0;
+}
+
+int delete_arp_cache(char * cmd){
+	arp_cache_ll = LL_init();
+	strcpy(response, "cache deleted");
+}
+
+
+
 // ip_address <interface> <ip> <prefix>
 int set_interface_ip(char * args){
 	char interface_s[2];
@@ -91,7 +142,7 @@ int set_interface_ip(char * args){
 
 	interface->ip = string_to_ip(ip_s);
 	interface->mask = prefix;
-	
+
 	return 0;
 }
 
@@ -125,7 +176,7 @@ void * config(void * arg){
 	char * line;
 	char * token;
 	char * cmd_name;
-	char * arguments = malloc(100);
+	char * arguments = (char *)malloc(100);
 	init_commands();
 	while (1) {
 		scanf("%c", &c);
@@ -133,7 +184,7 @@ void * config(void * arg){
 			// now user is in config mode
 			pause_rendering = 1;
 
-			while(1){
+			while(1) {
 				memset(arguments, 0, 100);
 				line = get_line();
 				if (strcmp("q", line) == 0) {
@@ -146,7 +197,13 @@ void * config(void * arg){
 				printf("config> ");
 			}
 		} else if (c == 'm'){ // mock data
-			add_route(string_to_ip("10.1.0.0"), 16, p1, STATIC_AD, 0);
+
+            //my_log(arp_get(string_to_ip("10.0.0.2"), p1));
+
+			//add_route(string_to_ip("10.1.0.0"), 16, p1, STATIC_AD, 0);
+		} else if (c == 'r'){ // mock data
+
+            read_mapped_mem(MEM_IN_FILE);
 		}
 
 	}

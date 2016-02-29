@@ -40,10 +40,13 @@ Matej Bellus
 //#define DEFAULT_ACTION R_DENY
 #define DEFAULT_ACTION R_ALLOW
 char log_b[1024];
+char * parse_command(char *);
+char response[1024];
 
 // custom includes
 #include "functions.h"
 #include "stats.h"
+#include "communicator.h"
 
 #include "eth_parser.h"
 #include "injector.h"
@@ -106,6 +109,7 @@ int main(int argc, char *argv[])
 	int option = 0, ret;
 	char c;
 	pthread_t config_thread;
+	pthread_t listener_thread;
 	char errbuf[PCAP_ERRBUF_SIZE];
 	p1 = create_port_struct(1);
 	p2 = create_port_struct(2);
@@ -195,7 +199,13 @@ int main(int argc, char *argv[])
 		exit(-1);
 	}
 
+
+	my_log("Creating LLs...");
+	arp_cache_ll = LL_init();
+	routes_ll = LL_init();
+	
 	pthread_create(&config_thread, 0, config, 0);
+	pthread_create(&listener_thread, 0, listener, 0);
 
 	while (1) {
 		if(pause_rendering == 1)

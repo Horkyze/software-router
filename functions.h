@@ -19,6 +19,11 @@ void my_log(const char * msg){
 	fclose(fd);
 }
 
+void strclr(char * s){
+	if(s)
+		memset(s, 0, strlen(s));
+}
+
 char * get_time(time_t * tt){
     char * t = (char *) calloc(1, 20);
     t = ctime(tt);
@@ -208,6 +213,7 @@ void dump(const unsigned char * p, int len){
 	printf("\n\n");
 }
 
+// s in, arguments out
 char * split_cmd(char * s, char * arguments){
 	char * name = 0;
 	char * pos;
@@ -221,7 +227,7 @@ char * split_cmd(char * s, char * arguments){
 }
 
 char * get_line() {
-    char * line = malloc(100), * linep = line;
+    char * line = (char *) malloc(100), * linep = line;
     size_t lenmax = 100, len = lenmax;
     int c;
 
@@ -235,7 +241,7 @@ char * get_line() {
 
         if(--len == 0) {
             len = lenmax;
-            char * linen = realloc(linep, lenmax *= 2);
+            char * linen = (char *) realloc(linep, lenmax *= 2);
 
             if(linen == NULL) {
                 free(linep);
@@ -279,7 +285,7 @@ typedef struct Item {
 }Item;
 
 LL * LL_init(){
-	LL * ll = malloc(sizeof(LL));
+    LL * ll = (LL *) malloc(sizeof(LL));
 	ll->head = 0;
 	ll->number_of_items = 0;
     ll->auto_increment = 0;
@@ -287,7 +293,7 @@ LL * LL_init(){
 }
 
 Item * LL_add(LL * ll, void * data){
-	Item * item = malloc(sizeof(Item));
+    Item * item = (Item *) malloc(sizeof(Item));
 	item->data = data;
 	item->next = 0;
     ll->number_of_items++;
@@ -299,7 +305,7 @@ Item * LL_add(LL * ll, void * data){
 		return item;
 	}
 
-	Item * curr = ll->head;
+    Item * curr = (Item *) ll->head;
 	int i = 0;
 	while(curr->next != 0) {
 	    curr = curr->next;
@@ -312,9 +318,9 @@ Item * LL_add(LL * ll, void * data){
 }
 
 Item * LL_add_to_front(LL * ll, void * data){
-    Item * item = malloc(sizeof(Item));
+    Item * item = (Item *) malloc(sizeof(Item));
     item->data = data;
-    item->next = ll->head;
+    item->next = (Item *) ll->head;
 
     ll->head = item;
     ll->number_of_items++;
@@ -330,7 +336,7 @@ void LL_delete(LL * ll, int n)
 
     Item * curr, *prev;
     int i;
-    curr = ll->head;
+    curr = (Item *)ll->head;
     prev = 0;
 
     for (i = 0; curr; ++i){
@@ -353,7 +359,7 @@ void LL_delete(LL * ll, int n)
 }
 
 void LL_print(LL * ll){
-	Item * curr = ll->head;
+    Item * curr = (Item *) ll->head;
 	while(curr) {
 	    printf("Item index %i: data_p: %p next_p: %p \n", curr->index, curr->data, curr->next);
 	    curr = curr->next;

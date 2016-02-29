@@ -7,7 +7,7 @@
 void parse_l3(Frame * f){
 
 	if (f->l2 == ETH2_TYPE){
-		f->network_header = f->eth_header + 14;
+        f->network_header = (char *)f->eth_header + 14;
 
 		if( EthII->eth_type == IP4_TYPE){
 			f->l3 = IP4_TYPE;
