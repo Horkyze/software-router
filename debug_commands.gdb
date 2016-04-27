@@ -1,1 +1,1 @@
-r -1 vboxnet1 -2 lo
+r -1 vboxnet1 -2 vboxnet2

@@ -26,9 +26,9 @@ void print_arp(Frame * f){
   printf("%x\n", ARP(f)->plen );
   printf("%x\n", ARP(f)->oc );
   printf("%s\n", get_hex(ARP(f)->sha, 6, ':'));
-  printf("%x\n", ARP(f)->spa );
+  printf("%s\n", ip_to_string(ARP(f)->spa) );
   printf("%s\n", get_hex(ARP(f)->tha, 6, ':'));
-  printf("%x\n", ARP(f)->tpa );
+  printf("%s\n", ip_to_string(ARP(f)->tpa) );
 }
 
 LL * arp_cache_ll = 0;
@@ -103,20 +103,22 @@ void arp_cache_update(u_long ip, u_char * mac){
 
 void incoming_arp(Frame * f){
     int merge_flag = 0;
-    my_log("incoming_arp");
+    my_log("[ARP]\t incoming_arp");
     if (arp_cache_search(ARP(f)->spa)) {
         arp_cache_update(ARP(f)->spa, ARP(f)->sha);
         merge_flag = 1;
-        my_log("found entry");
+        my_log("[ARP]\t found entry");
     }
 
+
     if( ARP(f)->tpa == f->p->ip || ARP(f)->tpa == 0){ // is the packet for me?
-        my_log("for me");
+        my_log("[ARP]\t packet is for me");
 
         if(merge_flag == 0){
             arp_cache_update(ARP(f)->spa, ARP(f)->sha); //add to table
         }
         if (ARP(f)->oc == ARP_REQUEST) {
+            f->can_forward = 0;
             // swap..
             memswap(EthII->dst_addr , EthII->src_addr, 6);
             // mac + ip size = 6 bytes + 4 bytes = 10 bytes
@@ -125,11 +127,30 @@ void incoming_arp(Frame * f){
             ARP(f)->spa = f->p->ip;
             ARP(f)->oc = ARP_REPLY;
             inject_frame(f, f->p);
-            // inject packet
+            // inject packet to the same port
         }
     } else {
-        my_log("not for me");
+        my_log("[ARP]\t not for me, maybe look routing table?");
+        Route * route = routing_table_search(ARP(f)->tpa);
 
+        if(route){
+            //return;
+            my_log("[ARP]\t found route in routing table -> arp proxy?");
+
+            memswap(EthII->dst_addr , EthII->src_addr, 6);
+            memcpy(EthII->src_addr, f->p->mac, 6);
+            // mac + ip size = 6 bytes + 4 bytes = 10 bytes
+            memswap(ARP(f)->sha, ARP(f)->tha, 10);
+            memcpy(ARP(f)->sha, f->p->mac, 6 );
+            ARP(f)->spa = f->p->ip;
+            ARP(f)->oc = ARP_REPLY;
+            inject_frame(f, f->p);
+
+
+        } else {
+            my_log("[ARP]\t no route found -> drop packet");
+            f->can_forward = 0;
+        }
     }
 
 
@@ -150,7 +171,7 @@ u_char * arp_get(u_int ip, Port * out){
         ARP(f)->hlen = 6;
         ARP(f)->plen = 4;
         ARP(f)->oc = ARP_REQUEST;
-        strcpy((char *)ARP(f)->sha, (char *)out->mac);
+        memcpy(ARP(f)->sha, out->mac, 6);
         ARP(f)->spa = out->ip;
         //ARP(f)->tha = 00:00:00:00:00:00;
         ARP(f)->tpa = ip;
@@ -167,12 +188,8 @@ u_char * arp_get(u_int ip, Port * out){
             if (mac){
                 return mac;
             }
-
         }
         return 0;
-
-
-
     }
 }
 

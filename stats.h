@@ -1,64 +1,8 @@
-
-typedef struct Stats{
-	// layer 2
-	u_long l2_total;
-
-	//layer 3
-	u_long l3_ip;
-	u_long l3_icmp;
-	u_long l3_arp;
-
-	//layer 4
-	u_long l4_tcp;
-	u_long l4_udp;
-
-	//layer 5
-	u_long l5_http; // 80
-	u_long l5_telnet; //2
-	u_long l5_other; //2
-
-	int dropped;
-	int rip_forwarded;
-	int static_forwarded;
-
-}Stats;
-
-typedef struct Port {
-	int id;
-	char * name;
-	pcap_t * handle;
-	pthread_t thread;
-	u_int ip;
-	int mask;
-	u_char mac[6];
-	Stats * in;
-	Stats * out;
-}Port;
-
-typedef struct Frame {
-	u_int number;
-	u_int length;
-	u_int parseble;
-
-	void * eth_header;
-	void * network_header;
-	void * transport_header;
-	void * data;
-
-	int l2; // eth only
-	int l3; // arp, icmp, ip
-	int l4; // tcp, udp
-	int l5; // containt port number
-
-	Port * p;
-	int direction;
-} Frame;
-
 Frame * new_frame(){
 	Frame * f = (Frame * ) calloc(1, sizeof(Frame));
 	f->length = 60;
-	f->eth_header = malloc(f->length); // minimal eth size
-    f->network_header = (char *)f->eth_header + 0x0d; // size of eth_II 14
+	f->eth_header = calloc(1, f->length); // minimal eth size
+    f->network_header = (char *)f->eth_header + 0x0e; // size of eth_II 14
 	return f;
 }
 
@@ -77,9 +21,16 @@ Port * create_port_struct(int i){
 	p->thread = 0;
 	p->in = create_stats_struct();
 	p->out = create_stats_struct();
-	p->ip = string_to_ip("10.0.0.1");
 	p->mask = 24;
-	strcpy((char *)p->mac, "\xac\xbc\x32\xb9\x1b\xb3");
+	if (i == 1) {
+		p->ip = string_to_ip("10.1.0.1");
+		strcpy((char *)p->mac, "\xac\xbc\x32\xb9\x1b\x01");
+	} else if (i == 2) {
+		p->ip = string_to_ip("10.2.0.1");
+		strcpy((char *)p->mac, "\xac\xbc\x32\xb9\x1b\x02");
+	}
+	add_route(ip_mask_to_network(p->ip, p->mask), p->mask, p, 0);
+
 	return p;
 }
 

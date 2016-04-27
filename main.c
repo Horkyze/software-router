@@ -25,7 +25,7 @@ Matej Bellus
 
 #define ETH2_TYPE 2
 #define IP4_TYPE 0x0008 // 0x0800 -> 0x0008 due to endianness
-#define ARP_TYPE 0x0608 // 0x8060 -> 0x0608 due to endianness
+#define ARP_TYPE ((u_short)0x0608) // 0x8060 -> 0x0608 due to endianness
 #define ICMP_TYPE 0x01
 #define UDP_TYPE  0x11
 #define TCP_TYPE  0x06
@@ -44,6 +44,7 @@ char * parse_command(char *);
 char response[1024];
 
 // custom includes
+#include "headers.h"
 #include "functions.h"
 #include "stats.h"
 #include "communicator.h"
@@ -202,8 +203,7 @@ int main(int argc, char *argv[])
 
 	my_log("Creating LLs...");
 	arp_cache_ll = LL_init();
-	routes_ll = LL_init();
-	
+
 	pthread_create(&config_thread, 0, config, 0);
 	pthread_create(&listener_thread, 0, listener, 0);
 
@@ -212,6 +212,7 @@ int main(int argc, char *argv[])
 			continue;
 
 		// render here
+		printf("%i\n", sizeof(arp_h));
 		system("clear");
 		print_routing_table();
 		print_arp_cache();

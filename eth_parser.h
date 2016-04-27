@@ -108,6 +108,7 @@ Frame * add_frame(u_char * data, int length, Port * p, int d){
 	frame->parseble = 0;
 	frame->p = p;
 	frame->direction = d;
+	frame->can_forward = 0;
 	int k = memcmp(&(hdr->eth_type), eth_max, 2);
 	// if we have ETH II
 	if ( k >= 0){

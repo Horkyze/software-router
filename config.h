@@ -9,6 +9,7 @@ int add_static_route(char *);
 int list_commands(char * cmd);
 int get_arp_cache(char *);
 int delete_arp_cache(char * cmd);
+int send_arp_request(char * cmd);
 
 LL * cmd_ll = 0;
 
@@ -71,6 +72,11 @@ void init_commands(){
 				"delete_arp_cache",
 				&delete_arp_cache
 			);
+	create_cmd("send_arp_request",
+				"send_arp_request <ip>",
+				"send_arp_request 10.0.0.2",
+				&send_arp_request
+			);
 	create_cmd("ip_address",
 				"ip_address <interface> <ip> <prefix>",
 				"ip_address p1 10.0.0.1 24",
@@ -118,11 +124,17 @@ int get_arp_cache(char * cmd){
 	return 0;
 }
 
-int delete_arp_cache(char * cmd){
+int delete_arp_cache(char * args){
 	arp_cache_ll = LL_init();
 	strcpy(response, "cache deleted");
+	return 1;
 }
 
+int send_arp_request(char * args){
+	u_char reply = arp_get(string_to_ip(args), p1);
+	printf("REPLY: %s\n", reply);
+	return 1;
+}
 
 
 // ip_address <interface> <ip> <prefix>
@@ -162,7 +174,7 @@ int add_static_route(char * args){
 		interface = p2;
 	}
 
-	add_route(string_to_ip(ip_s), prefix, interface, STATIC_AD, 0);
+	add_route(string_to_ip(ip_s), prefix, interface, STATIC_AD);
 
 	return 0;
 }
@@ -203,7 +215,7 @@ void * config(void * arg){
 			//add_route(string_to_ip("10.1.0.0"), 16, p1, STATIC_AD, 0);
 		} else if (c == 'r'){ // mock data
 
-            read_mapped_mem(MEM_IN_FILE);
+            //read_mapped_mem(MEM_IN_FILE);
 		}
 
 	}

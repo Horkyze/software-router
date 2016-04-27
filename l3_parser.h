@@ -11,9 +11,11 @@ void parse_l3(Frame * f){
 
 		if( EthII->eth_type == IP4_TYPE){
 			f->l3 = IP4_TYPE;
+			f->can_forward = 1;
 		}
 		if( EthII->eth_type == ARP_TYPE){
 			f->l3 = ARP_TYPE;
+			f->can_forward = 1;
 			incoming_arp(f);
 		}
 	}

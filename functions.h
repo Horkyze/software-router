@@ -185,6 +185,14 @@ int belongs_to_subnet(u_int addr, u_int subnet, int prefix){
 	return (addr << (32-prefix)) >> (32-prefix) == subnet;
 }
 
+u_int ip_mask_to_network(u_int ip, int prefix){
+	if (prefix < 0 || prefix > 32) {
+		my_log("invalid prefix");
+		exit(-1);
+	}
+	return ip << (32-prefix) >> (32-prefix);
+}
+
 
 void dump(const unsigned char * p, int len){
 	int i, k = 0;
@@ -193,22 +201,15 @@ void dump(const unsigned char * p, int len){
 	for (i = 1; i < len + 1; ++i)
 	{
 		printf("%02x ", p[i-1]);
-
 		buff[(i-1)%16] = (is_print(p[i-1]))? p[i-1] : '.';
-
 		if (i % 8 == 0 && i) {
 			printf(" ");
 		}
-
-
 		if (i % 16 == 0 && i){
-
 			printf(" | %s \n", buff);
 			memset(buff, 0, 17);
 			k = 0;
 		}
-
-
 	}
 	printf("\n\n");
 }

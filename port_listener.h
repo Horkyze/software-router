@@ -3,17 +3,21 @@
 #include <unistd.h>
 
 int forward_packet(Route * route, Frame * f) {
-	// if (!apply_rules(f, ppp, R_OUT)) {
-	// 	sprintf(log_b, "\tPort %i (%s) OUTbound rules blocked this frame", ppp->id, ppp->name);
-	// 	my_log(log_b);
-	// 	return 0;
-	// }
-	//update_source_mac(f);
-	// destination mac via arp
-	// arp -i en0 192.168.1.1 | cut -d " " -f4 , can use?
-	// next hop ?? set manually ?
 
-	//inject_frame(f, port);
+	sprintf(log_b, "forward_packet, out interface: %i", route->outgoing_interface->id);
+	my_log(log_b);
+
+	u_char * mac = arp_get(IPv4->dst_ip_addr, route->outgoing_interface);
+
+	if ( mac ) {
+		my_log("got mac");
+		memcpy(EthII->src_addr , route->outgoing_interface->mac, 6 );
+		memcpy(EthII->dst_addr , mac, 6 );
+		inject_frame(f, route->outgoing_interface);
+	}
+
+
+
 	return 0;
 }
 
@@ -21,7 +25,7 @@ void * port_listener(void * arg) {
 	Frame * f;
 	Port * p, * tmp;
 	p = (Port *)arg;
-	Route * route;
+	Route * route = 0;
 
 	struct pcap_pkthdr * header;
 	const u_char * packet;
@@ -48,11 +52,18 @@ void * port_listener(void * arg) {
 			// if (filter_check) {
 			//
 			// }
+			if (f->can_forward) {
+				route = routing_table_search(IPv4->dst_ip_addr);
+			} else {
+				my_log("cant forward");
+			}
 
-			route = routing_table_search(IPv4->src_ip_addr);
 			if(route){
 				forward_packet(route, f);
-			} else {
+			} else if (f->can_forward){
+				sprintf(log_b, "no route found for ip: %s", ip_to_string(IPv4->dst_ip_addr));
+				my_log(log_b);
+				//print_frame(f);
 				// default route??
 				// drop ??
 			}
