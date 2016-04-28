@@ -12,3 +12,8 @@ debug:
 
 clean:
 	-rm -rf bin/*
+
+test:
+	-rm bin/test
+	$(CC) $(CFLAGS) test.c -o bin/test
+	./bin/test

@@ -1,1 +1,1 @@
-r -1 eth1 -2 vboxnet2
+r -1 tap1 -2 tap0

@@ -80,6 +80,9 @@ Route * routing_table_search(u_int dst){
 		if ( belongs_to_subnet(dst, R->network, R->mask) ){
 			my_log("[R_TABLE]\t Found ");
 			return R;
+		} else {
+			sprintf(log_b, "[R_TABLE]\t failed belongs_to_subnet: %s %s %i", ip_to_string(dst), ip_to_string(R->network), R->mask);
+			my_log(log_b);
 		}
 		curr = curr->next;
 	}

@@ -1,93 +1,363 @@
-Thu Apr 28 02:22:12 2 || Software router starting... 
-Thu Apr 28 02:22:12 2 || libpcap version 1.5.3 
-Thu Apr 28 02:22:12 2 || pcap_setdirection failed 
-Thu Apr 28 02:22:12 2 || Handle activated for eth1 
-Thu Apr 28 02:22:12 2 || pcap_setdirection failed 
-Thu Apr 28 02:22:12 2 || Handle activated for vboxnet2 
-Thu Apr 28 02:22:12 2 || Creating threads... 
-Thu Apr 28 02:22:12 2 || Hello from thread on eth1 
-Thu Apr 28 02:22:12 2 || Creating LLs... 
-Thu Apr 28 02:22:12 2 || Hello from thread on vboxnet2 
-Thu Apr 28 02:22:12 2 || cant bind 
-Thu Apr 28 02:22:20 2 || -- > Port 1 (eth1)	got 98 bytes 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:20 2 || [ARP]	 Getting mac address.. 
-Thu Apr 28 02:22:20 2 || 	< -- Port 2 (vboxnet2) sending 60 bytes 
+Thu Apr 28 18:25:00 2 || Software router starting... 
+Thu Apr 28 18:25:00 2 || libpcap version 1.5.3 
+Thu Apr 28 18:25:00 2 || pcap_setdirection failed 
+Thu Apr 28 18:25:00 2 || Handle activated for tap3 
+Thu Apr 28 18:25:00 2 || pcap_setdirection failed 
+Thu Apr 28 18:25:00 2 || Handle activated for tap2 
+Thu Apr 28 18:25:00 2 || Creating threads... 
+Thu Apr 28 18:25:00 2 || Hello from thread on tap2 
+Thu Apr 28 18:25:00 2 || Creating LLs... 
+Thu Apr 28 18:25:00 2 || Hello from thread on tap2 
+Thu Apr 28 18:25:00 2 || Waiting for data... 
+Thu Apr 28 18:25:07 2 || Executing: ?   
+Thu Apr 28 18:25:38 2 || Executing: network  10.0.1.4 24 p1 
+Thu Apr 28 18:25:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:25:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:25:57 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:57 2 || [ARP]	 Getting mac address.. 
+Thu Apr 28 18:25:57 2 || 	< -- Port 2 (tap2) sending 60 bytes 
  
-Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 60 bytes 
-Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
-Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
-Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 60 bytes 
-Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
-Thu Apr 28 02:22:20 2 || 	< -- Port 2 (vboxnet2) sending 98 bytes 
+Thu Apr 28 18:25:57 2 || -- > Port 2 (tap2)	got 60 bytes 
+Thu Apr 28 18:25:57 2 || [ARP]	 incoming_arp 
+Thu Apr 28 18:25:57 2 || [ARP]	 packet is for me 
+Thu Apr 28 18:25:57 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:57 2 || 	< -- Port 2 (tap2) sending 98 bytes 
  
-Thu Apr 28 02:22:20 2 || [ARP]	 found entry 
-Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
-Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:20 2 || [ARP]	 Getting mac address.. 
-Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 60 bytes 
+Thu Apr 28 18:25:57 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:25:57 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:57 2 || [ARP]	 Getting mac address.. 
+Thu Apr 28 18:25:57 2 || 	< -- Port 1 (tap3) sending 60 bytes 
  
-Thu Apr 28 02:22:20 2 || -- > Port 1 (eth1)	got 60 bytes 
-Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
-Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
-Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+Thu Apr 28 18:25:57 2 || -- > Port 1 (tap3)	got 60 bytes 
+Thu Apr 28 18:25:57 2 || [ARP]	 incoming_arp 
+Thu Apr 28 18:25:57 2 || [ARP]	 packet is for me 
+Thu Apr 28 18:25:57 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:57 2 || 	< -- Port 1 (tap3) sending 98 bytes 
  
-Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+Thu Apr 28 18:25:58 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:58 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:58 2 || 	< -- Port 2 (tap2) sending 98 bytes 
  
-Thu Apr 28 02:22:21 2 || -- > Port 1 (eth1)	got 98 bytes 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:21 2 || 	< -- Port 2 (vboxnet2) sending 98 bytes 
+Thu Apr 28 18:25:58 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:25:58 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:58 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:58 2 || 	< -- Port 1 (tap3) sending 98 bytes 
  
-Thu Apr 28 02:22:21 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:21 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+Thu Apr 28 18:25:59 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:59 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:59 2 || 	< -- Port 2 (tap2) sending 98 bytes 
  
-Thu Apr 28 02:22:21 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
-Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
-Thu Apr 28 02:22:21 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+Thu Apr 28 18:25:59 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:25:59 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:25:59 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:25:59 2 || 	< -- Port 1 (tap3) sending 98 bytes 
  
-Thu Apr 28 02:22:36 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
-Thu Apr 28 02:22:36 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
-Thu Apr 28 02:22:36 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:22:36 2 || no route found for ip: 255.255.255.255 
-Thu Apr 28 02:22:36 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
-Thu Apr 28 02:22:36 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
-Thu Apr 28 02:22:36 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:22:36 2 || no route found for ip: 255.255.255.255 
-Thu Apr 28 02:22:39 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
-Thu Apr 28 02:22:39 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
-Thu Apr 28 02:22:39 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:22:39 2 || no route found for ip: 192.168.58.255 
-Thu Apr 28 02:22:49 2 || -- > Port 1 (eth1)	got 107 bytes 
-Thu Apr 28 02:22:49 2 || [PARSER] 	Frame is not for me.. 
-Thu Apr 28 02:23:09 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
-Thu Apr 28 02:23:09 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
-Thu Apr 28 02:23:09 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:23:09 2 || no route found for ip: 192.168.58.255 
-Thu Apr 28 02:23:39 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
-Thu Apr 28 02:23:39 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
-Thu Apr 28 02:23:39 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:23:39 2 || no route found for ip: 192.168.58.255 
-Thu Apr 28 02:23:41 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
-Thu Apr 28 02:23:41 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
-Thu Apr 28 02:23:41 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:23:41 2 || no route found for ip: 255.255.255.255 
-Thu Apr 28 02:23:41 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
-Thu Apr 28 02:23:41 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
-Thu Apr 28 02:23:41 2 || [R_TABLE]	 NOT found 
-Thu Apr 28 02:23:41 2 || no route found for ip: 255.255.255.255 
+Thu Apr 28 18:26:00 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:00 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:00 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:00 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:00 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:00 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:00 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:01 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:01 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:01 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:01 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:01 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:01 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:01 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:34 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:34 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:34 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:34 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:34 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:34 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:34 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:35 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:35 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:35 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:35 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:35 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:35 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:35 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:36 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:36 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:36 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:36 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:36 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:36 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:36 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:37 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:37 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:37 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:37 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:37 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:37 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:37 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:38 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:38 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:38 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:26:38 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:26:38 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:26:38 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:26:38 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:26:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:26:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:27:32 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:32 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:32 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:27:32 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:27:32 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:32 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:32 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:27:33 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:33 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:33 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:27:33 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:27:33 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:33 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:33 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:27:34 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:34 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:34 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:27:34 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:27:34 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:34 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:34 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:27:35 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:35 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:35 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:27:35 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:27:35 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:35 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:35 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:27:36 2 || -- > Port 2 (tap2)	got 98 bytes 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 routing_table_search: 10.0.1.4 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.10.10.0 24 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.4 10.0.2.0 24 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:36 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:36 2 || 	< -- Port 1 (tap3) sending 98 bytes 
+ 
+Thu Apr 28 18:27:36 2 || -- > Port 1 (tap3)	got 98 bytes 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
+Thu Apr 28 18:27:36 2 || [R_TABLE]	 Found  
+Thu Apr 28 18:27:36 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 18:27:36 2 || 	< -- Port 2 (tap2) sending 98 bytes 
+ 
+Thu Apr 28 18:27:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:27:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:28:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:28:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:29:31 2 || -- > Port 1 (tap3)	got 77 bytes 
+Thu Apr 28 18:29:31 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:29:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:29:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:30:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:30:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:31:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:31:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:32:51 2 || -- > Port 1 (tap3)	got 359 bytes 
+Thu Apr 28 18:32:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:33:28 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:33:28 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:33:30 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:33:30 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:33:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:33:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:33:54 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:33:54 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:34:22 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:34:22 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:34:50 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:34:50 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:34:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:34:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:35:17 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:35:17 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:35:45 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:35:45 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:35:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:35:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:36:14 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:36:14 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:36:41 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:36:41 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:36:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:36:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:37:09 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:37:09 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:37:36 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:37:36 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:37:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:37:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:38:02 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:38:02 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:38:31 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:38:31 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:38:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:38:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:39:01 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:39:01 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:39:09 2 || -- > Port 1 (tap3)	got 77 bytes 
+Thu Apr 28 18:39:09 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:39:27 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:39:27 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:39:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:39:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:39:53 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:39:53 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:40:22 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:40:22 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:40:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:40:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:40:51 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:40:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:41:17 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:41:17 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:41:44 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:41:44 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:41:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:41:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:42:13 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:42:13 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:42:39 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:42:39 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:42:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:42:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:43:07 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:43:07 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:43:33 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:43:33 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:43:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:43:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:44:00 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:44:00 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:44:28 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:44:28 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:44:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:44:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:44:54 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:44:54 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:45:19 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:45:19 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:45:46 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:45:46 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:45:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:45:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:46:16 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:46:16 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:46:42 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:46:42 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:46:51 2 || -- > Port 1 (tap3)	got 350 bytes 
+Thu Apr 28 18:46:51 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:47:08 2 || -- > Port 1 (tap3)	got 66 bytes 
+Thu Apr 28 18:47:08 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 18:47:15 2 || Ctrl C - cya ;)  

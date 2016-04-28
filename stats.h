@@ -23,7 +23,7 @@ Port * create_port_struct(int i){
 	p->out = create_stats_struct();
 	p->mask = 24;
 	if (i == 1) {
-		p->ip = string_to_ip("10.0.1.1");
+		p->ip = string_to_ip("10.10.10.2");
 		strcpy((char *)p->mac, "\x0A\x01\x01\x01\x01\x01");
 	} else if (i == 2) {
 		p->ip = string_to_ip("10.0.2.1");

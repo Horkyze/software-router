@@ -22,28 +22,24 @@
 #include "functions.h"
 
 
+void test_belongs_to_subnet(){
+    // addr, subnet, prefix
+    if ( belongs_to_subnet(string_to_ip("10.0.1.4"), string_to_ip("10.0.1.0"), 24) ){
+        printf("OK\n");
+    } else {
+        printf("ERROR belongs_to_subnet\n");
+    }
 
+    if ( ! belongs_to_subnet(string_to_ip("10.0.1.4"), string_to_ip("10.0.2.0"), 24) ){
+        printf("OK\n");
+    } else {
+        printf("ERROR ! belongs_to_subnet\n");
+    }
+}
 
 int main (int argc, char* const argv[])
 {
-  int fd;
-  void * file_memory;
-  char * string = malloc(50);
+    test_belongs_to_subnet();
 
-  /* Open the file. */
-  fd = open (SHARED_FILE, O_RDWR, S_IRUSR | S_IWUSR);
-
-  /* Create the memory mapping. */
-  file_memory = mmap (0, FILE_LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-  close (fd);
-  printf("file_memory: %p\n",file_memory );
-
-  /* Read the integer, print it out, and double it. */
-  //fscanf (file_memory, "%s", string);
-  while(1) printf ("value: %s\n", file_memory);
-  //sprintf ((char*) file_memory, "%d\n", 2 * integer);
-
-  /* Release the memory (unnecessary because the program exits). */
-  munmap (file_memory, FILE_LENGTH);
-  return 0;
+    return 0;
 }
