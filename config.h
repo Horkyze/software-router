@@ -41,7 +41,7 @@ int exec_cmd(char * cmd_name, char * arguments){
 		if (strcmp(CMD->cmd, cmd_name) == 0) {
 			sprintf(log_b, "Executing: %s %s", cmd_name, arguments );
 			my_log(log_b);
-			CMD->execute(arguments);
+			CMD->execute(str_trim(arguments));
 			return 1;
 		} else {
 			curr = curr->next;
@@ -160,22 +160,24 @@ int set_interface_ip(char * args){
 
 // network <network> <prefix> <outgoing_interface>
 int add_static_route(char * args){
-
-	char ip_s[15];
-	int prefix;
-	char interface_s[2];
+	char * ip_s;
+	char * prefix;
+	char * interface_s;
 	Port * interface;
 
-	sscanf(args, "%s %i %s", ip_s, &prefix, interface_s);
+	ip_s = strsep(&args, " ");
+	prefix = strsep(&args, " ");
+	interface_s = strsep(&args, " ");
+	//printf("ARGS: '%s'\n", args);
+	//sscanf(args, "%s %s %s", ip_s, prefix, interface_s);
+	//printf("parsed: '%s' '%s' '%s'", ip_s, prefix, interface_s);
 
 	if (strcmp(interface_s, "p1") == 0) {
 		interface = p1;
 	} else {
 		interface = p2;
 	}
-
-	add_route(string_to_ip(ip_s), prefix, interface, STATIC_AD);
-
+	add_route(string_to_ip(ip_s), atoi(prefix), interface, STATIC_AD);
 	return 0;
 }
 
