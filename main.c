@@ -49,12 +49,13 @@ char response[1024];
 #include "stats.h"
 #include "communicator.h"
 
-#include "eth_parser.h"
+#include "parser.h"
 #include "injector.h"
 #include "arp.h"
-#include "l3_parser.h"
-#include "l4_parser.h"
-#include "l5_parser.h"
+#include "icmp.h"
+// #include "l3_parser.h"
+// #include "l4_parser.h"
+// #include "l5_parser.h"
 
 pthread_mutex_t mutex;
 int pause_rendering = 0;
@@ -212,7 +213,7 @@ int main(int argc, char *argv[])
 			continue;
 
 		// render here
-		printf("%i\n", sizeof(arp_h));
+		printf("%lu\n", sizeof(arp_h));
 		system("clear");
 		print_routing_table();
 		print_arp_cache();

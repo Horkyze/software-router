@@ -3,14 +3,14 @@
 #include <unistd.h>
 
 int forward_packet(Route * route, Frame * f) {
-
-	sprintf(log_b, "forward_packet, out interface: %i", route->outgoing_interface->id);
-	my_log(log_b);
+	if (f->can_forward == 0) {
+		return 0;
+	}
 
 	u_char * mac = arp_get(IPv4->dst_ip_addr, route->outgoing_interface);
 
 	if ( mac ) {
-		my_log("got mac");
+		my_log("[ROUTER] \t forwarding frame");
 		memcpy(EthII->src_addr , route->outgoing_interface->mac, 6 );
 		memcpy(EthII->dst_addr , mac, 6 );
 		inject_frame(f, route->outgoing_interface);
@@ -36,12 +36,12 @@ void * port_listener(void * arg) {
 
 	while (1) {
 		check = pcap_next_ex(p->handle, &header, &packet);
-		pthread_mutex_lock(&mutex);
+		//pthread_mutex_lock(&mutex);
 		if (check) {
 
 			sprintf(log_b, "-- > Port %i (%s)\tgot %i bytes",
 			p->id, p->name, header->len);
-			//my_log(log_b);
+			my_log(log_b);
 
 			// more like parse frame..
 			f = add_frame((u_char*)packet, header->len, p, R_IN);
@@ -55,7 +55,10 @@ void * port_listener(void * arg) {
 			if (f->can_forward) {
 				route = routing_table_search(IPv4->dst_ip_addr);
 			} else {
-				my_log("cant forward");
+				//my_log("cant forward");
+
+				// this is not an Error
+				// incoming_arp() or incoming_icmp may respond
 			}
 
 			if(route){
@@ -68,12 +71,11 @@ void * port_listener(void * arg) {
 				// drop ??
 			}
 
-
 		} else {
 			sprintf(log_b, "Failed to get frame: pcpa_next_ex returned: %i", check);
 			my_log(log_b);
 		}
-		pthread_mutex_unlock (&mutex);
+		//pthread_mutex_unlock (&mutex);
 	}
 
 	pcap_close(p->handle);

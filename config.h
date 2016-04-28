@@ -131,7 +131,7 @@ int delete_arp_cache(char * args){
 }
 
 int send_arp_request(char * args){
-	u_char reply = arp_get(string_to_ip(args), p1);
+	u_char * reply = arp_get(string_to_ip(args), p1);
 	printf("REPLY: %s\n", reply);
 	return 1;
 }

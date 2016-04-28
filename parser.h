@@ -1,132 +1,106 @@
+const u_char eth_max[] = {0x06, 0x00}; // 1536
 
-/*===================================================
-=            Ethernet Header Declaration            =
-===================================================*/
-
-typedef	struct eth_2_h
-{
-	u_char dst_addr[6];
-	u_char src_addr[6];
-	u_char eth_type[2];
-	u_char extra[2]; // just for parsing purposes
-}Eth_II_hdr;
-
-typedef	struct eth_raw_h
-{
-	u_char dst_addr[6];
-	u_char src_addr[6];
-	u_char length[2];
-	u_char ipx_hdr[3];
-
-}eth_raw_h;
-
-typedef	struct eth_llc_h
-{
-	u_char dst_addr[6];
-	u_char src_addr[6];
-	u_char length[2];
-	u_char dsap[1];
-	u_char ssap[1];
-	u_char control[1];
-}eth_llc_h;
-
-
-typedef	struct eth_llc_snap_h
-{
-	u_char dst_addr[6];
-	u_char src_addr[6];
-	u_char length[2];
-	u_char dsap[1];
-	u_char ssap[1];
-	u_char control[1];
-	u_char vendor[3];
-	u_char eth_type[2];
-}eth_llc_snap_h;
-
-
-/*-----  End of Ethernet Header Declaration  ------*/
-
-const u_char eth_max[] = {0x06, 0x00}; // 1536 
-
-typedef	struct arp_h
-{
-	u_char hat[2];
-	u_char pat[2];
-	u_char hw_addr_len[1];
-	u_char proto_addr_len[1];
-	u_char operations[2];
-	u_char src_hw_addr[6];
-	u_char src_proto_addr[4];
-	u_char target_hw_addr[6];
-	u_char target_proto_addr[4];
-
-}arp_h;
-
-typedef	struct ipv4_h
-{
-	u_char version_ihl[1];
-	u_char dscp_enc[1];
-	u_char length[2];
-	u_char identification[2];
-	u_char flags_fragment_offset[2];
-	u_char ttl[1];
-	u_char protocol[1];
-	u_char header_chksm[2];
-	u_char src_ip_addr[4];
-	u_char dst_ip_addr[4];
-	u_char options[4]; // if ihl > 5
-
-}ipv4_h;
-
-
-
-
-
-void parse_eth(u_char * data){
-	struct eth_2_h * hdr = data;
-
-	printf("Dst Addr : "); 
-	print(hdr->dst_addr, 6);
-
-	printf("Src Addr : "); 
-	print(hdr->src_addr, 6);
-
-	printf("Length / type : "); 
-	print(hdr->eth_type, 2);
-
-
-	int k = memcmp(hdr->eth_type, eth_max, 2);
-	printf("cmp: %i\n", k);
-	if ( k >= 0){
-		
-		printf("Ethernet II\n");
-
-		if ( memcmp(hdr->eth_type, arp, 2) == 0 ){
-			printf("  Got ARP packet!\n");
-		}
-
-		if ( memcmp(hdr->eth_type, ipv4, 2) == 0 ){
-			printf("  Got IPv4 packet!\n");
-			ipv4_h * ip = data[14];
-			printf("Source IP: ");
-			print_ip(&ip->src_ip_addr);
-			printf("\n");
-		}
-
-	
-	} else {
-		// dont perform more analysis than this 
-		if (hdr->extra[0] == 0xFF && hdr->extra[1] == 0xFF)
-		{
-			printf("Ethernet RAW\n");
-		} else if (hdr->extra[0] == 0xAA && hdr->extra[1] == 0xAA)
-		{
-			printf("Ethernet LLC/SNAP\n");
-		} else {
-			printf("Ethernet LLC\n");
-		}
+char * get_src_mac(Frame * f){
+	eth_2_h * hdr;
+	hdr = (eth_2_h*)f->eth_header;
+	return get_hex(hdr->src_addr, 6, ':');
+}
+char * get_dst_mac(Frame * f){
+	eth_2_h * hdr;
+	hdr = (eth_2_h*)f->eth_header;
+	return get_hex(hdr->dst_addr, 6, ':');
+}
+int is_broadcast(Frame * f){
+	char * c;
+	c = get_dst_mac(f);
+	if (strcasecmp(c, "ff:ff:ff:ff:ff:ff") == 0) {
+		return 1;
 	}
+	return 0;
+}
 
+int is_for_me_eth(Frame * f){
+	if (is_broadcast(f)) {
+		return 1;
+	}
+	if( memcmp(EthII->dst_addr, &f->p->mac, 6) == 0){
+		return 1;
+	}
+	return 0;
+}
 
+void parse_l2(Frame * f);
+void parse_l3(Frame * f);
+void parse_l4(Frame * f);
+void parse_l5(Frame * f);
 
+void parse_l2(Frame * f) {
+	if( EthII->eth_type >= 0x0006) {
+		// we got eth2
+		f->l2 = ETH2_TYPE;
+		if (is_for_me_eth(f)) {
+			parse_l3(f);
+		} else {
+			my_log("[PARSER] \tFrame is not for me..");
+		}
+	} else {
+		my_log("[PARSER] \tFailed to parse L2, header not supported");
+	}
+}
+
+void parse_l3(Frame * f) {
+	f->network_header = (char *)f->eth_header + 14;
+	if( EthII->eth_type == IP4_TYPE){
+
+		f->l3 = IP4_TYPE;
+		f->can_forward = 1;
+		parse_l4(f);
+	} else if( EthII->eth_type == ARP_TYPE){
+		f->l3 = ARP_TYPE;
+		f->can_forward = 0;
+		incoming_arp(f);
+	} else {
+		my_log("[PARSER] \tFailed to parse L3, header not supported");
+	}
+}
+
+void parse_udp(Frame * f){
+
+}
+
+void parse_l4(Frame * f){
+
+	if (IPv4->protocol == ICMP_TYPE){
+		f->l4 = ICMP_TYPE;
+		incoming_icmp(f); // let icmp decide what to do
+	} else if (IPv4->protocol == TCP_TYPE){
+		f->l4 = TCP_TYPE;
+		f->can_forward = 1; // will be forwarded automatically
+	} else if (IPv4->protocol == UDP_TYPE){
+		f->l4 = UDP_TYPE;
+		parse_udp(f); // frame is maybe RIP, let udp decide
+	} else {
+		my_log("[PARSER] \tFailed to parse L4, header not supported");
+		f->can_forward = 1; // just forward
+	}
+}
+
+Frame * add_frame(u_char * data, int length, Port * p, int d){
+	struct eth_2_h * hdr = (eth_2_h *) data;
+    Frame * frame = (Frame *) calloc(sizeof(Frame), 1);
+	frame->length = length;
+	frame->data = malloc(length);
+	frame->eth_header = frame->data;
+	frame->parseble = 0;
+	frame->p = p;
+	frame->direction = d;
+	frame->can_forward = 0;
+	int k = memcmp(&(hdr->eth_type), eth_max, 2);
+	// if we have ETH II
+	if ( k >= 0){
+		frame->parseble = 1;
+	}
+	memcpy ( frame->data, data, length);
+	parse_l2(frame);
+    return frame;
 }

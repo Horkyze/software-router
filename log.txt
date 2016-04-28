@@ -1,48 +1,93 @@
-Tue Apr 26 19:58:34 2 || Software router starting... 
-Tue Apr 26 19:58:34 2 || libpcap version 1.5.3 
-Tue Apr 26 19:58:34 2 || pcap_setdirection failed 
-Tue Apr 26 19:58:34 2 || Handle activated for vboxnet1 
-Tue Apr 26 19:58:34 2 || pcap_setdirection failed 
-Tue Apr 26 19:58:34 2 || Handle activated for vboxnet2 
-Tue Apr 26 19:58:34 2 || Creating threads... 
-Tue Apr 26 19:58:34 2 || Hello from thread on vboxnet2 
-Tue Apr 26 19:58:34 2 || Creating LLs... 
-Tue Apr 26 19:58:34 2 || Hello from thread on vboxnet2 
-Tue Apr 26 19:58:34 2 || Waiting for data... 
-Tue Apr 26 19:58:35 2 || [ARP]	 incoming_arp 
-Tue Apr 26 19:58:35 2 || [ARP]	 not for me, maybe look routing table? 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 routing_table_search: 10.2.0.2 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 Found  
-Tue Apr 26 19:58:35 2 || [ARP]	 found route in routing table -> arp proxy? 
-Tue Apr 26 19:58:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 routing_table_search: 0.1.8.0 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 NOT found 
-Tue Apr 26 19:58:35 2 || no route found for ip: 0.1.8.0 
-Tue Apr 26 19:58:35 2 || [ARP]	 incoming_arp 
-Tue Apr 26 19:58:35 2 || [ARP]	 not for me, maybe look routing table? 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 routing_table_search: 10.2.0.2 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 Found  
-Tue Apr 26 19:58:35 2 || [ARP]	 found route in routing table -> arp proxy? 
-Tue Apr 26 19:58:35 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 routing_table_search: 0.1.8.0 
-Tue Apr 26 19:58:35 2 || [R_TABLE]	 NOT found 
-Tue Apr 26 19:58:35 2 || no route found for ip: 0.1.8.0 
-Tue Apr 26 19:58:36 2 || [ARP]	 incoming_arp 
-Tue Apr 26 19:58:36 2 || [ARP]	 not for me, maybe look routing table? 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 routing_table_search: 10.2.0.2 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 Found  
-Tue Apr 26 19:58:36 2 || [ARP]	 found route in routing table -> arp proxy? 
-Tue Apr 26 19:58:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 routing_table_search: 0.1.8.0 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 NOT found 
-Tue Apr 26 19:58:36 2 || no route found for ip: 0.1.8.0 
-Tue Apr 26 19:58:36 2 || [ARP]	 incoming_arp 
-Tue Apr 26 19:58:36 2 || [ARP]	 not for me, maybe look routing table? 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 routing_table_search: 10.2.0.2 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 Found  
-Tue Apr 26 19:58:36 2 || [ARP]	 found route in routing table -> arp proxy? 
-Tue Apr 26 19:58:36 2 || 	< -- Port 1 (vboxnet1) sending 60 bytes 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 routing_table_search: 0.1.8.0 
-Tue Apr 26 19:58:36 2 || [R_TABLE]	 NOT found 
-Tue Apr 26 19:58:36 2 || no route found for ip: 0.1.8.0 
-Tue Apr 26 19:58:36 2 || Ctrl C - cya ;)  
+Thu Apr 28 02:22:12 2 || Software router starting... 
+Thu Apr 28 02:22:12 2 || libpcap version 1.5.3 
+Thu Apr 28 02:22:12 2 || pcap_setdirection failed 
+Thu Apr 28 02:22:12 2 || Handle activated for eth1 
+Thu Apr 28 02:22:12 2 || pcap_setdirection failed 
+Thu Apr 28 02:22:12 2 || Handle activated for vboxnet2 
+Thu Apr 28 02:22:12 2 || Creating threads... 
+Thu Apr 28 02:22:12 2 || Hello from thread on eth1 
+Thu Apr 28 02:22:12 2 || Creating LLs... 
+Thu Apr 28 02:22:12 2 || Hello from thread on vboxnet2 
+Thu Apr 28 02:22:12 2 || cant bind 
+Thu Apr 28 02:22:20 2 || -- > Port 1 (eth1)	got 98 bytes 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:20 2 || [ARP]	 Getting mac address.. 
+Thu Apr 28 02:22:20 2 || 	< -- Port 2 (vboxnet2) sending 60 bytes 
+ 
+Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 60 bytes 
+Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
+Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
+Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 60 bytes 
+Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
+Thu Apr 28 02:22:20 2 || 	< -- Port 2 (vboxnet2) sending 98 bytes 
+ 
+Thu Apr 28 02:22:20 2 || [ARP]	 found entry 
+Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
+Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:20 2 || [ARP]	 Getting mac address.. 
+Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 60 bytes 
+ 
+Thu Apr 28 02:22:20 2 || -- > Port 1 (eth1)	got 60 bytes 
+Thu Apr 28 02:22:20 2 || [ARP]	 incoming_arp 
+Thu Apr 28 02:22:20 2 || [ARP]	 packet is for me 
+Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+ 
+Thu Apr 28 02:22:20 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
+Thu Apr 28 02:22:20 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:20 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:20 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+ 
+Thu Apr 28 02:22:21 2 || -- > Port 1 (eth1)	got 98 bytes 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:21 2 || 	< -- Port 2 (vboxnet2) sending 98 bytes 
+ 
+Thu Apr 28 02:22:21 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:21 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+ 
+Thu Apr 28 02:22:21 2 || -- > Port 2 (vboxnet2)	got 98 bytes 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
+Thu Apr 28 02:22:21 2 || [R_TABLE]	 Found  
+Thu Apr 28 02:22:21 2 || [ROUTER] 	 forwarding frame 
+Thu Apr 28 02:22:21 2 || 	< -- Port 1 (eth1) sending 98 bytes 
+ 
+Thu Apr 28 02:22:36 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
+Thu Apr 28 02:22:36 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
+Thu Apr 28 02:22:36 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:22:36 2 || no route found for ip: 255.255.255.255 
+Thu Apr 28 02:22:36 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
+Thu Apr 28 02:22:36 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
+Thu Apr 28 02:22:36 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:22:36 2 || no route found for ip: 255.255.255.255 
+Thu Apr 28 02:22:39 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
+Thu Apr 28 02:22:39 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
+Thu Apr 28 02:22:39 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:22:39 2 || no route found for ip: 192.168.58.255 
+Thu Apr 28 02:22:49 2 || -- > Port 1 (eth1)	got 107 bytes 
+Thu Apr 28 02:22:49 2 || [PARSER] 	Frame is not for me.. 
+Thu Apr 28 02:23:09 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
+Thu Apr 28 02:23:09 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
+Thu Apr 28 02:23:09 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:23:09 2 || no route found for ip: 192.168.58.255 
+Thu Apr 28 02:23:39 2 || -- > Port 2 (vboxnet2)	got 266 bytes 
+Thu Apr 28 02:23:39 2 || [R_TABLE]	 routing_table_search: 192.168.58.255 
+Thu Apr 28 02:23:39 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:23:39 2 || no route found for ip: 192.168.58.255 
+Thu Apr 28 02:23:41 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
+Thu Apr 28 02:23:41 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
+Thu Apr 28 02:23:41 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:23:41 2 || no route found for ip: 255.255.255.255 
+Thu Apr 28 02:23:41 2 || -- > Port 2 (vboxnet2)	got 402 bytes 
+Thu Apr 28 02:23:41 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
+Thu Apr 28 02:23:41 2 || [R_TABLE]	 NOT found 
+Thu Apr 28 02:23:41 2 || no route found for ip: 255.255.255.255 

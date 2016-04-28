@@ -118,9 +118,12 @@ void incoming_arp(Frame * f){
             arp_cache_update(ARP(f)->spa, ARP(f)->sha); //add to table
         }
         if (ARP(f)->oc == ARP_REQUEST) {
-            f->can_forward = 0;
+            my_log("[ARP]\t REPLY");
             // swap..
             memswap(EthII->dst_addr , EthII->src_addr, 6);
+
+            memcpy(EthII->src_addr, f->p->mac, 6);
+
             // mac + ip size = 6 bytes + 4 bytes = 10 bytes
             memswap(ARP(f)->sha, ARP(f)->tha, 10);
             memcpy(ARP(f)->sha, f->p->mac, 6 );
@@ -136,13 +139,14 @@ void incoming_arp(Frame * f){
         if(route){
             //return;
             my_log("[ARP]\t found route in routing table -> arp proxy?");
+            my_log("[ARP]\t WTFFFF 2");
 
             memswap(EthII->dst_addr , EthII->src_addr, 6);
             memcpy(EthII->src_addr, f->p->mac, 6);
             // mac + ip size = 6 bytes + 4 bytes = 10 bytes
             memswap(ARP(f)->sha, ARP(f)->tha, 10);
-            memcpy(ARP(f)->sha, f->p->mac, 6 );
-            ARP(f)->spa = f->p->ip;
+            memcpy(ARP(f)->sha, f->p->mac, 6 ); // my mac address
+            //ARP(f)->spa = f->p->ip;             // keep original
             ARP(f)->oc = ARP_REPLY;
             inject_frame(f, f->p);
 
@@ -175,7 +179,7 @@ u_char * arp_get(u_int ip, Port * out){
         ARP(f)->spa = out->ip;
         //ARP(f)->tha = 00:00:00:00:00:00;
         ARP(f)->tpa = ip;
-
+        my_log("[ARP]\t Getting mac address..");
         inject_frame(f, out);
 
         time_t send_time = time(0);

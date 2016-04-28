@@ -30,6 +30,7 @@ void parse_l4(Frame * f){
 
     	if (IPv4->protocol == ICMP_TYPE){
     		f->l4 = ICMP_TYPE;
+			incoming_icmp(f);
     	} else if (IPv4->protocol == TCP_TYPE){
     		f->l4 = TCP_TYPE;
     	} else if (IPv4->protocol == UDP_TYPE){
