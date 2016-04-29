@@ -133,6 +133,13 @@ void incoming_arp(Frame * f){
             // inject packet to the same port
         }
     } else {
+        if( belongs_to_subnet(
+                ARP(f)->tpa,
+                get_subnet(f->p->ip, f->p->mask),
+                f->p->mask)){
+            my_log("[ARP]\t do not reply to same interface");
+            return;
+        }
         my_log("[ARP]\t not for me, maybe look routing table?");
         Route * route = routing_table_search(ARP(f)->tpa);
 

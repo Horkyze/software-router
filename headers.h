@@ -87,7 +87,7 @@ typedef struct tcp_h{
 typedef struct rip_h {
     u_char command;
     u_char version;
-}
+}rip_h;
 
 typedef struct rip_entry_h {
     u_short family;
@@ -96,7 +96,7 @@ typedef struct rip_entry_h {
     u_int mask;
     u_int next_hop;
     u_int metric;
-}
+} rip_entry_h;
 
 typedef struct Stats{
 	// layer 2

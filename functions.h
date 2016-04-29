@@ -185,6 +185,10 @@ int belongs_to_subnet(u_int addr, u_int subnet, int prefix){
 	return (addr << (32-prefix)) >> (32-prefix) == subnet;
 }
 
+u_int get_subnet(u_int ip, int mask){
+	return (ip << (32 - mask)) >> (32-mask);
+}
+
 u_int ip_mask_to_network(u_int ip, int prefix){
 	if (prefix < 0 || prefix > 32) {
 		my_log("invalid prefix");
