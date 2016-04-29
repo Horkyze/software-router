@@ -18,9 +18,18 @@ int is_broadcast(Frame * f){
 	}
 	return 0;
 }
+int is_multicast(Frame * f){
+	return 1;
+	u_char multicast[6] = "\x01\x00\x5E\x00\x00\x00";
+	if (memcmp(multicast, EthII->dst_addr, 3) ){
+		return 1;
+	}
+
+	return 0;
+}
 
 int is_for_me_eth(Frame * f){
-	if (is_broadcast(f)) {
+	if (is_broadcast(f) || is_multicast(f)) {
 		return 1;
 	}
 	if( memcmp(EthII->dst_addr, &f->p->mac, 6) == 0){
@@ -66,18 +75,29 @@ void parse_l3(Frame * f) {
 
 void parse_udp(Frame * f){
 
+	// check for rip
+	if (IPv4->dst_ip_addr != RIP_BROADCAST_IP) {
+		return;
+	}
+	// maybe check for sport aswell?
+	if (UDP->dport != RIP_PORT) {
+		return;
+	}
+	incoming_rip(f);
 }
 
 void parse_l4(Frame * f){
-
+	f->transport_header = f->network_header + 20;
 	if (IPv4->protocol == ICMP_TYPE){
 		f->l4 = ICMP_TYPE;
 		incoming_icmp(f); // let icmp decide what to do
 	} else if (IPv4->protocol == TCP_TYPE){
 		f->l4 = TCP_TYPE;
 		f->can_forward = 1; // will be forwarded automatically
+		// f->app_layer =  // no need to parse tcp..
 	} else if (IPv4->protocol == UDP_TYPE){
 		f->l4 = UDP_TYPE;
+		 f->app_layer = f->transport_header + sizeof(udp_h);
 		parse_udp(f); // frame is maybe RIP, let udp decide
 	} else {
 		my_log("[PARSER] \tFailed to parse L4, header not supported");

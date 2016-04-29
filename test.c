@@ -20,6 +20,7 @@
 #include <sys/stat.h>
 
 #include "functions.h"
+#include "headers.h"
 
 
 void test_belongs_to_subnet(){
@@ -37,9 +38,36 @@ void test_belongs_to_subnet(){
     }
 }
 
+void test_header_sizes(){
+    if (sizeof(eth_2_h) == 16) { // 14 is real tho..
+        printf("OK\n");
+    } else {
+        printf("ERROR size eth_2_h\n");
+    }
+
+    if (sizeof(udp_h) == 8) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size udp_h\n");
+    }
+
+    if (sizeof(rip_h) == 4) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size rip_h\n");
+    }
+
+    if (sizeof(rip_entry_h) == 20) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size rip_entry_h\n");
+    }
+}
+
 int main (int argc, char* const argv[])
 {
     test_belongs_to_subnet();
+    test_header_sizes();
 
     return 0;
 }

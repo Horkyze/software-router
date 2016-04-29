@@ -1,12 +1,19 @@
 #ifndef HEADERS_H
 #define HEADERS_H
 
+#define _s16(x) __builtin_bswap16(x)
+#define _s32(x) __builtin_bswap32(x)
+#define _s64(x) __builtin_bswap64(x)
+
 // macro for referencing headers
 #define EthII ((eth_2_h*)f->eth_header)
 #define IPv4 ((ipv4_h*)f->network_header)
 #define UDP ((udp_h*)(f->transport_header))
 #define TCP ((tcp_h*)(f->transport_header))
 #define ICMP ((icmp_h*)(f->transport_header))
+#define RIP_H ((rip_h*)(f->app_layer))
+#define RIP_E(x) ((rip_entry_h*)(f->app_layer+4+(x*20)))
+
 #define BROADCAST_MAC "\xff\xff\xff\xff\xff\xff"
 
 
@@ -87,6 +94,7 @@ typedef struct tcp_h{
 typedef struct rip_h {
     u_char command;
     u_char version;
+	u_short zeros;
 }rip_h;
 
 typedef struct rip_entry_h {
@@ -148,6 +156,8 @@ typedef struct Frame {
 	void * eth_header;
 	void * network_header;
 	void * transport_header;
+	void * app_layer;
+
 	void * data;
 
 	int l2; // eth only
@@ -163,5 +173,6 @@ Route * add_route(u_int network, int mask, Port * p, int ad);
 Route * routing_table_search(u_int);
 void incoming_arp(Frame *);
 void incoming_icmp(Frame *);
+void incoming_rip(Frame *);
 
 #endif

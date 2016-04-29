@@ -1,188 +1,741 @@
-Fri Apr 29 18:54:47 2 || Software router starting... 
-Fri Apr 29 18:54:47 2 || libpcap version 1.5.3 
-Fri Apr 29 18:54:47 2 || pcap_setdirection failed 
-Fri Apr 29 18:54:47 2 || Handle activated for tap0 
-Fri Apr 29 18:54:47 2 || pcap_setdirection failed 
-Fri Apr 29 18:54:47 2 || Handle activated for tap1 
-Fri Apr 29 18:54:47 2 || Creating threads... 
-Fri Apr 29 18:54:47 2 || Hello from thread on tap1 
-Fri Apr 29 18:54:47 2 || Creating LLs... 
-Fri Apr 29 18:54:47 2 || Hello from thread on tap1 
-Fri Apr 29 18:54:47 2 || Waiting for data... 
-Fri Apr 29 18:55:04 2 || -- > Port 1 (tap0)	got 359 bytes 
-Fri Apr 29 18:55:04 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:55:26 2 || -- > Port 2 (tap1)	got 64 bytes 
-Fri Apr 29 18:55:26 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:55:26 2 || [ARP]	 do not reply to same interface 
-Fri Apr 29 18:55:27 2 || -- > Port 2 (tap1)	got 64 bytes 
-Fri Apr 29 18:55:27 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:55:27 2 || [ARP]	 do not reply to same interface 
-Fri Apr 29 18:55:28 2 || -- > Port 2 (tap1)	got 64 bytes 
-Fri Apr 29 18:55:28 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:55:28 2 || [ARP]	 do not reply to same interface 
-Fri Apr 29 18:56:04 2 || -- > Port 1 (tap0)	got 359 bytes 
-Fri Apr 29 18:56:04 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:57:04 2 || -- > Port 1 (tap0)	got 359 bytes 
-Fri Apr 29 18:57:04 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:58:04 2 || -- > Port 1 (tap0)	got 359 bytes 
-Fri Apr 29 18:58:04 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:58:20 2 || Executing: ?   
-Fri Apr 29 18:58:47 2 || -- > Port 1 (tap0)	got 77 bytes 
-Fri Apr 29 18:58:47 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:59:04 2 || -- > Port 1 (tap0)	got 359 bytes 
-Fri Apr 29 18:59:04 2 || [PARSER] 	Frame is not for me.. 
-Fri Apr 29 18:59:07 2 || Executing: network  10.0.1.0 24 p1 
-Fri Apr 29 18:59:23 2 || -- > Port 1 (tap0)	got 60 bytes 
-Fri Apr 29 18:59:23 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:59:23 2 || [ARP]	 packet is for me 
-Fri Apr 29 18:59:23 2 || [ARP]	 REPLY 
-Fri Apr 29 18:59:23 2 || 	< -- Port 1 (tap0) sending 60 bytes 
- 
-Fri Apr 29 18:59:25 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:25 2 || [ARP]	 Getting mac address.. 
-Fri Apr 29 18:59:25 2 || 	< -- Port 2 (tap1) sending 60 bytes 
- 
-Fri Apr 29 18:59:25 2 || -- > Port 2 (tap1)	got 60 bytes 
-Fri Apr 29 18:59:25 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:59:25 2 || [ARP]	 packet is for me 
-Fri Apr 29 18:59:25 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:25 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:25 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:25 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:25 2 || [ARP]	 Getting mac address.. 
-Fri Apr 29 18:59:25 2 || 	< -- Port 1 (tap0) sending 60 bytes 
- 
-Fri Apr 29 18:59:25 2 || -- > Port 1 (tap0)	got 60 bytes 
-Fri Apr 29 18:59:25 2 || [ARP]	 incoming_arp 
-Fri Apr 29 18:59:25 2 || [ARP]	 packet is for me 
-Fri Apr 29 18:59:25 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:25 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:26 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:26 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:26 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:26 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:26 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:26 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:26 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:27 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:27 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:27 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:27 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:27 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:27 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:27 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:28 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:28 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:28 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:28 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:28 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:28 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:28 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:39 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:39 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:39 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:39 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:39 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:39 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:39 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:40 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:40 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:40 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:40 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:40 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:40 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:40 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:41 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:41 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:41 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:41 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:41 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:41 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:41 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:42 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:42 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:42 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:42 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:42 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:42 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:42 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:43 2 || -- > Port 2 (tap1)	got 98 bytes 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 routing_table_search: 10.0.1.2 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.10.10.0 24 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.2 10.0.2.0 24 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:43 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:43 2 || 	< -- Port 1 (tap0) sending 98 bytes 
- 
-Fri Apr 29 18:59:43 2 || -- > Port 1 (tap0)	got 98 bytes 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 routing_table_search: 10.0.2.2 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.2.2 10.10.10.0 24 
-Fri Apr 29 18:59:43 2 || [R_TABLE]	 Found  
-Fri Apr 29 18:59:43 2 || [ROUTER] 	 forwarding frame 
-Fri Apr 29 18:59:43 2 || 	< -- Port 2 (tap1) sending 98 bytes 
- 
-Fri Apr 29 18:59:50 2 || Ctrl C - cya ;)  
+Fri Apr 29 21:57:54 2 || Software router starting... 
+Fri Apr 29 21:57:54 2 || libpcap version 1.5.3 
+Fri Apr 29 21:57:54 2 || pcap_setdirection failed 
+Fri Apr 29 21:57:54 2 || Handle activated for tap1 
+Fri Apr 29 21:57:54 2 || pcap_setdirection failed 
+Fri Apr 29 21:57:54 2 || Handle activated for tap0 
+Fri Apr 29 21:57:54 2 || Creating threads... 
+Fri Apr 29 21:57:54 2 || Hello from thread on tap1 
+Fri Apr 29 21:57:54 2 || Creating LLs... 
+Fri Apr 29 21:57:54 2 || Hello from thread on tap0 
+Fri Apr 29 21:57:54 2 || Waiting for data... 
+Fri Apr 29 21:58:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 21:58:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 21:58:08 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 21:58:08 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 21:58:08 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 21:58:08 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 21:58:08 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 21:58:08 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 21:58:08 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 21:58:37 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 21:58:37 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 21:58:37 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 21:58:37 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 21:58:37 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 21:58:37 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 21:58:37 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 21:59:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 21:59:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 21:59:05 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 21:59:05 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 21:59:05 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 21:59:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 21:59:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 21:59:05 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 21:59:05 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 21:59:31 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 21:59:31 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 21:59:31 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 21:59:31 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 21:59:31 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 21:59:31 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 21:59:31 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 21:59:58 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 21:59:58 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 21:59:58 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 21:59:58 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 21:59:58 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 21:59:58 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 21:59:58 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:00:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:00:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:00:28 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:00:28 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:00:28 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:00:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:00:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:00:28 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:00:28 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:00:53 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:00:53 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:00:53 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:00:53 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:00:53 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:00:53 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:00:53 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:01:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:01:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:01:22 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:01:22 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:01:22 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:01:22 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:01:22 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:01:22 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:01:22 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:01:48 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:01:48 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:01:48 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:01:48 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:01:48 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:01:48 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:01:48 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:02:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:02:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:02:15 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:02:15 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:02:15 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:02:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:02:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:02:15 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:02:15 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:02:44 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:02:44 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:02:44 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:02:44 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:02:44 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:02:44 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:02:44 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:03:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:03:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:03:11 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:03:11 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:03:11 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:03:11 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:03:11 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:03:11 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:03:11 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:03:39 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:03:39 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:03:39 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:03:39 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:03:39 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:03:39 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:03:39 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:04:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:04:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:04:05 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:04:05 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:04:05 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:04:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:04:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:04:05 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:04:05 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:04:33 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:04:33 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:04:33 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:04:33 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:04:33 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:04:33 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:04:33 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:05:03 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:05:03 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:05:03 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:05:03 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:05:03 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:05:03 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:05:03 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:05:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:05:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:05:30 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:05:30 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:05:30 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:05:30 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:05:30 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:05:30 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:05:30 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:05:59 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:05:59 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:05:59 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:05:59 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:05:59 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:05:59 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:05:59 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:06:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:06:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:06:28 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:06:28 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:06:28 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:06:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:06:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:06:28 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:06:28 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:06:55 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:06:55 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:06:55 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:06:55 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:06:55 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:06:55 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:06:55 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:07:02 2 || -- > Port 2 (tap0)	got 77 bytes 
+Fri Apr 29 22:07:02 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:07:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:07:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:07:22 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:07:22 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:07:22 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:07:22 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:07:22 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:07:22 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:07:22 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:07:49 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:07:49 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:07:49 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:07:49 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:07:49 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:07:49 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:07:49 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:08:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:08:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:08:15 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:08:15 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:08:15 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:08:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:08:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:08:15 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:08:15 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:08:41 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:08:41 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:08:41 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:08:41 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:08:41 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:08:41 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:08:41 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:09:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:09:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:09:07 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:09:07 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:09:07 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:09:07 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:09:07 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:09:07 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:09:07 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:09:37 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:09:37 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:09:37 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:09:37 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:09:37 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:09:37 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:09:37 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:10:03 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:10:03 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:10:03 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:10:03 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:10:03 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:10:03 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:10:03 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:10:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:10:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:10:31 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:10:31 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:10:31 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:10:31 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:10:31 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:10:31 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:10:31 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:11:01 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:11:01 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:11:01 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:11:01 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:11:01 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:11:01 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:11:01 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:11:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:11:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:11:27 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:11:27 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:11:27 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:11:27 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:11:27 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:11:27 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:11:27 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:11:57 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:11:57 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:11:57 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:11:57 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:11:57 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:11:57 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:11:57 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:12:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:12:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:12:23 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:12:23 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:12:23 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:12:23 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:12:23 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:12:23 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:12:23 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:12:51 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:12:51 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:12:51 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:12:51 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:12:51 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:12:51 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:12:51 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:13:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:13:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:13:17 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:13:17 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:13:17 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:13:17 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:13:17 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:13:17 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:13:17 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:13:43 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:13:43 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:13:43 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:13:43 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:13:43 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:13:43 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:13:43 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:14:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:14:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:14:12 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:14:12 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:14:12 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:14:12 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:14:12 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:14:12 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:14:12 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:14:41 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:14:41 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:14:41 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:14:41 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:14:41 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:14:41 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:14:41 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:15:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:15:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:15:08 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:15:08 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:15:08 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:15:08 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:15:08 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:15:08 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:15:08 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:15:11 2 || -- > Port 2 (tap0)	got 77 bytes 
+Fri Apr 29 22:15:11 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:15:36 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:15:36 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:15:36 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:15:36 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:15:36 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:15:36 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:15:36 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:16:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:16:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:16:05 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:16:05 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:16:05 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:16:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:16:05 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:16:05 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:16:05 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:16:33 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:16:33 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:16:33 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:16:33 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:16:33 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:16:33 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:16:33 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:17:02 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:17:02 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:17:02 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:17:02 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:17:02 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:17:02 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:17:02 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:17:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:17:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:17:28 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:17:28 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:17:28 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:17:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:17:28 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:17:28 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:17:28 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:17:57 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:17:57 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:17:57 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:17:57 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:17:57 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:17:57 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:17:57 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:18:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:18:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:18:26 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:18:26 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:18:26 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:18:26 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:18:26 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:18:26 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:18:26 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:18:52 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:18:52 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:18:52 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:18:52 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:18:52 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:18:52 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:18:52 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:19:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:19:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:19:21 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:19:21 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:19:21 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:19:21 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:19:21 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:19:21 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:19:21 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:19:48 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:19:48 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:19:48 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:19:48 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:19:48 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:19:48 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:19:48 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:20:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:20:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:20:16 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:20:16 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:20:16 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:20:16 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:20:16 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:20:16 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:20:16 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:20:45 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:20:45 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:20:45 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:20:45 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:20:45 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:20:45 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:20:45 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:21:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:21:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:21:15 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:21:15 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:21:15 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:21:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:21:15 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:21:15 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:21:15 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:21:45 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:21:45 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:21:45 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:21:45 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:21:45 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:21:45 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:21:45 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:22:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:22:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:22:14 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:22:14 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:22:14 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:22:14 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:22:14 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:22:14 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:22:14 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:22:40 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:22:40 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:22:40 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:22:40 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:22:40 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:22:40 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:22:40 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:23:05 2 || -- > Port 2 (tap0)	got 350 bytes 
+Fri Apr 29 22:23:05 2 || [PARSER] 	Failed to parse L3, header not supported 
+Fri Apr 29 22:23:09 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:23:09 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:23:09 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:23:09 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:23:09 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:23:09 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:23:09 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:23:38 2 || -- > Port 2 (tap0)	got 86 bytes 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 n. of entries = 2 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 command       = 2 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 ENTRY  0 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 224.0.0.9 2.8.2.8 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 ENTRY  1 
+Fri Apr 29 22:23:38 2 || [RIP-DEBUG] 	 0.0.9.2 8.2.8.0 
+Fri Apr 29 22:23:38 2 || [R_TABLE]	 routing_table_search: 224.0.0.9 
+Fri Apr 29 22:23:38 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.10.10.0 24 
+Fri Apr 29 22:23:38 2 || [R_TABLE]	 failed belongs_to_subnet: 224.0.0.9 10.0.2.0 24 
+Fri Apr 29 22:23:38 2 || [R_TABLE]	 NOT found 
+Fri Apr 29 22:23:38 2 || no route found for ip: 224.0.0.9 
+Fri Apr 29 22:23:44 2 || -- > Port 2 (tap0)	got 77 bytes 
+Fri Apr 29 22:23:44 2 || [PARSER] 	Failed to parse L3, header not supported 
