@@ -137,6 +137,10 @@ typedef struct Port {
 	Stats * out;
 }Port;
 
+#define RIP_AD 110
+#define STATIC_AD 1
+#define DIRECTLY_CONNECTED_AD 0
+
 typedef struct Route{
 	u_int network;
 	int mask; // prefix form

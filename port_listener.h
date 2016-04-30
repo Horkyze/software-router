@@ -39,6 +39,7 @@ void * port_listener(void * arg) {
 		//pthread_mutex_lock(&mutex);
 		if (check) {
 
+			my_log("\n");
 			sprintf(log_b, "-- > Port %i (%s)\tgot %i bytes",
 			p->id, p->name, header->len);
 			my_log(log_b);

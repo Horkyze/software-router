@@ -23,10 +23,10 @@ Port * create_port_struct(int i){
 	p->out = create_stats_struct();
 	p->mask = 24;
 	if (i == 1) {
-		p->ip = string_to_ip("10.10.10.2");
+		p->ip = string_to_ip("10.0.2.1");
 		strcpy((char *)p->mac, "\x0A\x01\x01\x01\x01\x01");
 	} else if (i == 2) {
-		p->ip = string_to_ip("10.0.2.1");
+		p->ip = string_to_ip("10.10.10.2");
 		strcpy((char *)p->mac, "\x0A\x02\x02\x02\x02\x02");
 	}
 	add_route(ip_mask_to_network(p->ip, p->mask), p->mask, p, 0);

@@ -84,6 +84,7 @@ void parse_udp(Frame * f){
 		return;
 	}
 	incoming_rip(f);
+	f->can_forward = 0;
 }
 
 void parse_l4(Frame * f){
@@ -97,7 +98,7 @@ void parse_l4(Frame * f){
 		// f->app_layer =  // no need to parse tcp..
 	} else if (IPv4->protocol == UDP_TYPE){
 		f->l4 = UDP_TYPE;
-		 f->app_layer = f->transport_header + sizeof(udp_h);
+		f->app_layer = f->transport_header + sizeof(udp_h);
 		parse_udp(f); // frame is maybe RIP, let udp decide
 	} else {
 		my_log("[PARSER] \tFailed to parse L4, header not supported");

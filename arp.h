@@ -133,6 +133,8 @@ void incoming_arp(Frame * f){
             // inject packet to the same port
         }
     } else {
+        sprintf(log_b, "[ARP] \t ip: %s subnet: %s mask: %i", ip_to_string(ARP(f)->tpa), ip_to_string(get_subnet(f->p->ip, f->p->mask)), f->p->mask);
+        my_log(log_b);
         if( belongs_to_subnet(
                 ARP(f)->tpa,
                 get_subnet(f->p->ip, f->p->mask),

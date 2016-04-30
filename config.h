@@ -1,7 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "mapped_memory.h"
 
 #define CMD ((Command *)curr->data)
 int set_interface_ip(char *);
@@ -113,7 +112,7 @@ int get_arp_cache(char * cmd){
 	char part[150];
 	strclr(part);
 	if ( ! curr ){
-		strcat(response, "arp empty \n lolo \n lolo ");
+		strcat(response, "arp empty");
 	}
 	while(curr){
 		printf("mac: %s\n", get_hex(A->mac, 6, ':'));

@@ -19,8 +19,9 @@
 #include <sys/mman.h>
 #include <sys/stat.h>
 
-#include "functions.h"
 #include "headers.h"
+#include "functions.h"
+
 
 
 void test_belongs_to_subnet(){
@@ -64,10 +65,30 @@ void test_header_sizes(){
     }
 }
 
+void test_mask_to_prefix(){
+    if (mask_to_prefix(string_to_ip("255.255.255.0")) == 24) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size mask_to_prefix \n");
+    }
+    if (mask_to_prefix(string_to_ip("255.255.255.255")) == 32) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size mask_to_prefix \n");
+    }
+
+    if (mask_to_prefix(string_to_ip("255.255.255.252")) == 30) {
+        printf("OK\n");
+    } else {
+        printf("ERROR size mask_to_prefix \n");
+    }
+
+}
 int main (int argc, char* const argv[])
 {
     test_belongs_to_subnet();
     test_header_sizes();
+    test_mask_to_prefix();
 
     return 0;
 }

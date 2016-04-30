@@ -19,17 +19,45 @@ void my_log(const char * msg){
 	fclose(fd);
 }
 
+char * dec_to_bin(int n){
+   int c, d, count;
+   char *pointer;
+   count = 0;
+   pointer = (char*)malloc(32+1);
+   if ( pointer == NULL )
+      exit(EXIT_FAILURE);
+   for ( c = 31 ; c >= 0 ; c-- )
+   {
+      d = n >> c;
+      if ( d & 1 )
+         *(pointer+count) = 1 + '0';
+      else
+         *(pointer+count) = 0 + '0';
+      count++;
+   }
+   *(pointer+count) = '\0';
+   return  pointer;
+}
+
 void strclr(char * s){
 	if(s)
 		memset(s, 0, strlen(s));
 }
 
-char * get_time(time_t * tt){
-    char * t = (char *) calloc(1, 20);
-    t = ctime(tt);
-    memset(t, 0, 11);
-    memset(t+20, 0, 1);
-    return (char *)(t +11);
+char * get_time(time_t * rawtime){
+
+	struct tm * timeinfo;
+	timeinfo = localtime ( rawtime );
+	char * t = (char * ) malloc(15);
+	sprintf(t, "%02i:%02i:%02i", timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+	return t; ;
+
+	// time_t * tt;
+    // char * t = (char *) calloc(1, 20);
+    // t = ctime(tt);
+    // memset(t, 0, 11);
+    // memset(t+20, 0, 1);
+    // return (char *)(t +11);
 }
 
 int is_print(u_char c){
@@ -164,9 +192,16 @@ u_int string_to_ip(char * s){
 	return ip;
 }
 
-int mask_to_prefix(){
-
-	return 0;
+int mask_to_prefix(u_int mask){
+	mask = _s32(mask);
+	int i = 0;
+	//printf("%s %s \n", dec_to_bin(mask), ip_to_string(mask) );
+	while( mask != 0 && i < 33){
+		i++;
+		mask = (mask << 1);
+		//printf("%s %i\n", dec_to_bin(mask), i);
+	}
+	return i;
 }
 
 u_int prefix_to_mask(int prefix){

@@ -4,13 +4,11 @@
 #define MAX 1024
 #define IP_SIZE 15 // 123.456.789.000
 
-#define RIP_AD 110
-#define STATIC_AD 1
-#define DIRECTLY_CONNECTED_AD 0
-
 LL * routes_ll;
 
 Route * add_route(u_int network, int mask, Port * p, int ad){
+	sprintf(log_b, "[R_TABLE] \t ADD %s\\%i port: %s  ad: %i", ip_to_string(network), mask, p->name, ad );
+	my_log(log_b);
 	if(routes_ll == 0){
 		routes_ll = LL_init();
 	}
@@ -34,8 +32,9 @@ void print_routing_table(){
 	Item * curr = (Item *) routes_ll->head;
 
 	while(curr){
-		printf("Network %s\\%u via %s, %s\n", ip_to_string(R->network), R->mask, R->outgoing_interface->name,
-		(R->ad == RIP_AD)? "RIP" : (R->ad == STATIC_AD)? "STATIC" : "CONNECTED" );
+		printf("Network %s \t\\%u via %s, %s\t %s\n", ip_to_string(R->network), R->mask, R->outgoing_interface->name,
+		(R->ad == RIP_AD)? "RIP" : (R->ad == STATIC_AD)? "STATIC" : "CONNECTED",
+	 	get_time(&R->last_update));
 		curr = curr->next;
 	}
 	printf("--------    END    --------\n");
