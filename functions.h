@@ -9,11 +9,12 @@ void my_log(const char * msg){
 
 	strcpy(time, ctime(&t));
 	time[strlen(time) - 4] = '\0';
-	FILE * fd;
+	FILE * fd = 0;
 
 	fd = fopen(LOG_FILE, "a");
 	if (fd == 0) {
 		printf("fd is zero \n");
+		return ;
 	}
     fprintf(fd, "%s\b || %s \n", time, msg );
 	fclose(fd);
@@ -160,6 +161,7 @@ void print_hex(u_char * data, int len){
 }
 
 char * ip_to_string(u_int ip){
+	//return inet_ntoa(ip);
 	char * s;
 	s = (char *) malloc(20);
     u_char bytes[4];
@@ -332,6 +334,56 @@ char * str_trim(char *str)
   return str;
 }
 
+//! \brief Calculate the IP header checksum.
+//! \param buf The IP header content.
+//! \param hdr_len The IP header length.
+//! \return The result of the checksum.
+uint16_t ip_checksum(const void *buf, size_t hdr_len)
+{
+	unsigned long sum = 0;
+	const uint16_t *ip1;
+
+	ip1 = buf;
+	while (hdr_len > 1){
+		sum += *ip1++;
+		if (sum & 0x80000000)
+			sum = (sum & 0xFFFF) + (sum >> 16);
+		hdr_len -= 2;
+	}
+
+	while (sum >> 16)
+		sum = (sum & 0xFFFF) + (sum >> 16);
+
+	return(~sum);
+}
+
+
+/*
+    Generic checksum calculation function
+*/
+u_short csum(u_short *ptr, int nbytes)
+{
+    register long sum;
+    unsigned short oddbyte;
+    register short answer;
+
+    sum=0;
+    while(nbytes>1) {
+        sum+=*ptr++;
+        nbytes-=2;
+    }
+    if(nbytes==1) {
+        oddbyte=0;
+        *((u_char*)&oddbyte)=*(u_char*)ptr;
+        sum+=oddbyte;
+    }
+
+    sum = (sum>>16)+(sum & 0xffff);
+    sum = sum + (sum>>16);
+    answer=(short)~sum;
+
+    return(answer);
+}
 
 /*===================================
 =            Linked List            =

@@ -9,6 +9,7 @@ int list_commands(char * cmd);
 int get_arp_cache(char *);
 int delete_arp_cache(char * cmd);
 int send_arp_request(char * cmd);
+int rip_add_route(char * cmd);
 
 LL * cmd_ll = 0;
 
@@ -40,8 +41,13 @@ int exec_cmd(char * cmd_name, char * arguments){
 		if (strcmp(CMD->cmd, cmd_name) == 0) {
 			sprintf(log_b, "Executing: %s %s", cmd_name, arguments );
 			my_log(log_b);
-			CMD->execute(str_trim(arguments));
-			return 1;
+			int status = CMD->execute(str_trim(arguments));
+			if (status) {
+				my_log("Exec OK");
+			} else {
+				my_log("Exec FAILED");
+			}
+			return status;
 		} else {
 			curr = curr->next;
 		}
@@ -86,6 +92,11 @@ void init_commands(){
 				"network 192.168.0.0 16 p2",
 				&add_static_route
 			);
+	create_cmd("rip",
+				"rip <network>",
+				"rip 10.0.1.0",
+				&rip_add_route
+			);
 	create_cmd("?",
 				"? - list all possible commands",
 				"?",
@@ -103,7 +114,7 @@ int list_commands(char * args){
 		printf("  %s\n\n", CMD->example);
 		curr = curr->next;
 	}
-	return 0;
+	return 1;
 }
 
 int get_arp_cache(char * cmd){
@@ -120,7 +131,7 @@ int get_arp_cache(char * cmd){
 		strcat(response, part);
 		curr = curr->next;
 	}
-	return 0;
+	return 1;
 }
 
 int delete_arp_cache(char * args){
@@ -154,7 +165,7 @@ int set_interface_ip(char * args){
 	interface->ip = string_to_ip(ip_s);
 	interface->mask = prefix;
 
-	return 0;
+	return 1;
 }
 
 // network <network> <prefix> <outgoing_interface>
@@ -176,8 +187,23 @@ int add_static_route(char * args){
 	} else {
 		interface = p2;
 	}
-	add_route(string_to_ip(ip_s), atoi(prefix), interface, STATIC_AD);
-	return 0;
+	add_route(string_to_ip(ip_s), atoi(prefix), interface, STATIC_AD, 0);
+	return 1;
+}
+
+// rip <network>
+int rip_add_route(char * args){
+	u_int net = inet_addr( str_trim(args) );
+	Route * r = routing_table_search(net);
+	if (! r){
+		my_log("[RIP-CONFIG]\t Cannot add network that is not in routing table");
+		strcpy(response, "failed");
+		return 0;
+	}
+	int mask = r->mask;
+	Port * out_port = r->outgoing_interface;
+	add_route(net, mask, out_port, RIP_AD, RIP_FLAG_DB);
+	return 1;
 }
 
 
@@ -205,8 +231,13 @@ void * config(void * arg){
 					break;
 				}
 				cmd_name = split_cmd(line, arguments);
-				if (cmd_name)
-					exec_cmd(cmd_name, arguments);
+				if (cmd_name){
+					if (exec_cmd(cmd_name, arguments)){
+						printf("OK\n");
+					} else {
+						printf("ERROR\n");
+					}
+				}
 				printf("config> ");
 			}
 		} else if (c == 'm'){ // mock data

@@ -43,9 +43,15 @@ char log_b[1024];
 char * parse_command(char *);
 char response[1024];
 
+pthread_mutex_t mutex;
+int pause_rendering = 0;
+
+
 // custom includes
 #include "headers.h"
+Port *p1, *p2;
 #include "functions.h"
+LL * routes_ll;
 #include "stats.h"
 #include "communicator.h"
 
@@ -54,13 +60,6 @@ char response[1024];
 #include "arp.h"
 #include "icmp.h"
 #include "ripv2.h"
-// #include "l3_parser.h"
-// #include "l4_parser.h"
-// #include "l5_parser.h"
-
-pthread_mutex_t mutex;
-int pause_rendering = 0;
-Port *p1, *p2;
 
 #include "routing_table.h"
 //#include "rules.h"
@@ -113,6 +112,7 @@ int main(int argc, char *argv[])
 	char c;
 	pthread_t config_thread;
 	pthread_t listener_thread;
+	pthread_t rip_timers_thread;
 	char errbuf[PCAP_ERRBUF_SIZE];
 	p1 = create_port_struct(1);
 	p2 = create_port_struct(2);
@@ -201,6 +201,11 @@ int main(int argc, char *argv[])
 		my_log("Error creating p2 thread");
 		exit(-1);
 	}
+	if ( pthread_create(&rip_timers_thread, 0, rip_timers, 0) ){
+		my_log("Error creating rip_timers thread");
+		exit(-1);
+	}
+
 
 
 	my_log("Creating LLs...");

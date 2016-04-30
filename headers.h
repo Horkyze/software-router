@@ -1,6 +1,8 @@
 #ifndef HEADERS_H
 #define HEADERS_H
 
+#define FLG_CHK(a,b) ((a & b) == b)
+
 #define _s16(x) __builtin_bswap16(x)
 #define _s32(x) __builtin_bswap32(x)
 #define _s64(x) __builtin_bswap64(x)
@@ -13,6 +15,7 @@
 #define ICMP ((icmp_h*)(f->transport_header))
 #define RIP_H ((rip_h*)(f->app_layer))
 #define RIP_E(x) ((rip_entry_h*)(f->app_layer+4+(x*20)))
+#define RIP_OFFSET_E(ptr, x) ((rip_entry_h*)(ptr+(x*20)))
 
 #define BROADCAST_MAC "\xff\xff\xff\xff\xff\xff"
 
@@ -62,6 +65,14 @@ typedef struct udp_h{
 	u_short chcksm;
 }udp_h;
 
+struct pseudo_header {
+    u_int32_t source_address;
+    u_int32_t dest_address;
+    u_int8_t placeholder;
+    u_int8_t protocol;
+    u_int16_t udp_length;
+};
+
 
 #define FIN 0x01
 #define SYN 0x02
@@ -89,6 +100,7 @@ typedef struct tcp_h{
 #define RIP_IP_FAMILY 0x0200 //0x0002
 #define RIP_PORT 0x0802 //0x0208 520 udp
 #define RIP_BROADCAST_IP 0x090000e0 //0xe0000009 224.0.0.9
+#define RIP_MULTICAST_MAC "\x01\x00\x5e\x00\x00\x09" //01-00-5E-00-00-00
 
 
 typedef struct rip_h {
@@ -140,12 +152,13 @@ typedef struct Port {
 #define RIP_AD 110
 #define STATIC_AD 1
 #define DIRECTLY_CONNECTED_AD 0
-
+#define RIP_FLAG_DB 0x00000001
 typedef struct Route{
 	u_int network;
 	int mask; // prefix form
 	int ad; // administrative distance
 	Port * outgoing_interface; // via this interface
+	u_int flags;
 	time_t last_update;
 }Route;
 
@@ -173,10 +186,12 @@ typedef struct Frame {
 	int direction;
 } Frame;
 
-Route * add_route(u_int network, int mask, Port * p, int ad);
+Route * add_route(u_int network, int mask, Port * p, int ad, u_int flags);
 Route * routing_table_search(u_int);
 void incoming_arp(Frame *);
 void incoming_icmp(Frame *);
 void incoming_rip(Frame *);
+
+Frame * RIP_generate_update(Port *);
 
 #endif

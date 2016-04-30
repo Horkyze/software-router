@@ -86,6 +86,8 @@ void test_mask_to_prefix(){
 }
 int main (int argc, char* const argv[])
 {
+    time_t t = time(0);
+    printf("%lu\n", t);
     test_belongs_to_subnet();
     test_header_sizes();
     test_mask_to_prefix();

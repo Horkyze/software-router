@@ -4,9 +4,7 @@
 #define MAX 1024
 #define IP_SIZE 15 // 123.456.789.000
 
-LL * routes_ll;
-
-Route * add_route(u_int network, int mask, Port * p, int ad){
+Route * add_route(u_int network, int mask, Port * p, int ad, u_int flags){
 	sprintf(log_b, "[R_TABLE] \t ADD %s\\%i port: %s  ad: %i", ip_to_string(network), mask, p->name, ad );
 	my_log(log_b);
 	if(routes_ll == 0){
@@ -16,6 +14,7 @@ Route * add_route(u_int network, int mask, Port * p, int ad){
 	r = (Route *) malloc(sizeof(Route));
 	r->network = network;
 	r->mask = mask;
+	r->flags = flags;
 	r->ad = ad;
 	r->outgoing_interface = p;
 	time (&r->last_update);
