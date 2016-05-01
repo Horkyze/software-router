@@ -16,10 +16,22 @@ Route * add_route(u_int network, int mask, Port * p, int ad, u_int flags){
 	r->mask = mask;
 	r->flags = flags;
 	r->ad = ad;
+	r->metric = 0; // only RIP
 	r->outgoing_interface = p;
 	time (&r->last_update);
 	LL_add(routes_ll, r);
 	return r;
+}
+
+char * get_route(Route * r){
+	char * s = (char *) calloc(1024, 1);
+	sprintf(s, "Network %s \t\\%u via %s, %s\t %s %s",
+		ip_to_string(r->network), r->mask, r->outgoing_interface->name,
+		(r->ad == RIP_AD)? "RIP" : (r->ad == STATIC_AD)? "STATIC" : "CONNECTED",
+		get_time(&r->last_update),
+		dec_to_bin(r->flags)
+	);
+	return s;
 }
 
 void print_routing_table(){
@@ -31,9 +43,7 @@ void print_routing_table(){
 	Item * curr = (Item *) routes_ll->head;
 
 	while(curr){
-		printf("Network %s \t\\%u via %s, %s\t %s\n", ip_to_string(R->network), R->mask, R->outgoing_interface->name,
-		(R->ad == RIP_AD)? "RIP" : (R->ad == STATIC_AD)? "STATIC" : "CONNECTED",
-	 	get_time(&R->last_update));
+		printf("%s\n", get_route(R));
 		curr = curr->next;
 	}
 	printf("--------    END    --------\n");
@@ -45,26 +55,35 @@ void clear_routing_table(){
 	routes_ll = 0;
 }
 
-// void mac_delete_old_entries(int older_than){
-// 	if (routes_ll == 0){
-// 		return;
-// 	}
-// 	time_t t;
-// 	t = time(0);
-// 	int i = 0;
-// 	Item * curr = (Item *) routes_ll->head;
-// 	while(curr){
-// 		if ( t - ((Route *)curr->data)->last_update > older_than ){
-// 			// sprintf(log_b, "AUTO deleted entry from mac table (%s)", ((Route *)curr->data)->mac );
-// 			// my_log(log_b);
-// 			LL_delete(routes_ll, i);
-// 		}
-// 		curr = curr->next;
-// 		i++;
-// 	}
-// 	return;
-//}
+// id 1 is the first
+int routing_table_delete(Route * r, int id){
+	if (routes_ll == 0){
+		return 0;
+	}
+	if (id && r) {
+		my_log("[R_TABLE]\t Cannot delete by route and id, choose one");
+		return 0;
+	}
+	Item * curr = (Item *) routes_ll->head;
+	int i;
+	for(i = 1; curr; i++, curr = curr->next ){
 
+		if (r->ad == DIRECTLY_CONNECTED_AD) {
+			my_log("[R_TABLE]\t Cannot remove directly connected routes");
+			return 0;
+		}
+		if (id && i == id) {
+			my_log("[R_TABLE]\t Deleted by id");
+			LL_delete(routes_ll, i-1);
+			return 1;
+		} else if (r && R == r) {
+			my_log("[R_TABLE]\t Deleted by route");
+			LL_delete(routes_ll, i-1);
+			return 1;
+		}
+	}
+	return 0;
+}
 
 
 Route * routing_table_search(u_int dst){
@@ -73,17 +92,21 @@ Route * routing_table_search(u_int dst){
 	}
 	sprintf(log_b, "[R_TABLE]\t routing_table_search: %s", ip_to_string(dst));
 	my_log(log_b);
+	Route * potencial = 0;
 	Item * curr = (Item *) routes_ll->head;
 	while(curr){
-		if ( belongs_to_subnet(dst, R->network, R->mask) ){
-			my_log("[R_TABLE]\t Found ");
-			return R;
-		} else {
-			sprintf(log_b, "[R_TABLE]\t failed belongs_to_subnet: %s %s %i", ip_to_string(dst), ip_to_string(R->network), R->mask);
-			my_log(log_b);
+		// this entry is only as rip database,
+		// do not preform real search with it
+		if ( ! FLG_CHK(R->flags, RIP_FLAG_DB)) {
+			if ( belongs_to_subnet(dst, R->network, R->mask) && R->ad > (potencial ? potencial->ad : -1) ){
+				my_log("[R_TABLE]\t Found potencial route ");
+				potencial = R;
+			}
 		}
 		curr = curr->next;
 	}
-	my_log("[R_TABLE]\t NOT found");
-	return 0;
+	if(potencial == 0) {
+		my_log("[R_TABLE]\t NOT found");
+	}
+	return potencial;
 }

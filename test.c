@@ -84,6 +84,51 @@ void test_mask_to_prefix(){
     }
 
 }
+
+void test_flags(){
+    u_int f = 0;
+    FLG_ADD(f, RIP_FLAG_DB);
+    FLG_ADD(f, RIP_FLAG_INVALID);
+
+    if ( ! FLG_CHK(f, RIP_FLAG_FLUSH)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_FLUSH \n");
+    }
+
+    if ( FLG_CHK(f, RIP_FLAG_INVALID)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_INVALID \n");
+    }
+
+    if ( FLG_CHK(f, RIP_FLAG_DB)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_DB \n");
+    }
+
+    FLG_RM(f, RIP_FLAG_INVALID);
+
+    if ( ! FLG_CHK(f, RIP_FLAG_FLUSH)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_FLUSH \n");
+    }
+
+    if ( ! FLG_CHK(f, RIP_FLAG_INVALID)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_INVALID \n");
+    }
+
+    if ( FLG_CHK(f, RIP_FLAG_DB)) {
+        printf("OK\n");
+    } else {
+        printf("ERROR FLG_CHK(f, RIP_FLAG_DB \n");
+    }
+
+}
 int main (int argc, char* const argv[])
 {
     time_t t = time(0);
@@ -91,6 +136,7 @@ int main (int argc, char* const argv[])
     test_belongs_to_subnet();
     test_header_sizes();
     test_mask_to_prefix();
+    test_flags();
 
     return 0;
 }

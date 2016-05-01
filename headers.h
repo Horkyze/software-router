@@ -2,6 +2,14 @@
 #define HEADERS_H
 
 #define FLG_CHK(a,b) ((a & b) == b)
+#define FLG_ADD(a,b) ( a = a | b)
+#define FLG_RM(a,b) ( a = a ^ b)
+
+#define RIP_FLAG_INVALID 	0x00000002
+#define RIP_FLAG_FLUSH   	0x00000004
+#define RIP_FLAG_HOLD_DOWN 	0x00000008
+
+#define MIN(a,b) ( (a < b) ? (a) : (b) )
 
 #define _s16(x) __builtin_bswap16(x)
 #define _s32(x) __builtin_bswap32(x)
@@ -101,6 +109,7 @@ typedef struct tcp_h{
 #define RIP_PORT 0x0802 //0x0208 520 udp
 #define RIP_BROADCAST_IP 0x090000e0 //0xe0000009 224.0.0.9
 #define RIP_MULTICAST_MAC "\x01\x00\x5e\x00\x00\x09" //01-00-5E-00-00-00
+#define RIP_INFINITY 16
 
 
 typedef struct rip_h {
@@ -115,7 +124,7 @@ typedef struct rip_entry_h {
     u_int ip;
     u_int mask;
     u_int next_hop;
-    u_int metric;
+    u_int metric; // hop count
 } rip_entry_h;
 
 typedef struct Stats{
@@ -152,6 +161,8 @@ typedef struct Port {
 #define RIP_AD 110
 #define STATIC_AD 1
 #define DIRECTLY_CONNECTED_AD 0
+// entries marked with this flag were set by
+// rip <network> command
 #define RIP_FLAG_DB 0x00000001
 typedef struct Route{
 	u_int network;
@@ -159,6 +170,7 @@ typedef struct Route{
 	int ad; // administrative distance
 	Port * outgoing_interface; // via this interface
 	u_int flags;
+	u_int metric; // hop count
 	time_t last_update;
 }Route;
 
@@ -186,8 +198,11 @@ typedef struct Frame {
 	int direction;
 } Frame;
 
+char * get_route(Route * r);
 Route * add_route(u_int network, int mask, Port * p, int ad, u_int flags);
 Route * routing_table_search(u_int);
+int routing_table_delete(Route * r, int id);
+
 void incoming_arp(Frame *);
 void incoming_icmp(Frame *);
 void incoming_rip(Frame *);

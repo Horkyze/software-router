@@ -1,14 +1,42 @@
-#define RIP_T_UPDATE 5
-#define RIP_T_INVALID 180
-#define RIP_T_FLUSH 240
-//#define RIP_T_HOLD_DOWN 180
+#define CHECK_EVERY     5   // check timers every n seconds
+#define RIP_T_UPDATE    5
+#define RIP_T_INVALID   5   //180 default
+#define RIP_T_FLUSH     5   //240 default
+#define RIP_T_HOLD_DOWN 180
 
-void RIP_flush() {
+// check for timers in rip db
+void RIP_check_timers() {
+    if (routes_ll == 0){
+        return;
+    }
+    Item * curr = (Item *) routes_ll->head;
+    while(curr){
 
-}
+        if ( ! FLG_CHK(R->flags, RIP_FLAG_DB) && R->ad == RIP_AD) {
 
-void RIP_invalid() {
+            if( FLG_CHK(R->flags, RIP_FLAG_FLUSH) ) {
+                my_log("[RIP]\t Found flush route ");
+                if ( time(0) - R->last_update > RIP_T_FLUSH) {
+                    my_log("[RIP]\t Timer expired, bey bey route ");
+                    routing_table_delete(R, 0);
+                }
+            } else if( FLG_CHK(R->flags, RIP_FLAG_INVALID) ) {
+                my_log("[RIP]\t Found invalid route ");
+                if ( time(0) - R->last_update > RIP_T_INVALID) {
+                    my_log("[RIP]\t Timer expired, set metric to 16, update flags ");
+                    R->metric = RIP_INFINITY;
+                    R->last_update = time(0);
+                    FLG_RM(R->flags, RIP_FLAG_INVALID);
+                    FLG_ADD(R->flags, RIP_FLAG_FLUSH);
+                }
+            } else if ( time(0) - R->last_update > RIP_T_INVALID){
+                my_log("[RIP]\t Route was not updated for a while, set to invalid ");
+                FLG_ADD(R->flags, RIP_FLAG_INVALID);
+            }
 
+        }
+        curr = curr->next;
+    }
 }
 
 void RIP_update() {
@@ -26,20 +54,13 @@ void * rip_timers(void * arg){
     time_t now;
     while (1) {
         now = time(0);
-        if ( ( now - start_time ) % RIP_T_FLUSH == 0) {
-            RIP_flush();
-        }
-        if ( ( now - start_time ) % RIP_T_INVALID == 0) {
-            RIP_invalid();
-        }
+        RIP_check_timers();
         if ( ( now - start_time ) % RIP_T_UPDATE == 0) {
             RIP_update();
         }
-        sleep(3);
+        sleep(CHECK_EVERY);
     }
 }
-
-
 
 Frame * RIP_generate_update(Port * p){
     // send all rip prefixes except p->ip
@@ -170,13 +191,17 @@ void debug_rip(Frame * f){
     }
 }
 
+// parse incoming rip entry. from RIP_RESPONSE
 void RIP_parse_entry(Frame * f, int i){
     Route * r = routing_table_search(RIP_E(i)->ip);
     if(r){
-        my_log("lolo");
+        if (r->ad == RIP_AD) {
+            my_log("[RIP] \t Updating routing table...");
+            time (&r->last_update);
+            r->metric   = MIN(RIP_INFINITY, ntohl(RIP_E(i)->metric) + 1);
+            r->mask     = mask_to_prefix(RIP_E(i)->mask);
+        }
     } else {
-        my_log("lolo not found");
-
         // add new Route
         add_route(RIP_E(i)->ip, mask_to_prefix(RIP_E(i)->mask), f->p, RIP_AD, 0);
     }
@@ -184,13 +209,14 @@ void RIP_parse_entry(Frame * f, int i){
 
 void incoming_rip(Frame * f){
     debug_rip(f);
-    if(RIP_H->command == RIP_RESPONSE){
-
+    if(RIP_H->command == RIP_RESPONSE) {
         int n = number_of_rip_entries(f);
         while (n-- && n > -1){
             RIP_parse_entry(f, n);
         }
-    } else { // RIP_REQUEST
-
+    } else if(RIP_H->command == RIP_REQUEST) {
+        inject_frame(RIP_generate_update(f->p), f->p);
+    } else {
+        my_log("[RIP] \t recieved invalid rip command");
     }
 }

@@ -1,118 +1,1071 @@
-Sat Apr 30 20:43:41 2 || Software router starting... 
-Sat Apr 30 20:43:41 2 || libpcap version 1.5.3 
-Sat Apr 30 20:43:41 2 || [R_TABLE] 	 ADD 10.0.2.0\24 port:   ad: 1 
-Sat Apr 30 20:43:41 2 || [R_TABLE] 	 ADD 10.10.10.0\24 port:   ad: 1 
-Sat Apr 30 20:43:41 2 || pcap_setdirection failed 
-Sat Apr 30 20:43:41 2 || Handle activated for tap1 
-Sat Apr 30 20:43:41 2 || pcap_setdirection failed 
-Sat Apr 30 20:43:41 2 || Handle activated for tap0 
-Sat Apr 30 20:43:41 2 || Creating threads... 
-Sat Apr 30 20:43:41 2 || Hello from thread on tap0 
-Sat Apr 30 20:43:41 2 || Hello from thread on tap0 
-Sat Apr 30 20:43:41 2 || Creating LLs... 
-Sat Apr 30 20:43:41 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:43:41 2 || port or frame null 
-Sat Apr 30 20:43:41 2 || Waiting for data... 
-Sat Apr 30 20:43:41 2 || port or frame null 
-Sat Apr 30 20:43:47 2 || 
+Sun May  1 13:40:59 2 || Software router starting... 
+Sun May  1 13:40:59 2 || libpcap version 1.5.3 
+Sun May  1 13:40:59 2 || [R_TABLE] 	 ADD 10.0.2.0\24 port:   ad: 0 
+Sun May  1 13:40:59 2 || [R_TABLE] 	 ADD 10.10.10.0\24 port:   ad: 0 
+Sun May  1 13:40:59 2 || pcap_setdirection failed 
+Sun May  1 13:40:59 2 || Handle activated for tap1 
+Sun May  1 13:40:59 2 || pcap_setdirection failed 
+Sun May  1 13:40:59 2 || Handle activated for tap0 
+Sun May  1 13:40:59 2 || Creating threads... 
+Sun May  1 13:40:59 2 || Hello from thread on tap1 
+Sun May  1 13:40:59 2 || Hello from thread on tap0 
+Sun May  1 13:40:59 2 || Creating LLs... 
+Sun May  1 13:40:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:40:59 2 || port or frame null 
+Sun May  1 13:40:59 2 || port or frame null 
+Sun May  1 13:40:59 2 || Waiting for data... 
+Sun May  1 13:41:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:04 2 || port or frame null 
+Sun May  1 13:41:04 2 || port or frame null 
+Sun May  1 13:41:05 2 || 
  
-Sat Apr 30 20:43:47 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sat Apr 30 20:43:47 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sat Apr 30 20:43:47 2 || [RIP-DEBUG] 	 command       = 2 
-Sat Apr 30 20:43:47 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sat Apr 30 20:43:47 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sat Apr 30 20:43:47 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sat Apr 30 20:43:47 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.0.2.0 24 
-Sat Apr 30 20:43:47 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.10.10.0 24 
-Sat Apr 30 20:43:47 2 || [R_TABLE]	 NOT found 
-Sat Apr 30 20:43:47 2 || lolo not found 
-Sat Apr 30 20:43:47 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sat Apr 30 20:43:48 2 || Executing: rip  10.0.2.0 
-Sat Apr 30 20:43:48 2 || [R_TABLE]	 routing_table_search: 10.0.2.0 
-Sat Apr 30 20:43:48 2 || [R_TABLE]	 Found  
-Sat Apr 30 20:43:48 2 || [R_TABLE] 	 ADD 10.0.2.0\24 port: tap1  ad: 110 
-Sat Apr 30 20:43:48 2 || Exec OK 
-Sat Apr 30 20:43:56 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:43:56 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:43:56 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+Sun May  1 13:41:05 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:41:05 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:41:05 2 || [RIP-DEBUG] 	 command       = 1 
+Sun May  1 13:41:05 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:41:05 2 || [RIP-DEBUG] 	 0.0.0.0 0.0.0.0 
+Sun May  1 13:41:05 2 || port or frame null 
+Sun May  1 13:41:07 2 || 
  
-Sat Apr 30 20:43:56 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:43:56 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+Sun May  1 13:41:07 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:41:07 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:41:07 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:41:07 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:41:07 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:41:07 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:41:07 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:41:07 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:41:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:09 2 || port or frame null 
+Sun May  1 13:41:09 2 || port or frame null 
+Sun May  1 13:41:14 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:41:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:14 2 || port or frame null 
+Sun May  1 13:41:14 2 || port or frame null 
+Sun May  1 13:41:19 2 || [RIP]	 Found invalid route  
+Sun May  1 13:41:19 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:41:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:19 2 || port or frame null 
+Sun May  1 13:41:19 2 || port or frame null 
+Sun May  1 13:41:24 2 || [RIP]	 Found flush route  
+Sun May  1 13:41:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:24 2 || port or frame null 
+Sun May  1 13:41:24 2 || port or frame null 
+Sun May  1 13:41:29 2 || [RIP]	 Found flush route  
+Sun May  1 13:41:29 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:41:29 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:41:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:29 2 || port or frame null 
+Sun May  1 13:41:29 2 || port or frame null 
+Sun May  1 13:41:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:34 2 || port or frame null 
+Sun May  1 13:41:34 2 || port or frame null 
+Sun May  1 13:41:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:39 2 || port or frame null 
+Sun May  1 13:41:39 2 || port or frame null 
+Sun May  1 13:41:39 2 || 
  
-Sat Apr 30 20:43:56 2 || 
+Sun May  1 13:41:39 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:41:39 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:41:39 2 || [RIP-DEBUG] 	 command       = 1 
+Sun May  1 13:41:39 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:41:39 2 || [RIP-DEBUG] 	 0.0.0.0 0.0.0.0 
+Sun May  1 13:41:39 2 || port or frame null 
+Sun May  1 13:41:41 2 || 
  
-Sat Apr 30 20:43:56 2 || -- > Port 2 (tap0)	got 60 bytes 
-Sat Apr 30 20:43:56 2 || [ARP]	 incoming_arp 
-Sat Apr 30 20:43:56 2 || [ARP]	 packet is for me 
-Sat Apr 30 20:43:56 2 || [ARP]	 REPLY 
-Sat Apr 30 20:43:56 2 || 	< -- Port 2 (tap0) sending 60 bytes 
+Sun May  1 13:41:41 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:41:41 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:41:41 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:41:41 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:41:41 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:41:41 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:41:41 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:41:41 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:41:44 2 || 
  
-Sat Apr 30 20:44:11 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:44:11 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:11 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+Sun May  1 13:41:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:41:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:41:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:44 2 || port or frame null 
+Sun May  1 13:41:44 2 || port or frame null 
+Sun May  1 13:41:49 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:41:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:49 2 || port or frame null 
+Sun May  1 13:41:49 2 || port or frame null 
+Sun May  1 13:41:54 2 || [RIP]	 Found invalid route  
+Sun May  1 13:41:54 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:41:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:54 2 || port or frame null 
+Sun May  1 13:41:54 2 || port or frame null 
+Sun May  1 13:41:59 2 || [RIP]	 Found flush route  
+Sun May  1 13:41:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:41:59 2 || port or frame null 
+Sun May  1 13:41:59 2 || port or frame null 
+Sun May  1 13:42:04 2 || [RIP]	 Found flush route  
+Sun May  1 13:42:04 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:42:04 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:42:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:04 2 || port or frame null 
+Sun May  1 13:42:04 2 || port or frame null 
+Sun May  1 13:42:08 2 || 
  
-Sat Apr 30 20:44:11 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:11 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+Sun May  1 13:42:08 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:42:08 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:42:08 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:42:08 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:42:08 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:42:08 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:42:08 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:42:08 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:42:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:09 2 || port or frame null 
+Sun May  1 13:42:09 2 || port or frame null 
+Sun May  1 13:42:14 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:42:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:14 2 || port or frame null 
+Sun May  1 13:42:14 2 || port or frame null 
+Sun May  1 13:42:19 2 || [RIP]	 Found invalid route  
+Sun May  1 13:42:19 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:42:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:19 2 || port or frame null 
+Sun May  1 13:42:19 2 || port or frame null 
+Sun May  1 13:42:24 2 || [RIP]	 Found flush route  
+Sun May  1 13:42:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:24 2 || port or frame null 
+Sun May  1 13:42:24 2 || port or frame null 
+Sun May  1 13:42:29 2 || [RIP]	 Found flush route  
+Sun May  1 13:42:29 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:42:29 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:42:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:29 2 || port or frame null 
+Sun May  1 13:42:29 2 || port or frame null 
+Sun May  1 13:42:34 2 || 
  
-Sat Apr 30 20:44:14 2 || 
+Sun May  1 13:42:34 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:42:34 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:42:34 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:42:34 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:42:34 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:42:34 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:42:34 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:42:34 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:42:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:34 2 || port or frame null 
+Sun May  1 13:42:34 2 || port or frame null 
+Sun May  1 13:42:36 2 || Executing: rip  10.0.2.0 
+Sun May  1 13:42:36 2 || [R_TABLE]	 routing_table_search: 10.0.2.0 
+Sun May  1 13:42:36 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:42:36 2 || [R_TABLE] 	 ADD 10.0.2.0\24 port: tap1  ad: 110 
+Sun May  1 13:42:36 2 || Exec OK 
+Sun May  1 13:42:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:39 2 || 	< -- Port 1 (tap1) sending 66 bytes 
  
-Sat Apr 30 20:44:14 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sat Apr 30 20:44:14 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sat Apr 30 20:44:14 2 || [RIP-DEBUG] 	 command       = 2 
-Sat Apr 30 20:44:14 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sat Apr 30 20:44:14 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sat Apr 30 20:44:14 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sat Apr 30 20:44:14 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.0.2.0 24 
-Sat Apr 30 20:44:14 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.10.10.0 24 
-Sat Apr 30 20:44:14 2 || [R_TABLE]	 Found  
-Sat Apr 30 20:44:14 2 || lolo 
-Sat Apr 30 20:44:26 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:44:26 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:26 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+Sun May  1 13:42:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:39 2 || 	< -- Port 2 (tap0) sending 66 bytes 
  
-Sat Apr 30 20:44:26 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:26 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+Sun May  1 13:42:44 2 || 
  
-Sat Apr 30 20:44:31 2 || 
+Sun May  1 13:42:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:42:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:42:44 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:42:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:44 2 || 	< -- Port 1 (tap1) sending 66 bytes 
  
-Sat Apr 30 20:44:31 2 || -- > Port 2 (tap0)	got 350 bytes 
-Sat Apr 30 20:44:31 2 || [PARSER] 	Failed to parse L3, header not supported 
-Sat Apr 30 20:44:41 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:44:41 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:41 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+Sun May  1 13:42:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:44 2 || 	< -- Port 2 (tap0) sending 66 bytes 
  
-Sat Apr 30 20:44:41 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:41 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+Sun May  1 13:42:49 2 || [RIP]	 Found invalid route  
+Sun May  1 13:42:49 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:42:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:49 2 || 	< -- Port 1 (tap1) sending 66 bytes 
  
-Sat Apr 30 20:44:42 2 || 
+Sun May  1 13:42:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:49 2 || 	< -- Port 2 (tap0) sending 66 bytes 
  
-Sat Apr 30 20:44:42 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sat Apr 30 20:44:42 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sat Apr 30 20:44:42 2 || [RIP-DEBUG] 	 command       = 2 
-Sat Apr 30 20:44:42 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sat Apr 30 20:44:42 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sat Apr 30 20:44:42 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sat Apr 30 20:44:42 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.0.2.0 24 
-Sat Apr 30 20:44:42 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.10.10.0 24 
-Sat Apr 30 20:44:42 2 || [R_TABLE]	 Found  
-Sat Apr 30 20:44:42 2 || lolo 
-Sat Apr 30 20:44:56 2 || [RIP] 	   Update timer 
-Sat Apr 30 20:44:56 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:56 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+Sun May  1 13:42:54 2 || [RIP]	 Found flush route  
+Sun May  1 13:42:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:54 2 || 	< -- Port 1 (tap1) sending 66 bytes 
  
-Sat Apr 30 20:44:56 2 || [RIP]	 Found route with flag 
-Sat Apr 30 20:44:56 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+Sun May  1 13:42:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:54 2 || 	< -- Port 2 (tap0) sending 66 bytes 
  
-Sat Apr 30 20:45:11 2 || 
+Sun May  1 13:42:59 2 || [RIP]	 Found flush route  
+Sun May  1 13:42:59 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:42:59 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:42:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:42:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:59 2 || 	< -- Port 1 (tap1) sending 66 bytes 
  
-Sat Apr 30 20:45:11 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sat Apr 30 20:45:11 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sat Apr 30 20:45:11 2 || [RIP-DEBUG] 	 command       = 2 
-Sat Apr 30 20:45:11 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sat Apr 30 20:45:11 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sat Apr 30 20:45:11 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sat Apr 30 20:45:11 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.0.2.0 24 
-Sat Apr 30 20:45:11 2 || [R_TABLE]	 failed belongs_to_subnet: 10.0.1.0 10.10.10.0 24 
-Sat Apr 30 20:45:11 2 || [R_TABLE]	 Found  
-Sat Apr 30 20:45:11 2 || lolo 
-Sat Apr 30 20:45:11 2 || Ctrl C - cya ;)  
+Sun May  1 13:42:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:42:59 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:03 2 || 
+ 
+Sun May  1 13:43:03 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:43:03 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:43:03 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:43:03 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:43:03 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:43:03 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:43:03 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:43:03 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:43:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:04 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:04 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:09 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:43:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:09 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:09 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:14 2 || [RIP]	 Found invalid route  
+Sun May  1 13:43:14 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:43:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:14 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:14 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:19 2 || [RIP]	 Found flush route  
+Sun May  1 13:43:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:19 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:19 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:24 2 || [RIP]	 Found flush route  
+Sun May  1 13:43:24 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:43:24 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:43:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:24 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:24 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:28 2 || 
+ 
+Sun May  1 13:43:28 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:43:28 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:43:28 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:43:28 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:43:28 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:43:28 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:43:28 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:43:28 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:43:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:29 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:29 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:34 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:43:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:34 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:34 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:39 2 || [RIP]	 Found invalid route  
+Sun May  1 13:43:39 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:43:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:39 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:39 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:42 2 || 
+ 
+Sun May  1 13:43:42 2 || -- > Port 1 (tap1)	got 64 bytes 
+Sun May  1 13:43:42 2 || [ARP]	 incoming_arp 
+Sun May  1 13:43:42 2 || [ARP] 	 ip: 10.0.2.5 subnet: 10.0.2.0 mask: 24 
+Sun May  1 13:43:42 2 || [ARP]	 do not reply to same interface 
+Sun May  1 13:43:43 2 || 
+ 
+Sun May  1 13:43:43 2 || -- > Port 1 (tap1)	got 64 bytes 
+Sun May  1 13:43:43 2 || [ARP]	 incoming_arp 
+Sun May  1 13:43:43 2 || [ARP] 	 ip: 10.0.2.5 subnet: 10.0.2.0 mask: 24 
+Sun May  1 13:43:43 2 || [ARP]	 do not reply to same interface 
+Sun May  1 13:43:44 2 || 
+ 
+Sun May  1 13:43:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:43:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:43:44 2 || [RIP]	 Found flush route  
+Sun May  1 13:43:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:44 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:44 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:44 2 || 
+ 
+Sun May  1 13:43:44 2 || -- > Port 1 (tap1)	got 64 bytes 
+Sun May  1 13:43:44 2 || [ARP]	 incoming_arp 
+Sun May  1 13:43:44 2 || [ARP] 	 ip: 10.0.2.5 subnet: 10.0.2.0 mask: 24 
+Sun May  1 13:43:44 2 || [ARP]	 do not reply to same interface 
+Sun May  1 13:43:49 2 || [RIP]	 Found flush route  
+Sun May  1 13:43:49 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:43:49 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:43:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:49 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:49 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:54 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:54 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:43:55 2 || 
+ 
+Sun May  1 13:43:55 2 || -- > Port 1 (tap1)	got 64 bytes 
+Sun May  1 13:43:55 2 || [ARP]	 incoming_arp 
+Sun May  1 13:43:55 2 || [ARP]	 packet is for me 
+Sun May  1 13:43:55 2 || [ARP]	 REPLY 
+Sun May  1 13:43:55 2 || 	< -- Port 1 (tap1) sending 64 bytes 
+ 
+Sun May  1 13:43:55 2 || 
+ 
+Sun May  1 13:43:55 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:43:55 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:43:55 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:43:55 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:43:56 2 || 
+ 
+Sun May  1 13:43:56 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:43:56 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:43:56 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:43:56 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:43:56 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:43:56 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:43:56 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:43:56 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:43:57 2 || 
+ 
+Sun May  1 13:43:57 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:43:57 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:43:57 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:43:57 2 || [ARP]	 Getting mac address.. 
+Sun May  1 13:43:57 2 || 	< -- Port 2 (tap0) sending 60 bytes 
+ 
+Sun May  1 13:43:57 2 || 
+ 
+Sun May  1 13:43:57 2 || -- > Port 2 (tap0)	got 60 bytes 
+Sun May  1 13:43:57 2 || [ARP]	 incoming_arp 
+Sun May  1 13:43:57 2 || [ARP]	 packet is for me 
+Sun May  1 13:43:57 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:43:57 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:43:59 2 || 
+ 
+Sun May  1 13:43:59 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:43:59 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:43:59 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:43:59 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:43:59 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:43:59 2 || 
+ 
+Sun May  1 13:43:59 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:43:59 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:43:59 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:43:59 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:43:59 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:43:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:43:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:59 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:43:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:43:59 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:00 2 || 
+ 
+Sun May  1 13:44:00 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:00 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:00 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:00 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:00 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:00 2 || 
+ 
+Sun May  1 13:44:00 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:00 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:00 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:00 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:00 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:01 2 || 
+ 
+Sun May  1 13:44:01 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:01 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:01 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:01 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:01 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:01 2 || 
+ 
+Sun May  1 13:44:01 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:01 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:01 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:01 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:01 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:01 2 || 
+ 
+Sun May  1 13:44:01 2 || -- > Port 2 (tap0)	got 77 bytes 
+Sun May  1 13:44:01 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:44:04 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:44:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:04 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:04 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:09 2 || [RIP]	 Found invalid route  
+Sun May  1 13:44:09 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:44:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:09 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:09 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:14 2 || [RIP]	 Found flush route  
+Sun May  1 13:44:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:14 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:14 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:19 2 || [RIP]	 Found flush route  
+Sun May  1 13:44:19 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:44:19 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:44:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:19 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:19 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:19 2 || 
+ 
+Sun May  1 13:44:19 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:19 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:19 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:19 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:19 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:19 2 || 
+ 
+Sun May  1 13:44:19 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:19 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:19 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:44:19 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:44:21 2 || 
+ 
+Sun May  1 13:44:21 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:21 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:21 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:21 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:21 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:21 2 || 
+ 
+Sun May  1 13:44:21 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:21 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:44:21 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:44:23 2 || 
+ 
+Sun May  1 13:44:23 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:23 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:23 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:23 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:23 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:23 2 || 
+ 
+Sun May  1 13:44:23 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:23 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:23 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:44:23 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:44:23 2 || 
+ 
+Sun May  1 13:44:23 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:44:23 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:44:23 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:44:23 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:44:23 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:44:23 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:44:23 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:44:23 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:44:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:24 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:24 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:25 2 || 
+ 
+Sun May  1 13:44:25 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:25 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:25 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:25 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:25 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:25 2 || 
+ 
+Sun May  1 13:44:25 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:25 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:25 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:25 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:25 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:26 2 || 
+ 
+Sun May  1 13:44:26 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:26 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:26 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:26 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:26 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:26 2 || 
+ 
+Sun May  1 13:44:26 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:26 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:26 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:26 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:26 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:29 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:44:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:29 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:29 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:32 2 || 
+ 
+Sun May  1 13:44:32 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:32 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:32 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:32 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:32 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:32 2 || 
+ 
+Sun May  1 13:44:32 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:32 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:32 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:32 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:32 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:33 2 || 
+ 
+Sun May  1 13:44:33 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:33 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:33 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:33 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:33 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:33 2 || 
+ 
+Sun May  1 13:44:33 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:33 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:33 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:33 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:33 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:34 2 || 
+ 
+Sun May  1 13:44:34 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:34 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:34 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:34 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:34 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:34 2 || 
+ 
+Sun May  1 13:44:34 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:34 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:34 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:34 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:34 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:34 2 || [RIP]	 Found invalid route  
+Sun May  1 13:44:34 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:44:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:34 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:34 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:35 2 || 
+ 
+Sun May  1 13:44:35 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:35 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:35 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:35 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:35 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:35 2 || 
+ 
+Sun May  1 13:44:35 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:35 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:35 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:35 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:35 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:36 2 || 
+ 
+Sun May  1 13:44:36 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:44:36 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:44:36 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:36 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:36 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:44:36 2 || 
+ 
+Sun May  1 13:44:36 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:44:36 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:44:36 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:44:36 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:44:36 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:44:39 2 || [RIP]	 Found flush route  
+Sun May  1 13:44:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:39 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:39 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:44 2 || 
+ 
+Sun May  1 13:44:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:44:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:44:44 2 || [RIP]	 Found flush route  
+Sun May  1 13:44:44 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:44:44 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:44:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:44 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:44 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:49 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:49 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:51 2 || 
+ 
+Sun May  1 13:44:51 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:44:51 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:44:51 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:44:51 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:44:51 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:44:51 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:44:51 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:44:51 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:44:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:54 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:54 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:44:59 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:44:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:44:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:59 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:44:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:44:59 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:04 2 || [RIP]	 Found invalid route  
+Sun May  1 13:45:04 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:45:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:04 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:04 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:09 2 || [RIP]	 Found flush route  
+Sun May  1 13:45:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:09 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:09 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:14 2 || [RIP]	 Found flush route  
+Sun May  1 13:45:14 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:45:14 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:45:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:14 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:14 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:17 2 || 
+ 
+Sun May  1 13:45:17 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:45:17 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:45:17 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:17 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:17 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:45:17 2 || 
+ 
+Sun May  1 13:45:17 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:45:17 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:45:17 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:45:17 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:45:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:19 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:19 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:19 2 || 
+ 
+Sun May  1 13:45:19 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:45:19 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:45:19 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:19 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:19 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:45:19 2 || 
+ 
+Sun May  1 13:45:19 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:45:19 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:45:19 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:45:19 2 || no route found for ip: 10.0.1.5 
+Sun May  1 13:45:20 2 || 
+ 
+Sun May  1 13:45:20 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:45:20 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:45:20 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:45:20 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:45:20 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:45:20 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:45:20 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:45:20 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:45:21 2 || 
+ 
+Sun May  1 13:45:21 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:45:21 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:45:21 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:21 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:21 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:45:21 2 || 
+ 
+Sun May  1 13:45:21 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:45:21 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:45:21 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:21 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:21 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:45:22 2 || 
+ 
+Sun May  1 13:45:22 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:45:22 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:45:22 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:22 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:22 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:45:22 2 || 
+ 
+Sun May  1 13:45:22 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:45:22 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:45:22 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:22 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:22 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:45:23 2 || 
+ 
+Sun May  1 13:45:23 2 || -- > Port 2 (tap0)	got 98 bytes 
+Sun May  1 13:45:23 2 || [R_TABLE]	 routing_table_search: 10.0.2.5 
+Sun May  1 13:45:23 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:23 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:23 2 || 	< -- Port 1 (tap1) sending 98 bytes 
+ 
+Sun May  1 13:45:23 2 || 
+ 
+Sun May  1 13:45:23 2 || -- > Port 1 (tap1)	got 98 bytes 
+Sun May  1 13:45:23 2 || [R_TABLE]	 routing_table_search: 10.0.1.5 
+Sun May  1 13:45:23 2 || [R_TABLE]	 Found potencial route  
+Sun May  1 13:45:23 2 || [ROUTER] 	 forwarding frame 
+Sun May  1 13:45:23 2 || 	< -- Port 2 (tap0) sending 98 bytes 
+ 
+Sun May  1 13:45:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:24 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:24 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:29 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:45:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:29 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:29 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:34 2 || [RIP]	 Found invalid route  
+Sun May  1 13:45:34 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:45:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:34 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:34 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:39 2 || [RIP]	 Found flush route  
+Sun May  1 13:45:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:39 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:39 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:44 2 || 
+ 
+Sun May  1 13:45:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:45:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:45:44 2 || [RIP]	 Found flush route  
+Sun May  1 13:45:44 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:45:44 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:45:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:44 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:44 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:49 2 || 
+ 
+Sun May  1 13:45:49 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:45:49 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:45:49 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:45:49 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:45:49 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:45:49 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:45:49 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:45:49 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:45:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:49 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:49 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:54 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:54 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:45:59 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:45:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:45:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:59 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:45:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:45:59 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:04 2 || [RIP]	 Found invalid route  
+Sun May  1 13:46:04 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:46:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:04 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:04 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:09 2 || [RIP]	 Found flush route  
+Sun May  1 13:46:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:09 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:09 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:14 2 || [RIP]	 Found flush route  
+Sun May  1 13:46:14 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:46:14 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:46:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:14 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:14 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:17 2 || 
+ 
+Sun May  1 13:46:17 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:46:17 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:46:17 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:46:17 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:46:17 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:46:17 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:46:17 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:46:17 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:46:19 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:19 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:19 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:19 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:24 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:46:24 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:24 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:24 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:24 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:29 2 || [RIP]	 Found invalid route  
+Sun May  1 13:46:29 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:46:29 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:29 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:29 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:29 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:34 2 || [RIP]	 Found flush route  
+Sun May  1 13:46:34 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:34 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:34 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:34 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:39 2 || [RIP]	 Found flush route  
+Sun May  1 13:46:39 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:46:39 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:46:39 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:39 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:39 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:39 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:44 2 || 
+ 
+Sun May  1 13:46:44 2 || -- > Port 2 (tap0)	got 350 bytes 
+Sun May  1 13:46:44 2 || [PARSER] 	Failed to parse L3, header not supported 
+Sun May  1 13:46:44 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:44 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:44 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:44 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:44 2 || 
+ 
+Sun May  1 13:46:44 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:46:44 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:46:44 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:46:44 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:46:44 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:46:44 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:46:44 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:46:44 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:46:49 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:49 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:49 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:49 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:54 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Sun May  1 13:46:54 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:54 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:54 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:54 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:46:59 2 || [RIP]	 Found invalid route  
+Sun May  1 13:46:59 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Sun May  1 13:46:59 2 || [RIP] 	   Update timer 
+Sun May  1 13:46:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:59 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:46:59 2 || [RIP]	 Found route with flag 
+Sun May  1 13:46:59 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:47:04 2 || [RIP]	 Found flush route  
+Sun May  1 13:47:04 2 || [RIP] 	   Update timer 
+Sun May  1 13:47:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:04 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:47:04 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:04 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:47:09 2 || [RIP]	 Found flush route  
+Sun May  1 13:47:09 2 || [RIP]	 Timer expired, bey bey route  
+Sun May  1 13:47:09 2 || [R_TABLE]	 Deleted by route 
+Sun May  1 13:47:09 2 || [RIP] 	   Update timer 
+Sun May  1 13:47:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:09 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:47:09 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:09 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 
+Sun May  1 13:47:13 2 || 
+ 
+Sun May  1 13:47:13 2 || -- > Port 2 (tap0)	got 66 bytes 
+Sun May  1 13:47:13 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Sun May  1 13:47:13 2 || [RIP-DEBUG] 	 command       = 2 
+Sun May  1 13:47:13 2 || [RIP-DEBUG] 	 ENTRY  0 
+Sun May  1 13:47:13 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
+Sun May  1 13:47:13 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
+Sun May  1 13:47:13 2 || [R_TABLE]	 NOT found 
+Sun May  1 13:47:13 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
+Sun May  1 13:47:14 2 || [RIP] 	   Update timer 
+Sun May  1 13:47:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:14 2 || 	< -- Port 1 (tap1) sending 66 bytes 
+ 
+Sun May  1 13:47:14 2 || [RIP]	 Found route with flag 
+Sun May  1 13:47:14 2 || 	< -- Port 2 (tap0) sending 66 bytes 
+ 

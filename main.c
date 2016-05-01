@@ -39,9 +39,9 @@ Matej Bellus
 #define R_MAC 6
 //#define DEFAULT_ACTION R_DENY
 #define DEFAULT_ACTION R_ALLOW
-char log_b[1024];
+char log_b[2042];
 char * parse_command(char *);
-char response[1024];
+char response[2048];
 
 pthread_mutex_t mutex;
 int pause_rendering = 0;

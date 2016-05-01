@@ -29,7 +29,7 @@ Port * create_port_struct(int i){
 		p->ip = string_to_ip("10.10.10.2");
 		strcpy((char *)p->mac, "\x0A\x02\x02\x02\x02\x02");
 	}
-	add_route(ip_mask_to_network(p->ip, p->mask), p->mask, p, STATIC_AD, 0);
+	add_route(ip_mask_to_network(p->ip, p->mask), p->mask, p, 0, 0);
 
 	return p;
 }
