@@ -41,6 +41,7 @@ void * listener(void * arg)
         my_log("Waiting for data...");
         fflush(stdout);
 
+        strclr(buf);
         //try to receive some data, this is a blocking call
         if ((recv_len = recvfrom(s, buf, BUFLEN, 0, (struct sockaddr *) &si_other, (socklen_t *) &slen)) == -1)
         {
@@ -59,7 +60,7 @@ void * listener(void * arg)
         parse_command(buf);
 
         //now reply the client with the same data
-        if (sendto(s, response, 1024, 0, (struct sockaddr*) &si_other, slen) == -1)
+        if (sendto(s, response, 2048, 0, (struct sockaddr*) &si_other, slen) == -1)
         {
             my_log("cant sendto");
             return 0;

@@ -209,4 +209,6 @@ void incoming_rip(Frame *);
 
 Frame * RIP_generate_update(Port *);
 
+char * get_interface_detail(Port * p);
+
 #endif

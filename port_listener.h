@@ -86,3 +86,9 @@ void * port_listener(void * arg) {
 void print_interface_details(Port * p){
 	printf("Interface p%i (%s): %s\\%i %s\n", p->id, p->name, ip_to_string(p->ip), p->mask, get_hex(p->mac, 6, ':'));
 }
+
+char * get_interface_detail(Port * p){
+	char * s = malloc(1024);
+	sprintf(s, "Interface p%i (%s): %s\\%i %s\n", p->id, p->name, ip_to_string(p->ip), p->mask, get_hex(p->mac, 6, ':'));
+	return s;
+}

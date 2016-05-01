@@ -10,6 +10,9 @@ int get_arp_cache(char *);
 int delete_arp_cache(char * cmd);
 int send_arp_request(char * cmd);
 int rip_add_route(char * cmd);
+int get_routing_table(char * cmd);
+int get_interface_details(char * cmd);
+int delete_route(char * cmd);
 
 LL * cmd_ll = 0;
 
@@ -39,7 +42,7 @@ int exec_cmd(char * cmd_name, char * arguments){
 	Item * curr = (Item *) cmd_ll->head;
 	while(curr){
 		if (strcmp(CMD->cmd, cmd_name) == 0) {
-			sprintf(log_b, "Executing: %s %s", cmd_name, arguments );
+			sprintf(log_b, "[CONFIG] \tExecuting: %s %s", cmd_name, arguments );
 			my_log(log_b);
 			int status = CMD->execute(str_trim(arguments));
 			if (status) {
@@ -87,6 +90,16 @@ void init_commands(){
 				"ip_address p1 10.0.0.1 24",
 				&set_interface_ip
 			);
+	create_cmd("get_interface_details",
+				"get_interface_details <interface> <ip> <prefix>",
+				"get_interface_details p1 10.0.0.1 24",
+				&get_interface_details
+			);
+	create_cmd("get_routing_table",
+				"get_routing_table ",
+				"get_routing_table ",
+				&get_routing_table
+			);
 	create_cmd("network",
 				"network <network> <prefix> <outgoing_interface>",
 				"network 192.168.0.0 16 p2",
@@ -96,6 +109,11 @@ void init_commands(){
 				"rip <network>",
 				"rip 10.0.1.0",
 				&rip_add_route
+			);
+	create_cmd("delete_route",
+				"delete_route <id>",
+				"delete_route 1",
+				&delete_route
 			);
 	create_cmd("?",
 				"? - list all possible commands",
@@ -126,7 +144,6 @@ int get_arp_cache(char * cmd){
 		strcat(response, "arp empty");
 	}
 	while(curr){
-		printf("mac: %s\n", get_hex(A->mac, 6, ':'));
 		sprintf(part, "%s \tis at %s\n", ip_to_string(A->ip), get_hex(A->mac, 6, ':'));
 		strcat(response, part);
 		curr = curr->next;
@@ -168,6 +185,11 @@ int set_interface_ip(char * args){
 	return 1;
 }
 
+int get_interface_details(char * cmd){
+	sprintf(response, "%s%s", get_interface_detail(p1), get_interface_detail(p2));
+	return 1;
+}
+
 // network <network> <prefix> <outgoing_interface>
 int add_static_route(char * args){
 	char * ip_s;
@@ -203,6 +225,28 @@ int rip_add_route(char * args){
 	int mask = r->mask;
 	Port * out_port = r->outgoing_interface;
 	add_route(net, mask, out_port, RIP_AD, RIP_FLAG_DB);
+	return 1;
+}
+
+int get_routing_table(char * args){
+		if (routes_ll == 0){
+			strcpy(response, "epmty");
+			return 1;
+		}
+		Item * curr = (Item *) routes_ll->head;
+		char part[1024];
+		int i = 1;
+		while(curr){
+			sprintf(part, "[%i] %s\n",i, get_route(R));
+			strcat(response, part);
+			curr = curr->next;
+			i++;
+		}
+		return 1;
+}
+
+int delete_route(char * args){
+	routing_table_delete(0, atoi(args));
 	return 1;
 }
 

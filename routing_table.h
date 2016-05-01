@@ -25,9 +25,9 @@ Route * add_route(u_int network, int mask, Port * p, int ad, u_int flags){
 
 char * get_route(Route * r){
 	char * s = (char *) calloc(1024, 1);
-	sprintf(s, "Network %s \t\\%u via %s, %s\t %s %s",
+	sprintf(s, "Network %15s\t\\%u via %s, %s\t %s %s",
 		ip_to_string(r->network), r->mask, r->outgoing_interface->name,
-		(r->ad == RIP_AD)? "RIP" : (r->ad == STATIC_AD)? "STATIC" : "CONNECTED",
+		(r->ad == RIP_AD)? "RIP      " : (r->ad == STATIC_AD)? "STATIC" : "CONNECTED",
 		get_time(&r->last_update),
 		dec_to_bin(r->flags)
 	);
@@ -41,10 +41,11 @@ void print_routing_table(){
 		return;
 	}
 	Item * curr = (Item *) routes_ll->head;
-
+	int i = 1;
 	while(curr){
-		printf("%s\n", get_route(R));
+		printf("[%i] %s\n", i, get_route(R));
 		curr = curr->next;
+		i++;
 	}
 	printf("--------    END    --------\n");
 }
@@ -68,7 +69,7 @@ int routing_table_delete(Route * r, int id){
 	int i;
 	for(i = 1; curr; i++, curr = curr->next ){
 
-		if (r->ad == DIRECTLY_CONNECTED_AD) {
+		if ( id == 1 || id == 2 || (r && r->ad == DIRECTLY_CONNECTED_AD) ) {
 			my_log("[R_TABLE]\t Cannot remove directly connected routes");
 			return 0;
 		}
