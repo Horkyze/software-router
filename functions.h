@@ -251,11 +251,12 @@ u_int get_subnet(u_int ip, int mask){
 }
 
 u_int ip_mask_to_network(u_int ip, int prefix){
+	u_int new = htonl(ip);
 	if (prefix < 0 || prefix > 32) {
 		my_log("invalid prefix");
 		exit(-1);
 	}
-	return ip << (32-prefix) >> (32-prefix);
+	return ntohl( ( new >> (32-prefix) ) << (32-prefix) );
 }
 
 

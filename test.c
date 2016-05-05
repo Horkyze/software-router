@@ -129,6 +129,26 @@ void test_flags(){
     }
 
 }
+
+void test_ip_mask_to_network(){
+
+    printf("%s\n", ip_to_string (ip_mask_to_network(string_to_ip("192.168.5.61"), 24)) );
+    // if ( ip_mask_to_network(string_to_ip("192.168.5.61"), 24) == string_to_ip("192.168.0.0") ) {
+    //     printf("OK\n");
+    // } else {
+    //     printf("ERROR ip_mask_to_network \n");
+    // }
+    u_int ip = string_to_ip("176.16.0.2");
+
+    printf("%s\n", ip_to_string (ip_mask_to_network(ip, 30) ));
+    // if ( ip_mask_to_network(string_to_ip("176.16.0.2"), 30) == string_to_ip("176.16.0.0") ) {
+    //     printf("OK\n");
+    // } else {
+    //     printf("ERROR ip_mask_to_network \n");
+    // }
+
+}
+
 int main (int argc, char* const argv[])
 {
     time_t t = time(0);
@@ -137,6 +157,7 @@ int main (int argc, char* const argv[])
     test_header_sizes();
     test_mask_to_prefix();
     test_flags();
+    test_ip_mask_to_network();
 
     return 0;
 }

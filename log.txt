@@ -1,1595 +1,657 @@
-Sun May  1 17:57:30 2 || Software router starting... 
-Sun May  1 17:57:30 2 || libpcap version 1.5.3 
-Sun May  1 17:57:30 2 || [R_TABLE] 	 ADD 10.0.2.0\24 port:   ad: 0 
-Sun May  1 17:57:30 2 || [R_TABLE] 	 ADD 10.10.10.0\24 port:   ad: 0 
-Sun May  1 17:57:30 2 || pcap_setdirection failed 
-Sun May  1 17:57:30 2 || Handle activated for tap1 
-Sun May  1 17:57:30 2 || pcap_setdirection failed 
-Sun May  1 17:57:30 2 || Handle activated for tap0 
-Sun May  1 17:57:30 2 || Creating threads... 
-Sun May  1 17:57:30 2 || Hello from thread on tap0 
-Sun May  1 17:57:30 2 || Hello from thread on tap0 
-Sun May  1 17:57:30 2 || Creating LLs... 
-Sun May  1 17:57:30 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:30 2 || port or frame null 
-Sun May  1 17:57:30 2 || port or frame null 
-Sun May  1 17:57:30 2 || Waiting for data... 
-Sun May  1 17:57:35 2 || [CONFIG] 	Executing: ?   
-Sun May  1 17:57:35 2 || Exec OK 
-Sun May  1 17:57:35 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:35 2 || port or frame null 
-Sun May  1 17:57:35 2 || port or frame null 
-Sun May  1 17:57:36 2 || 
- 
-Sun May  1 17:57:36 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sun May  1 17:57:36 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sun May  1 17:57:36 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:57:36 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:57:36 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sun May  1 17:57:36 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sun May  1 17:57:36 2 || [R_TABLE]	 NOT found 
-Sun May  1 17:57:36 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sun May  1 17:57:40 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:40 2 || port or frame null 
-Sun May  1 17:57:40 2 || port or frame null 
-Sun May  1 17:57:41 2 || 
- 
-Sun May  1 17:57:41 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sun May  1 17:57:41 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sun May  1 17:57:41 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:57:41 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:57:41 2 || [RIP-DEBUG] 	 10.0.2.1 255.255.255.255 
-Sun May  1 17:57:41 2 || [R_TABLE]	 routing_table_search: 10.0.2.1 
-Sun May  1 17:57:41 2 || [R_TABLE]	 Found potencial route  
-Sun May  1 17:57:42 2 || 
- 
-Sun May  1 17:57:42 2 || 
- 
-Sun May  1 17:57:42 2 || -- > Port 1 (tap1)	got 137 bytes 
-Sun May  1 17:57:42 2 || -- > Port 1 (tap1)	got 137 bytes 
-Sun May  1 17:57:42 2 || [PARSER] 	Failed to parse L3, header not supported 
-Sun May  1 17:57:42 2 || [PARSER] 	Failed to parse L3, header not supported 
-Sun May  1 17:57:45 2 || 
- 
-Sun May  1 17:57:45 2 || -- > Port 2 (tap0)	got 350 bytes 
-Sun May  1 17:57:45 2 || [PARSER] 	Failed to parse L3, header not supported 
-Sun May  1 17:57:45 2 || [RIP]	 Route was not updated for a while, set to invalid  
-Sun May  1 17:57:45 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:45 2 || port or frame null 
-Sun May  1 17:57:45 2 || port or frame null 
-Sun May  1 17:57:50 2 || [RIP]	 Found invalid route  
-Sun May  1 17:57:50 2 || [RIP]	 Timer expired, set metric to 16, update flags  
-Sun May  1 17:57:50 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:50 2 || port or frame null 
-Sun May  1 17:57:50 2 || port or frame null 
-Sun May  1 17:57:55 2 || [RIP]	 Found flush route  
-Sun May  1 17:57:55 2 || [RIP] 	   Update timer 
-Sun May  1 17:57:55 2 || port or frame null 
-Sun May  1 17:57:55 2 || port or frame null 
-Sun May  1 17:58:00 2 || [RIP]	 Found flush route  
-Sun May  1 17:58:00 2 || [RIP]	 Timer expired, bey bey route  
-Sun May  1 17:58:00 2 || [R_TABLE]	 Deleted by route 
-Sun May  1 17:58:00 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:00 2 || port or frame null 
-Sun May  1 17:58:00 2 || port or frame null 
-Sun May  1 17:58:02 2 || Received packet from 127.0.0.1:49523
- 
-Sun May  1 17:58:02 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:02 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:02 2 || Exec OK 
-Sun May  1 17:58:02 2 || Waiting for data... 
-Sun May  1 17:58:02 2 || Received packet from 127.0.0.1:52737
- 
-Sun May  1 17:58:02 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:02 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:02 2 || Exec OK 
-Sun May  1 17:58:02 2 || Waiting for data... 
-Sun May  1 17:58:02 2 || Received packet from 127.0.0.1:53245
- 
-Sun May  1 17:58:02 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:02 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:02 2 || Exec OK 
-Sun May  1 17:58:02 2 || Waiting for data... 
-Sun May  1 17:58:03 2 || Received packet from 127.0.0.1:57497
- 
-Sun May  1 17:58:03 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:03 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:03 2 || Exec OK 
-Sun May  1 17:58:03 2 || Waiting for data... 
-Sun May  1 17:58:03 2 || Received packet from 127.0.0.1:55971
- 
-Sun May  1 17:58:03 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:03 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:03 2 || Exec OK 
-Sun May  1 17:58:03 2 || Waiting for data... 
-Sun May  1 17:58:03 2 || Received packet from 127.0.0.1:53823
- 
-Sun May  1 17:58:03 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:03 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:03 2 || Exec OK 
-Sun May  1 17:58:03 2 || Waiting for data... 
-Sun May  1 17:58:04 2 || Received packet from 127.0.0.1:60450
- 
-Sun May  1 17:58:04 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:04 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:04 2 || Exec OK 
-Sun May  1 17:58:04 2 || Waiting for data... 
-Sun May  1 17:58:04 2 || Received packet from 127.0.0.1:44829
- 
-Sun May  1 17:58:04 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:04 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:04 2 || Exec OK 
-Sun May  1 17:58:04 2 || Waiting for data... 
-Sun May  1 17:58:04 2 || Received packet from 127.0.0.1:46671
- 
-Sun May  1 17:58:04 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:04 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:04 2 || Exec OK 
-Sun May  1 17:58:04 2 || Waiting for data... 
-Sun May  1 17:58:05 2 || 
- 
-Sun May  1 17:58:05 2 || -- > Port 2 (tap0)	got 86 bytes 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 n. of entries = 2 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 ENTRY  1 
-Sun May  1 17:58:05 2 || [RIP-DEBUG] 	 10.0.2.1 255.255.255.255 
-Sun May  1 17:58:05 2 || [R_TABLE]	 routing_table_search: 10.0.2.1 
-Sun May  1 17:58:05 2 || [R_TABLE]	 Found potencial route  
-Sun May  1 17:58:05 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sun May  1 17:58:05 2 || [R_TABLE]	 NOT found 
-Sun May  1 17:58:05 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sun May  1 17:58:05 2 || Received packet from 127.0.0.1:47273
- 
-Sun May  1 17:58:05 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:05 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:05 2 || Exec OK 
-Sun May  1 17:58:05 2 || Waiting for data... 
-Sun May  1 17:58:05 2 || Received packet from 127.0.0.1:41753
- 
-Sun May  1 17:58:05 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:05 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:05 2 || Exec OK 
-Sun May  1 17:58:05 2 || Waiting for data... 
-Sun May  1 17:58:05 2 || Received packet from 127.0.0.1:33951
- 
-Sun May  1 17:58:05 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:05 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:05 2 || Exec OK 
-Sun May  1 17:58:05 2 || Waiting for data... 
-Sun May  1 17:58:05 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:05 2 || port or frame null 
-Sun May  1 17:58:05 2 || port or frame null 
-Sun May  1 17:58:06 2 || Received packet from 127.0.0.1:36501
- 
-Sun May  1 17:58:06 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:06 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:06 2 || Exec OK 
-Sun May  1 17:58:06 2 || Waiting for data... 
-Sun May  1 17:58:06 2 || Received packet from 127.0.0.1:60571
- 
-Sun May  1 17:58:06 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:06 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:06 2 || Exec OK 
-Sun May  1 17:58:06 2 || Waiting for data... 
-Sun May  1 17:58:06 2 || Received packet from 127.0.0.1:50652
- 
-Sun May  1 17:58:06 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:06 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:06 2 || Exec OK 
-Sun May  1 17:58:06 2 || Waiting for data... 
-Sun May  1 17:58:08 2 || Received packet from 127.0.0.1:35791
- 
-Sun May  1 17:58:08 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:08 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:08 2 || Exec OK 
-Sun May  1 17:58:08 2 || Waiting for data... 
-Sun May  1 17:58:08 2 || Received packet from 127.0.0.1:47707
- 
-Sun May  1 17:58:08 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:08 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:08 2 || Exec OK 
-Sun May  1 17:58:08 2 || Waiting for data... 
-Sun May  1 17:58:08 2 || Received packet from 127.0.0.1:54189
- 
-Sun May  1 17:58:08 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:08 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:08 2 || Exec OK 
-Sun May  1 17:58:08 2 || Waiting for data... 
-Sun May  1 17:58:09 2 || Received packet from 127.0.0.1:35167
- 
-Sun May  1 17:58:09 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:09 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:09 2 || Exec OK 
-Sun May  1 17:58:09 2 || Waiting for data... 
-Sun May  1 17:58:09 2 || Received packet from 127.0.0.1:32829
- 
-Sun May  1 17:58:09 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:09 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:09 2 || Exec OK 
-Sun May  1 17:58:09 2 || Waiting for data... 
-Sun May  1 17:58:09 2 || Received packet from 127.0.0.1:48585
- 
-Sun May  1 17:58:09 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:09 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:09 2 || Exec OK 
-Sun May  1 17:58:09 2 || Waiting for data... 
-Sun May  1 17:58:10 2 || Received packet from 127.0.0.1:47875
- 
-Sun May  1 17:58:10 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:10 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:10 2 || Exec OK 
-Sun May  1 17:58:10 2 || Waiting for data... 
-Sun May  1 17:58:10 2 || Received packet from 127.0.0.1:41481
- 
-Sun May  1 17:58:10 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:10 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:10 2 || Exec OK 
-Sun May  1 17:58:10 2 || Waiting for data... 
-Sun May  1 17:58:10 2 || Received packet from 127.0.0.1:34744
- 
-Sun May  1 17:58:10 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:10 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:10 2 || Exec OK 
-Sun May  1 17:58:10 2 || Waiting for data... 
-Sun May  1 17:58:10 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:10 2 || port or frame null 
-Sun May  1 17:58:10 2 || port or frame null 
-Sun May  1 17:58:11 2 || Received packet from 127.0.0.1:59621
- 
-Sun May  1 17:58:11 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:11 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:11 2 || Exec OK 
-Sun May  1 17:58:11 2 || Waiting for data... 
-Sun May  1 17:58:11 2 || Received packet from 127.0.0.1:34021
- 
-Sun May  1 17:58:11 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:11 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:11 2 || Exec OK 
-Sun May  1 17:58:11 2 || Waiting for data... 
-Sun May  1 17:58:11 2 || Received packet from 127.0.0.1:36205
- 
-Sun May  1 17:58:11 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:11 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:11 2 || Exec OK 
-Sun May  1 17:58:11 2 || Waiting for data... 
-Sun May  1 17:58:12 2 || Received packet from 127.0.0.1:58015
- 
-Sun May  1 17:58:12 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:12 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:12 2 || Exec OK 
-Sun May  1 17:58:12 2 || Waiting for data... 
-Sun May  1 17:58:12 2 || Received packet from 127.0.0.1:50607
- 
-Sun May  1 17:58:12 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:12 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:12 2 || Exec OK 
-Sun May  1 17:58:12 2 || Waiting for data... 
-Sun May  1 17:58:12 2 || Received packet from 127.0.0.1:50344
- 
-Sun May  1 17:58:12 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:12 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:12 2 || Exec OK 
-Sun May  1 17:58:12 2 || Waiting for data... 
-Sun May  1 17:58:14 2 || Received packet from 127.0.0.1:53228
- 
-Sun May  1 17:58:14 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:14 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:14 2 || Exec OK 
-Sun May  1 17:58:14 2 || Waiting for data... 
-Sun May  1 17:58:14 2 || Received packet from 127.0.0.1:36656
- 
-Sun May  1 17:58:14 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:14 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:14 2 || Exec OK 
-Sun May  1 17:58:14 2 || Waiting for data... 
-Sun May  1 17:58:14 2 || Received packet from 127.0.0.1:34398
- 
-Sun May  1 17:58:14 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:14 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:14 2 || Exec OK 
-Sun May  1 17:58:14 2 || Waiting for data... 
-Sun May  1 17:58:15 2 || Received packet from 127.0.0.1:50986
- 
-Sun May  1 17:58:15 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:15 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:15 2 || Exec OK 
-Sun May  1 17:58:15 2 || Waiting for data... 
-Sun May  1 17:58:15 2 || Received packet from 127.0.0.1:38852
- 
-Sun May  1 17:58:15 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:15 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:15 2 || Exec OK 
-Sun May  1 17:58:15 2 || Waiting for data... 
-Sun May  1 17:58:15 2 || Received packet from 127.0.0.1:54669
- 
-Sun May  1 17:58:15 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:15 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:15 2 || Exec OK 
-Sun May  1 17:58:15 2 || Waiting for data... 
-Sun May  1 17:58:15 2 || [RIP]	 Route was not updated for a while, set to invalid  
-Sun May  1 17:58:15 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:15 2 || port or frame null 
-Sun May  1 17:58:15 2 || port or frame null 
-Sun May  1 17:58:16 2 || Received packet from 127.0.0.1:57226
- 
-Sun May  1 17:58:16 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:16 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:16 2 || Exec OK 
-Sun May  1 17:58:16 2 || Waiting for data... 
-Sun May  1 17:58:16 2 || Received packet from 127.0.0.1:53526
- 
-Sun May  1 17:58:16 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:16 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:16 2 || Exec OK 
-Sun May  1 17:58:16 2 || Waiting for data... 
-Sun May  1 17:58:16 2 || Received packet from 127.0.0.1:34977
- 
-Sun May  1 17:58:16 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:16 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:16 2 || Exec OK 
-Sun May  1 17:58:16 2 || Waiting for data... 
-Sun May  1 17:58:17 2 || Received packet from 127.0.0.1:58945
- 
-Sun May  1 17:58:17 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:17 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:17 2 || Exec OK 
-Sun May  1 17:58:17 2 || Waiting for data... 
-Sun May  1 17:58:17 2 || Received packet from 127.0.0.1:42558
- 
-Sun May  1 17:58:17 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:17 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:17 2 || Exec OK 
-Sun May  1 17:58:17 2 || Waiting for data... 
-Sun May  1 17:58:17 2 || Received packet from 127.0.0.1:41871
- 
-Sun May  1 17:58:17 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:17 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:17 2 || Exec OK 
-Sun May  1 17:58:17 2 || Waiting for data... 
-Sun May  1 17:58:18 2 || Received packet from 127.0.0.1:55453
- 
-Sun May  1 17:58:18 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:18 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:18 2 || Exec OK 
-Sun May  1 17:58:18 2 || Waiting for data... 
-Sun May  1 17:58:18 2 || Received packet from 127.0.0.1:55199
- 
-Sun May  1 17:58:18 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:18 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:18 2 || Exec OK 
-Sun May  1 17:58:18 2 || Waiting for data... 
-Sun May  1 17:58:18 2 || Received packet from 127.0.0.1:55069
- 
-Sun May  1 17:58:18 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:18 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:18 2 || Exec OK 
-Sun May  1 17:58:18 2 || Waiting for data... 
-Sun May  1 17:58:18 2 || Received packet from 127.0.0.1:41963
- 
-Sun May  1 17:58:18 2 || Data: ip_address p1 192.168.1.1 24
- 
-Sun May  1 17:58:18 2 || [CONFIG] 	Executing: ip_address  p1 192.168.1.1 24 
-Sun May  1 17:58:18 2 || Exec OK 
-Sun May  1 17:58:18 2 || Waiting for data... 
-Sun May  1 17:58:20 2 || Received packet from 127.0.0.1:59081
- 
-Sun May  1 17:58:20 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:20 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:20 2 || Exec OK 
-Sun May  1 17:58:20 2 || Waiting for data... 
-Sun May  1 17:58:20 2 || Received packet from 127.0.0.1:53539
- 
-Sun May  1 17:58:20 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:20 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:20 2 || Exec OK 
-Sun May  1 17:58:20 2 || Waiting for data... 
-Sun May  1 17:58:20 2 || Received packet from 127.0.0.1:54183
- 
-Sun May  1 17:58:20 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:20 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:20 2 || Exec OK 
-Sun May  1 17:58:20 2 || Waiting for data... 
-Sun May  1 17:58:20 2 || [RIP]	 Found invalid route  
-Sun May  1 17:58:20 2 || [RIP]	 Timer expired, set metric to 16, update flags  
-Sun May  1 17:58:20 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:20 2 || port or frame null 
-Sun May  1 17:58:20 2 || port or frame null 
-Sun May  1 17:58:21 2 || Received packet from 127.0.0.1:42262
- 
-Sun May  1 17:58:21 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:21 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:21 2 || Exec OK 
-Sun May  1 17:58:21 2 || Waiting for data... 
-Sun May  1 17:58:21 2 || Received packet from 127.0.0.1:41129
- 
-Sun May  1 17:58:21 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:21 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:21 2 || Exec OK 
-Sun May  1 17:58:21 2 || Waiting for data... 
-Sun May  1 17:58:21 2 || Received packet from 127.0.0.1:38497
- 
-Sun May  1 17:58:21 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:21 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:21 2 || Exec OK 
-Sun May  1 17:58:21 2 || Waiting for data... 
-Sun May  1 17:58:22 2 || Received packet from 127.0.0.1:50095
- 
-Sun May  1 17:58:22 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:22 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:22 2 || Exec OK 
-Sun May  1 17:58:22 2 || Waiting for data... 
-Sun May  1 17:58:22 2 || Received packet from 127.0.0.1:58645
- 
-Sun May  1 17:58:22 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:22 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:22 2 || Exec OK 
-Sun May  1 17:58:22 2 || Waiting for data... 
-Sun May  1 17:58:22 2 || Received packet from 127.0.0.1:47918
- 
-Sun May  1 17:58:22 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:22 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:22 2 || Exec OK 
-Sun May  1 17:58:22 2 || Waiting for data... 
-Sun May  1 17:58:23 2 || Received packet from 127.0.0.1:36687
- 
-Sun May  1 17:58:23 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:23 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:23 2 || Exec OK 
-Sun May  1 17:58:23 2 || Waiting for data... 
-Sun May  1 17:58:23 2 || Received packet from 127.0.0.1:54863
- 
-Sun May  1 17:58:23 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:23 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:23 2 || Exec OK 
-Sun May  1 17:58:23 2 || Waiting for data... 
-Sun May  1 17:58:23 2 || Received packet from 127.0.0.1:54810
- 
-Sun May  1 17:58:23 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:23 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:23 2 || Exec OK 
-Sun May  1 17:58:23 2 || Waiting for data... 
-Sun May  1 17:58:24 2 || Received packet from 127.0.0.1:33363
- 
-Sun May  1 17:58:24 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:24 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:24 2 || Exec OK 
-Sun May  1 17:58:24 2 || Waiting for data... 
-Sun May  1 17:58:24 2 || Received packet from 127.0.0.1:46495
- 
-Sun May  1 17:58:24 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:24 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:24 2 || Exec OK 
-Sun May  1 17:58:24 2 || Waiting for data... 
-Sun May  1 17:58:24 2 || Received packet from 127.0.0.1:45925
- 
-Sun May  1 17:58:24 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:24 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:24 2 || Exec OK 
-Sun May  1 17:58:24 2 || Waiting for data... 
-Sun May  1 17:58:25 2 || [RIP]	 Found flush route  
-Sun May  1 17:58:25 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:25 2 || port or frame null 
-Sun May  1 17:58:25 2 || port or frame null 
-Sun May  1 17:58:26 2 || Received packet from 127.0.0.1:56735
- 
-Sun May  1 17:58:26 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:26 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:26 2 || Exec OK 
-Sun May  1 17:58:26 2 || Waiting for data... 
-Sun May  1 17:58:26 2 || Received packet from 127.0.0.1:58830
- 
-Sun May  1 17:58:26 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:26 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:26 2 || Exec OK 
-Sun May  1 17:58:26 2 || Waiting for data... 
-Sun May  1 17:58:26 2 || Received packet from 127.0.0.1:54239
- 
-Sun May  1 17:58:26 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:26 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:26 2 || Exec OK 
-Sun May  1 17:58:26 2 || Waiting for data... 
-Sun May  1 17:58:27 2 || Received packet from 127.0.0.1:59380
- 
-Sun May  1 17:58:27 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:27 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:27 2 || Exec OK 
-Sun May  1 17:58:27 2 || Waiting for data... 
-Sun May  1 17:58:27 2 || Received packet from 127.0.0.1:51987
- 
-Sun May  1 17:58:27 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:27 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:27 2 || Exec OK 
-Sun May  1 17:58:27 2 || Waiting for data... 
-Sun May  1 17:58:27 2 || Received packet from 127.0.0.1:33688
- 
-Sun May  1 17:58:27 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:27 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:27 2 || Exec OK 
-Sun May  1 17:58:27 2 || Waiting for data... 
-Sun May  1 17:58:28 2 || Received packet from 127.0.0.1:60752
- 
-Sun May  1 17:58:28 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:28 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:28 2 || Exec OK 
-Sun May  1 17:58:28 2 || Waiting for data... 
-Sun May  1 17:58:28 2 || Received packet from 127.0.0.1:58150
- 
-Sun May  1 17:58:28 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:28 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:28 2 || Exec OK 
-Sun May  1 17:58:28 2 || Waiting for data... 
-Sun May  1 17:58:28 2 || Received packet from 127.0.0.1:37874
- 
-Sun May  1 17:58:28 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:28 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:28 2 || Exec OK 
-Sun May  1 17:58:28 2 || Waiting for data... 
-Sun May  1 17:58:29 2 || Received packet from 127.0.0.1:58248
- 
-Sun May  1 17:58:29 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:29 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:29 2 || Exec OK 
-Sun May  1 17:58:29 2 || Waiting for data... 
-Sun May  1 17:58:29 2 || Received packet from 127.0.0.1:41230
- 
-Sun May  1 17:58:29 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:29 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:29 2 || Exec OK 
-Sun May  1 17:58:29 2 || Waiting for data... 
-Sun May  1 17:58:29 2 || Received packet from 127.0.0.1:58929
- 
-Sun May  1 17:58:29 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:29 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:29 2 || Exec OK 
-Sun May  1 17:58:29 2 || Waiting for data... 
-Sun May  1 17:58:30 2 || Received packet from 127.0.0.1:32899
- 
-Sun May  1 17:58:30 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:30 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:30 2 || Exec OK 
-Sun May  1 17:58:30 2 || Waiting for data... 
-Sun May  1 17:58:30 2 || Received packet from 127.0.0.1:41802
- 
-Sun May  1 17:58:30 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:30 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:30 2 || Exec OK 
-Sun May  1 17:58:30 2 || Waiting for data... 
-Sun May  1 17:58:30 2 || Received packet from 127.0.0.1:58405
- 
-Sun May  1 17:58:30 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:30 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:30 2 || Exec OK 
-Sun May  1 17:58:30 2 || Waiting for data... 
-Sun May  1 17:58:30 2 || [RIP]	 Found flush route  
-Sun May  1 17:58:30 2 || [RIP]	 Timer expired, bey bey route  
-Sun May  1 17:58:30 2 || [R_TABLE]	 Deleted by route 
-Sun May  1 17:58:30 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:30 2 || port or frame null 
-Sun May  1 17:58:30 2 || port or frame null 
-Sun May  1 17:58:31 2 || 
- 
-Sun May  1 17:58:31 2 || -- > Port 2 (tap0)	got 86 bytes 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 n. of entries = 2 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 ENTRY  1 
-Sun May  1 17:58:31 2 || [RIP-DEBUG] 	 10.0.2.1 255.255.255.255 
-Sun May  1 17:58:31 2 || [R_TABLE]	 routing_table_search: 10.0.2.1 
-Sun May  1 17:58:31 2 || [R_TABLE]	 Found potencial route  
-Sun May  1 17:58:31 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sun May  1 17:58:31 2 || [R_TABLE]	 NOT found 
-Sun May  1 17:58:31 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sun May  1 17:58:32 2 || Received packet from 127.0.0.1:54203
- 
-Sun May  1 17:58:32 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:32 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:32 2 || Exec OK 
-Sun May  1 17:58:32 2 || Waiting for data... 
-Sun May  1 17:58:32 2 || Received packet from 127.0.0.1:45492
- 
-Sun May  1 17:58:32 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:32 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:32 2 || Exec OK 
-Sun May  1 17:58:32 2 || Waiting for data... 
-Sun May  1 17:58:32 2 || Received packet from 127.0.0.1:36651
- 
-Sun May  1 17:58:32 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:32 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:32 2 || Exec OK 
-Sun May  1 17:58:32 2 || Waiting for data... 
-Sun May  1 17:58:33 2 || Received packet from 127.0.0.1:58346
- 
-Sun May  1 17:58:33 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:33 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:33 2 || Exec OK 
-Sun May  1 17:58:33 2 || Waiting for data... 
-Sun May  1 17:58:33 2 || Received packet from 127.0.0.1:54927
- 
-Sun May  1 17:58:33 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:33 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:33 2 || Exec OK 
-Sun May  1 17:58:33 2 || Waiting for data... 
-Sun May  1 17:58:33 2 || Received packet from 127.0.0.1:35753
- 
-Sun May  1 17:58:33 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:33 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:33 2 || Exec OK 
-Sun May  1 17:58:33 2 || Waiting for data... 
-Sun May  1 17:58:34 2 || Received packet from 127.0.0.1:49986
- 
-Sun May  1 17:58:34 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:34 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:34 2 || Exec OK 
-Sun May  1 17:58:34 2 || Waiting for data... 
-Sun May  1 17:58:34 2 || Received packet from 127.0.0.1:52905
- 
-Sun May  1 17:58:34 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:34 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:34 2 || Exec OK 
-Sun May  1 17:58:34 2 || Waiting for data... 
-Sun May  1 17:58:34 2 || Received packet from 127.0.0.1:51412
- 
-Sun May  1 17:58:34 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:34 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:34 2 || Exec OK 
-Sun May  1 17:58:34 2 || Waiting for data... 
-Sun May  1 17:58:35 2 || Received packet from 127.0.0.1:59750
- 
-Sun May  1 17:58:35 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:35 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:35 2 || Exec OK 
-Sun May  1 17:58:35 2 || Waiting for data... 
-Sun May  1 17:58:35 2 || Received packet from 127.0.0.1:34175
- 
-Sun May  1 17:58:35 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:35 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:35 2 || Exec OK 
-Sun May  1 17:58:35 2 || Waiting for data... 
-Sun May  1 17:58:35 2 || Received packet from 127.0.0.1:50806
- 
-Sun May  1 17:58:35 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:35 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:35 2 || Exec OK 
-Sun May  1 17:58:35 2 || Waiting for data... 
-Sun May  1 17:58:35 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:35 2 || port or frame null 
-Sun May  1 17:58:35 2 || port or frame null 
-Sun May  1 17:58:36 2 || Received packet from 127.0.0.1:44119
- 
-Sun May  1 17:58:36 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:36 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:36 2 || Exec OK 
-Sun May  1 17:58:36 2 || Waiting for data... 
-Sun May  1 17:58:36 2 || Received packet from 127.0.0.1:32779
- 
-Sun May  1 17:58:36 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:36 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:36 2 || Exec OK 
-Sun May  1 17:58:36 2 || Waiting for data... 
-Sun May  1 17:58:36 2 || Received packet from 127.0.0.1:34337
- 
-Sun May  1 17:58:36 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:36 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:36 2 || Exec OK 
-Sun May  1 17:58:36 2 || Waiting for data... 
-Sun May  1 17:58:38 2 || Received packet from 127.0.0.1:55721
- 
-Sun May  1 17:58:38 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:38 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:38 2 || Exec OK 
-Sun May  1 17:58:38 2 || Waiting for data... 
-Sun May  1 17:58:38 2 || Received packet from 127.0.0.1:37818
- 
-Sun May  1 17:58:38 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:38 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:38 2 || Exec OK 
-Sun May  1 17:58:38 2 || Waiting for data... 
-Sun May  1 17:58:38 2 || Received packet from 127.0.0.1:54985
- 
-Sun May  1 17:58:38 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:38 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:38 2 || Exec OK 
-Sun May  1 17:58:38 2 || Waiting for data... 
-Sun May  1 17:58:39 2 || Received packet from 127.0.0.1:55865
- 
-Sun May  1 17:58:39 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:39 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:39 2 || Exec OK 
-Sun May  1 17:58:39 2 || Waiting for data... 
-Sun May  1 17:58:39 2 || Received packet from 127.0.0.1:39185
- 
-Sun May  1 17:58:39 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:39 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:39 2 || Exec OK 
-Sun May  1 17:58:39 2 || Waiting for data... 
-Sun May  1 17:58:39 2 || Received packet from 127.0.0.1:39506
- 
-Sun May  1 17:58:39 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:39 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:39 2 || Exec OK 
-Sun May  1 17:58:39 2 || Waiting for data... 
-Sun May  1 17:58:40 2 || Received packet from 127.0.0.1:35841
- 
-Sun May  1 17:58:40 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:40 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:40 2 || Exec OK 
-Sun May  1 17:58:40 2 || Waiting for data... 
-Sun May  1 17:58:40 2 || Received packet from 127.0.0.1:47027
- 
-Sun May  1 17:58:40 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:40 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:40 2 || Exec OK 
-Sun May  1 17:58:40 2 || Waiting for data... 
-Sun May  1 17:58:40 2 || Received packet from 127.0.0.1:37898
- 
-Sun May  1 17:58:40 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:40 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:40 2 || Exec OK 
-Sun May  1 17:58:40 2 || Waiting for data... 
-Sun May  1 17:58:40 2 || [RIP]	 Route was not updated for a while, set to invalid  
-Sun May  1 17:58:40 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:40 2 || port or frame null 
-Sun May  1 17:58:40 2 || port or frame null 
-Sun May  1 17:58:41 2 || Received packet from 127.0.0.1:42700
- 
-Sun May  1 17:58:41 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:41 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:41 2 || Exec OK 
-Sun May  1 17:58:41 2 || Waiting for data... 
-Sun May  1 17:58:41 2 || Received packet from 127.0.0.1:40817
- 
-Sun May  1 17:58:41 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:41 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:41 2 || Exec OK 
-Sun May  1 17:58:41 2 || Waiting for data... 
-Sun May  1 17:58:41 2 || Received packet from 127.0.0.1:45540
- 
-Sun May  1 17:58:41 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:41 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:41 2 || Exec OK 
-Sun May  1 17:58:41 2 || Waiting for data... 
-Sun May  1 17:58:42 2 || Received packet from 127.0.0.1:57636
- 
-Sun May  1 17:58:42 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:42 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:42 2 || Exec OK 
-Sun May  1 17:58:42 2 || Waiting for data... 
-Sun May  1 17:58:42 2 || Received packet from 127.0.0.1:44418
- 
-Sun May  1 17:58:42 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:42 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:42 2 || Exec OK 
-Sun May  1 17:58:42 2 || Waiting for data... 
-Sun May  1 17:58:42 2 || Received packet from 127.0.0.1:46893
- 
-Sun May  1 17:58:42 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:42 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:42 2 || Exec OK 
-Sun May  1 17:58:42 2 || Waiting for data... 
-Sun May  1 17:58:44 2 || Received packet from 127.0.0.1:41598
- 
-Sun May  1 17:58:44 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:44 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:44 2 || Exec OK 
-Sun May  1 17:58:44 2 || Waiting for data... 
-Sun May  1 17:58:44 2 || Received packet from 127.0.0.1:55674
- 
-Sun May  1 17:58:44 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:44 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:44 2 || Exec OK 
-Sun May  1 17:58:44 2 || Waiting for data... 
-Sun May  1 17:58:44 2 || Received packet from 127.0.0.1:49565
- 
-Sun May  1 17:58:44 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:44 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:44 2 || Exec OK 
-Sun May  1 17:58:44 2 || Waiting for data... 
-Sun May  1 17:58:45 2 || Received packet from 127.0.0.1:45303
- 
-Sun May  1 17:58:45 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:45 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:45 2 || Exec OK 
-Sun May  1 17:58:45 2 || Waiting for data... 
-Sun May  1 17:58:45 2 || Received packet from 127.0.0.1:47876
- 
-Sun May  1 17:58:45 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:45 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:45 2 || Exec OK 
-Sun May  1 17:58:45 2 || Waiting for data... 
-Sun May  1 17:58:45 2 || Received packet from 127.0.0.1:45811
- 
-Sun May  1 17:58:45 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:45 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:45 2 || Exec OK 
-Sun May  1 17:58:45 2 || Waiting for data... 
-Sun May  1 17:58:45 2 || 
- 
-Sun May  1 17:58:45 2 || -- > Port 2 (tap0)	got 350 bytes 
-Sun May  1 17:58:45 2 || [PARSER] 	Failed to parse L3, header not supported 
-Sun May  1 17:58:45 2 || [RIP]	 Found invalid route  
-Sun May  1 17:58:45 2 || [RIP]	 Timer expired, set metric to 16, update flags  
-Sun May  1 17:58:45 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:45 2 || port or frame null 
-Sun May  1 17:58:45 2 || port or frame null 
-Sun May  1 17:58:46 2 || Received packet from 127.0.0.1:33057
- 
-Sun May  1 17:58:46 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:46 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:46 2 || Exec OK 
-Sun May  1 17:58:46 2 || Waiting for data... 
-Sun May  1 17:58:46 2 || Received packet from 127.0.0.1:51402
- 
-Sun May  1 17:58:46 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:46 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:46 2 || Exec OK 
-Sun May  1 17:58:46 2 || Waiting for data... 
-Sun May  1 17:58:46 2 || Received packet from 127.0.0.1:53143
- 
-Sun May  1 17:58:46 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:46 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:46 2 || Exec OK 
-Sun May  1 17:58:46 2 || Waiting for data... 
-Sun May  1 17:58:47 2 || Received packet from 127.0.0.1:54236
- 
-Sun May  1 17:58:47 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:47 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:47 2 || Exec OK 
-Sun May  1 17:58:47 2 || Waiting for data... 
-Sun May  1 17:58:47 2 || Received packet from 127.0.0.1:53407
- 
-Sun May  1 17:58:47 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:47 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:47 2 || Exec OK 
-Sun May  1 17:58:47 2 || Waiting for data... 
-Sun May  1 17:58:47 2 || Received packet from 127.0.0.1:36156
- 
-Sun May  1 17:58:47 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:47 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:47 2 || Exec OK 
-Sun May  1 17:58:47 2 || Waiting for data... 
-Sun May  1 17:58:48 2 || Received packet from 127.0.0.1:32893
- 
-Sun May  1 17:58:48 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:48 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:48 2 || Exec OK 
-Sun May  1 17:58:48 2 || Waiting for data... 
-Sun May  1 17:58:48 2 || Received packet from 127.0.0.1:36085
- 
-Sun May  1 17:58:48 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:48 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:48 2 || Exec OK 
-Sun May  1 17:58:48 2 || Waiting for data... 
-Sun May  1 17:58:48 2 || Received packet from 127.0.0.1:45290
- 
-Sun May  1 17:58:48 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:48 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:48 2 || Exec OK 
-Sun May  1 17:58:48 2 || Waiting for data... 
-Sun May  1 17:58:50 2 || Received packet from 127.0.0.1:57241
- 
-Sun May  1 17:58:50 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:50 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:50 2 || Exec OK 
-Sun May  1 17:58:50 2 || Waiting for data... 
-Sun May  1 17:58:50 2 || Received packet from 127.0.0.1:41576
- 
-Sun May  1 17:58:50 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:50 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:50 2 || Exec OK 
-Sun May  1 17:58:50 2 || Waiting for data... 
-Sun May  1 17:58:50 2 || Received packet from 127.0.0.1:55008
- 
-Sun May  1 17:58:50 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:50 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:50 2 || Exec OK 
-Sun May  1 17:58:50 2 || Waiting for data... 
-Sun May  1 17:58:50 2 || [RIP]	 Found flush route  
-Sun May  1 17:58:50 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:50 2 || port or frame null 
-Sun May  1 17:58:50 2 || port or frame null 
-Sun May  1 17:58:51 2 || Received packet from 127.0.0.1:57647
- 
-Sun May  1 17:58:51 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:51 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:51 2 || Exec OK 
-Sun May  1 17:58:51 2 || Waiting for data... 
-Sun May  1 17:58:51 2 || Received packet from 127.0.0.1:45004
- 
-Sun May  1 17:58:51 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:51 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:51 2 || Exec OK 
-Sun May  1 17:58:51 2 || Waiting for data... 
-Sun May  1 17:58:51 2 || Received packet from 127.0.0.1:39824
- 
-Sun May  1 17:58:51 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:51 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:51 2 || Exec OK 
-Sun May  1 17:58:51 2 || Waiting for data... 
-Sun May  1 17:58:52 2 || Received packet from 127.0.0.1:54582
- 
-Sun May  1 17:58:52 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:52 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:52 2 || Exec OK 
-Sun May  1 17:58:52 2 || Waiting for data... 
-Sun May  1 17:58:52 2 || Received packet from 127.0.0.1:56251
- 
-Sun May  1 17:58:52 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:52 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:52 2 || Exec OK 
-Sun May  1 17:58:52 2 || Waiting for data... 
-Sun May  1 17:58:52 2 || Received packet from 127.0.0.1:60568
- 
-Sun May  1 17:58:52 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:52 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:52 2 || Exec OK 
-Sun May  1 17:58:52 2 || Waiting for data... 
-Sun May  1 17:58:53 2 || Received packet from 127.0.0.1:39494
- 
-Sun May  1 17:58:53 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:53 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:53 2 || Exec OK 
-Sun May  1 17:58:53 2 || Waiting for data... 
-Sun May  1 17:58:53 2 || Received packet from 127.0.0.1:60269
- 
-Sun May  1 17:58:53 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:53 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:53 2 || Exec OK 
-Sun May  1 17:58:53 2 || Waiting for data... 
-Sun May  1 17:58:53 2 || Received packet from 127.0.0.1:48875
- 
-Sun May  1 17:58:53 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:53 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:53 2 || Exec OK 
-Sun May  1 17:58:53 2 || Waiting for data... 
-Sun May  1 17:58:54 2 || Received packet from 127.0.0.1:35247
- 
-Sun May  1 17:58:54 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:54 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:54 2 || Exec OK 
-Sun May  1 17:58:54 2 || Waiting for data... 
-Sun May  1 17:58:54 2 || Received packet from 127.0.0.1:48204
- 
-Sun May  1 17:58:54 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:54 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:54 2 || Exec OK 
-Sun May  1 17:58:54 2 || Waiting for data... 
-Sun May  1 17:58:54 2 || Received packet from 127.0.0.1:40948
- 
-Sun May  1 17:58:54 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:54 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:54 2 || Exec OK 
-Sun May  1 17:58:54 2 || Waiting for data... 
-Sun May  1 17:58:55 2 || [RIP]	 Found flush route  
-Sun May  1 17:58:55 2 || [RIP]	 Timer expired, bey bey route  
-Sun May  1 17:58:55 2 || [R_TABLE]	 Deleted by route 
-Sun May  1 17:58:55 2 || [RIP] 	   Update timer 
-Sun May  1 17:58:55 2 || port or frame null 
-Sun May  1 17:58:55 2 || port or frame null 
-Sun May  1 17:58:56 2 || Received packet from 127.0.0.1:54679
- 
-Sun May  1 17:58:56 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:56 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:56 2 || Exec OK 
-Sun May  1 17:58:56 2 || Waiting for data... 
-Sun May  1 17:58:56 2 || Received packet from 127.0.0.1:34955
- 
-Sun May  1 17:58:56 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:56 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:56 2 || Exec OK 
-Sun May  1 17:58:56 2 || Waiting for data... 
-Sun May  1 17:58:56 2 || Received packet from 127.0.0.1:56438
- 
-Sun May  1 17:58:56 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:56 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:56 2 || Exec OK 
-Sun May  1 17:58:56 2 || Waiting for data... 
-Sun May  1 17:58:57 2 || Received packet from 127.0.0.1:58959
- 
-Sun May  1 17:58:57 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:57 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:57 2 || Exec OK 
-Sun May  1 17:58:57 2 || Waiting for data... 
-Sun May  1 17:58:57 2 || Received packet from 127.0.0.1:44348
- 
-Sun May  1 17:58:57 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:57 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:57 2 || Exec OK 
-Sun May  1 17:58:57 2 || Waiting for data... 
-Sun May  1 17:58:57 2 || Received packet from 127.0.0.1:54038
- 
-Sun May  1 17:58:57 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:57 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:57 2 || Exec OK 
-Sun May  1 17:58:57 2 || Waiting for data... 
-Sun May  1 17:58:58 2 || Received packet from 127.0.0.1:44463
- 
-Sun May  1 17:58:58 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:58 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:58 2 || Exec OK 
-Sun May  1 17:58:58 2 || Waiting for data... 
-Sun May  1 17:58:58 2 || Received packet from 127.0.0.1:50097
- 
-Sun May  1 17:58:58 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:58 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:58 2 || Exec OK 
-Sun May  1 17:58:58 2 || Waiting for data... 
-Sun May  1 17:58:58 2 || Received packet from 127.0.0.1:55957
- 
-Sun May  1 17:58:58 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:58 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:58 2 || Exec OK 
-Sun May  1 17:58:58 2 || Waiting for data... 
-Sun May  1 17:58:59 2 || Received packet from 127.0.0.1:36623
- 
-Sun May  1 17:58:59 2 || Data: get_arp_cache 
- 
-Sun May  1 17:58:59 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:58:59 2 || Exec OK 
-Sun May  1 17:58:59 2 || Waiting for data... 
-Sun May  1 17:58:59 2 || Received packet from 127.0.0.1:40750
- 
-Sun May  1 17:58:59 2 || Data: get_routing_table 
- 
-Sun May  1 17:58:59 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:58:59 2 || Exec OK 
-Sun May  1 17:58:59 2 || Waiting for data... 
-Sun May  1 17:58:59 2 || Received packet from 127.0.0.1:59111
- 
-Sun May  1 17:58:59 2 || Data: get_interface_details 
- 
-Sun May  1 17:58:59 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:58:59 2 || Exec OK 
-Sun May  1 17:58:59 2 || Waiting for data... 
-Sun May  1 17:59:00 2 || 
- 
-Sun May  1 17:59:00 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sun May  1 17:59:00 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sun May  1 17:59:00 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:59:00 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:59:00 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sun May  1 17:59:00 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sun May  1 17:59:00 2 || [R_TABLE]	 NOT found 
-Sun May  1 17:59:00 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sun May  1 17:59:00 2 || Received packet from 127.0.0.1:56272
- 
-Sun May  1 17:59:00 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:00 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:00 2 || Exec OK 
-Sun May  1 17:59:00 2 || Waiting for data... 
-Sun May  1 17:59:00 2 || Received packet from 127.0.0.1:35075
- 
-Sun May  1 17:59:00 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:00 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:00 2 || Exec OK 
-Sun May  1 17:59:00 2 || Waiting for data... 
-Sun May  1 17:59:00 2 || Received packet from 127.0.0.1:35691
- 
-Sun May  1 17:59:00 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:00 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:00 2 || Exec OK 
-Sun May  1 17:59:00 2 || Waiting for data... 
-Sun May  1 17:59:00 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:00 2 || port or frame null 
-Sun May  1 17:59:00 2 || port or frame null 
-Sun May  1 17:59:02 2 || Received packet from 127.0.0.1:44810
- 
-Sun May  1 17:59:02 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:02 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:02 2 || Exec OK 
-Sun May  1 17:59:02 2 || Waiting for data... 
-Sun May  1 17:59:02 2 || Received packet from 127.0.0.1:56651
- 
-Sun May  1 17:59:02 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:02 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:02 2 || Exec OK 
-Sun May  1 17:59:02 2 || Waiting for data... 
-Sun May  1 17:59:02 2 || Received packet from 127.0.0.1:48523
- 
-Sun May  1 17:59:02 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:02 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:02 2 || Exec OK 
-Sun May  1 17:59:02 2 || Waiting for data... 
-Sun May  1 17:59:03 2 || Received packet from 127.0.0.1:45762
- 
-Sun May  1 17:59:03 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:03 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:03 2 || Exec OK 
-Sun May  1 17:59:03 2 || Waiting for data... 
-Sun May  1 17:59:03 2 || Received packet from 127.0.0.1:36202
- 
-Sun May  1 17:59:03 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:03 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:03 2 || Exec OK 
-Sun May  1 17:59:03 2 || Waiting for data... 
-Sun May  1 17:59:03 2 || Received packet from 127.0.0.1:46275
- 
-Sun May  1 17:59:03 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:03 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:03 2 || Exec OK 
-Sun May  1 17:59:03 2 || Waiting for data... 
-Sun May  1 17:59:04 2 || Received packet from 127.0.0.1:57993
- 
-Sun May  1 17:59:04 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:04 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:04 2 || Exec OK 
-Sun May  1 17:59:04 2 || Waiting for data... 
-Sun May  1 17:59:04 2 || Received packet from 127.0.0.1:44739
- 
-Sun May  1 17:59:04 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:04 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:04 2 || Exec OK 
-Sun May  1 17:59:04 2 || Waiting for data... 
-Sun May  1 17:59:04 2 || Received packet from 127.0.0.1:37065
- 
-Sun May  1 17:59:04 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:04 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:04 2 || Exec OK 
-Sun May  1 17:59:04 2 || Waiting for data... 
-Sun May  1 17:59:05 2 || Received packet from 127.0.0.1:35688
- 
-Sun May  1 17:59:05 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:05 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:05 2 || Exec OK 
-Sun May  1 17:59:05 2 || Waiting for data... 
-Sun May  1 17:59:05 2 || Received packet from 127.0.0.1:41195
- 
-Sun May  1 17:59:05 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:05 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:05 2 || Exec OK 
-Sun May  1 17:59:05 2 || Waiting for data... 
-Sun May  1 17:59:05 2 || Received packet from 127.0.0.1:44774
- 
-Sun May  1 17:59:05 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:05 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:05 2 || Exec OK 
-Sun May  1 17:59:05 2 || Waiting for data... 
-Sun May  1 17:59:05 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:05 2 || port or frame null 
-Sun May  1 17:59:05 2 || port or frame null 
-Sun May  1 17:59:06 2 || Received packet from 127.0.0.1:44664
- 
-Sun May  1 17:59:06 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:06 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:06 2 || Exec OK 
-Sun May  1 17:59:06 2 || Waiting for data... 
-Sun May  1 17:59:06 2 || Received packet from 127.0.0.1:58753
- 
-Sun May  1 17:59:06 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:06 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:06 2 || Exec OK 
-Sun May  1 17:59:06 2 || Waiting for data... 
-Sun May  1 17:59:06 2 || Received packet from 127.0.0.1:54945
- 
-Sun May  1 17:59:06 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:06 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:06 2 || Exec OK 
-Sun May  1 17:59:06 2 || Waiting for data... 
-Sun May  1 17:59:08 2 || Received packet from 127.0.0.1:56511
- 
-Sun May  1 17:59:08 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:08 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:08 2 || Exec OK 
-Sun May  1 17:59:08 2 || Waiting for data... 
-Sun May  1 17:59:08 2 || Received packet from 127.0.0.1:43497
- 
-Sun May  1 17:59:08 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:08 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:08 2 || Exec OK 
-Sun May  1 17:59:08 2 || Waiting for data... 
-Sun May  1 17:59:08 2 || Received packet from 127.0.0.1:38797
- 
-Sun May  1 17:59:08 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:08 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:08 2 || Exec OK 
-Sun May  1 17:59:08 2 || Waiting for data... 
-Sun May  1 17:59:09 2 || Received packet from 127.0.0.1:58663
- 
-Sun May  1 17:59:09 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:09 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:09 2 || Exec OK 
-Sun May  1 17:59:09 2 || Waiting for data... 
-Sun May  1 17:59:09 2 || Received packet from 127.0.0.1:51680
- 
-Sun May  1 17:59:09 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:09 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:09 2 || Exec OK 
-Sun May  1 17:59:09 2 || Waiting for data... 
-Sun May  1 17:59:09 2 || Received packet from 127.0.0.1:54336
- 
-Sun May  1 17:59:09 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:09 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:09 2 || Exec OK 
-Sun May  1 17:59:09 2 || Waiting for data... 
-Sun May  1 17:59:10 2 || Received packet from 127.0.0.1:51214
- 
-Sun May  1 17:59:10 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:10 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:10 2 || Exec OK 
-Sun May  1 17:59:10 2 || Waiting for data... 
-Sun May  1 17:59:10 2 || Received packet from 127.0.0.1:58310
- 
-Sun May  1 17:59:10 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:10 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:10 2 || Exec OK 
-Sun May  1 17:59:10 2 || Waiting for data... 
-Sun May  1 17:59:10 2 || Received packet from 127.0.0.1:52094
- 
-Sun May  1 17:59:10 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:10 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:10 2 || Exec OK 
-Sun May  1 17:59:10 2 || Waiting for data... 
-Sun May  1 17:59:10 2 || [RIP]	 Route was not updated for a while, set to invalid  
-Sun May  1 17:59:10 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:10 2 || port or frame null 
-Sun May  1 17:59:10 2 || port or frame null 
-Sun May  1 17:59:11 2 || Received packet from 127.0.0.1:52410
- 
-Sun May  1 17:59:11 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:11 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:11 2 || Exec OK 
-Sun May  1 17:59:11 2 || Waiting for data... 
-Sun May  1 17:59:11 2 || Received packet from 127.0.0.1:60758
- 
-Sun May  1 17:59:11 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:11 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:11 2 || Exec OK 
-Sun May  1 17:59:11 2 || Waiting for data... 
-Sun May  1 17:59:11 2 || Received packet from 127.0.0.1:46268
- 
-Sun May  1 17:59:11 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:11 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:11 2 || Exec OK 
-Sun May  1 17:59:11 2 || Waiting for data... 
-Sun May  1 17:59:12 2 || Received packet from 127.0.0.1:49360
- 
-Sun May  1 17:59:12 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:12 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:12 2 || Exec OK 
-Sun May  1 17:59:12 2 || Waiting for data... 
-Sun May  1 17:59:12 2 || Received packet from 127.0.0.1:53750
- 
-Sun May  1 17:59:12 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:12 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:12 2 || Exec OK 
-Sun May  1 17:59:12 2 || Waiting for data... 
-Sun May  1 17:59:12 2 || Received packet from 127.0.0.1:34275
- 
-Sun May  1 17:59:12 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:12 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:12 2 || Exec OK 
-Sun May  1 17:59:12 2 || Waiting for data... 
-Sun May  1 17:59:14 2 || Received packet from 127.0.0.1:43238
- 
-Sun May  1 17:59:14 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:14 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:14 2 || Exec OK 
-Sun May  1 17:59:14 2 || Waiting for data... 
-Sun May  1 17:59:14 2 || Received packet from 127.0.0.1:46611
- 
-Sun May  1 17:59:14 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:14 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:14 2 || Exec OK 
-Sun May  1 17:59:14 2 || Waiting for data... 
-Sun May  1 17:59:14 2 || Received packet from 127.0.0.1:43743
- 
-Sun May  1 17:59:14 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:14 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:14 2 || Exec OK 
-Sun May  1 17:59:14 2 || Waiting for data... 
-Sun May  1 17:59:15 2 || Received packet from 127.0.0.1:57434
- 
-Sun May  1 17:59:15 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:15 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:15 2 || Exec OK 
-Sun May  1 17:59:15 2 || Waiting for data... 
-Sun May  1 17:59:15 2 || Received packet from 127.0.0.1:34453
- 
-Sun May  1 17:59:15 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:15 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:15 2 || Exec OK 
-Sun May  1 17:59:15 2 || Waiting for data... 
-Sun May  1 17:59:15 2 || Received packet from 127.0.0.1:52383
- 
-Sun May  1 17:59:15 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:15 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:15 2 || Exec OK 
-Sun May  1 17:59:15 2 || Waiting for data... 
-Sun May  1 17:59:15 2 || [RIP]	 Found invalid route  
-Sun May  1 17:59:15 2 || [RIP]	 Timer expired, set metric to 16, update flags  
-Sun May  1 17:59:15 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:15 2 || port or frame null 
-Sun May  1 17:59:15 2 || port or frame null 
-Sun May  1 17:59:16 2 || Received packet from 127.0.0.1:59383
- 
-Sun May  1 17:59:16 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:16 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:16 2 || Exec OK 
-Sun May  1 17:59:16 2 || Waiting for data... 
-Sun May  1 17:59:16 2 || Received packet from 127.0.0.1:41263
- 
-Sun May  1 17:59:16 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:16 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:16 2 || Exec OK 
-Sun May  1 17:59:16 2 || Waiting for data... 
-Sun May  1 17:59:16 2 || Received packet from 127.0.0.1:33933
- 
-Sun May  1 17:59:16 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:16 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:16 2 || Exec OK 
-Sun May  1 17:59:16 2 || Waiting for data... 
-Sun May  1 17:59:17 2 || Received packet from 127.0.0.1:51304
- 
-Sun May  1 17:59:17 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:17 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:17 2 || Exec OK 
-Sun May  1 17:59:17 2 || Waiting for data... 
-Sun May  1 17:59:17 2 || Received packet from 127.0.0.1:40404
- 
-Sun May  1 17:59:17 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:17 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:17 2 || Exec OK 
-Sun May  1 17:59:17 2 || Waiting for data... 
-Sun May  1 17:59:17 2 || Received packet from 127.0.0.1:47603
- 
-Sun May  1 17:59:17 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:17 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:17 2 || Exec OK 
-Sun May  1 17:59:17 2 || Waiting for data... 
-Sun May  1 17:59:18 2 || Received packet from 127.0.0.1:51897
- 
-Sun May  1 17:59:18 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:18 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:18 2 || Exec OK 
-Sun May  1 17:59:18 2 || Waiting for data... 
-Sun May  1 17:59:18 2 || Received packet from 127.0.0.1:36655
- 
-Sun May  1 17:59:18 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:18 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:18 2 || Exec OK 
-Sun May  1 17:59:18 2 || Waiting for data... 
-Sun May  1 17:59:18 2 || Received packet from 127.0.0.1:60534
- 
-Sun May  1 17:59:18 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:18 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:18 2 || Exec OK 
-Sun May  1 17:59:18 2 || Waiting for data... 
-Sun May  1 17:59:20 2 || Received packet from 127.0.0.1:43657
- 
-Sun May  1 17:59:20 2 || Data: get_arp_cache 
- 
-Sun May  1 17:59:20 2 || [CONFIG] 	Executing: get_arp_cache   
-Sun May  1 17:59:20 2 || Exec OK 
-Sun May  1 17:59:20 2 || Waiting for data... 
-Sun May  1 17:59:20 2 || Received packet from 127.0.0.1:43363
- 
-Sun May  1 17:59:20 2 || Data: get_routing_table 
- 
-Sun May  1 17:59:20 2 || [CONFIG] 	Executing: get_routing_table   
-Sun May  1 17:59:20 2 || Exec OK 
-Sun May  1 17:59:20 2 || Waiting for data... 
-Sun May  1 17:59:20 2 || Received packet from 127.0.0.1:45992
- 
-Sun May  1 17:59:20 2 || Data: get_interface_details 
- 
-Sun May  1 17:59:20 2 || [CONFIG] 	Executing: get_interface_details   
-Sun May  1 17:59:20 2 || Exec OK 
-Sun May  1 17:59:20 2 || Waiting for data... 
-Sun May  1 17:59:20 2 || [RIP]	 Found flush route  
-Sun May  1 17:59:20 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:20 2 || port or frame null 
-Sun May  1 17:59:20 2 || port or frame null 
-Sun May  1 17:59:25 2 || [RIP]	 Found flush route  
-Sun May  1 17:59:25 2 || [RIP]	 Timer expired, bey bey route  
-Sun May  1 17:59:25 2 || [R_TABLE]	 Deleted by route 
-Sun May  1 17:59:25 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:25 2 || port or frame null 
-Sun May  1 17:59:25 2 || port or frame null 
-Sun May  1 17:59:26 2 || 
- 
-Sun May  1 17:59:26 2 || -- > Port 2 (tap0)	got 66 bytes 
-Sun May  1 17:59:26 2 || [RIP-DEBUG] 	 n. of entries = 1 
-Sun May  1 17:59:26 2 || [RIP-DEBUG] 	 command       = 2 
-Sun May  1 17:59:26 2 || [RIP-DEBUG] 	 ENTRY  0 
-Sun May  1 17:59:26 2 || [RIP-DEBUG] 	 10.0.1.0 255.255.255.0 
-Sun May  1 17:59:26 2 || [R_TABLE]	 routing_table_search: 10.0.1.0 
-Sun May  1 17:59:26 2 || [R_TABLE]	 NOT found 
-Sun May  1 17:59:26 2 || [R_TABLE] 	 ADD 10.0.1.0\24 port: tap0  ad: 110 
-Sun May  1 17:59:30 2 || [RIP] 	   Update timer 
-Sun May  1 17:59:30 2 || port or frame null 
-Sun May  1 17:59:30 2 || port or frame null 
-Sun May  1 17:59:32 2 || Ctrl C - cya ;)  
+Thu May  5 20:08:40 2 || Software router starting... 
+Thu May  5 20:08:40 2 || libpcap version 1.5.3 
+Thu May  5 20:08:40 2 || [R_TABLE] 	 ADD 176.16.0.0\30 port:   ad: 0 
+Thu May  5 20:08:40 2 || [R_TABLE] 	 ADD 10.0.0.0\25 port:   ad: 0 
+Thu May  5 20:08:40 2 || pcap_setdirection failed 
+Thu May  5 20:08:40 2 || Handle activated for tap0 
+Thu May  5 20:08:40 2 || pcap_setdirection failed 
+Thu May  5 20:08:40 2 || Handle activated for tap1 
+Thu May  5 20:08:40 2 || Creating threads... 
+Thu May  5 20:08:40 2 || Hello from thread on tap0 
+Thu May  5 20:08:40 2 || Creating LLs... 
+Thu May  5 20:08:40 2 || Hello from thread on tap1 
+Thu May  5 20:08:40 2 || [RIP] 	   Update timer 
+Thu May  5 20:08:40 2 || port or frame null 
+Thu May  5 20:08:40 2 || Waiting for data... 
+Thu May  5 20:08:40 2 || port or frame null 
+Thu May  5 20:08:45 2 || [RIP] 	   Update timer 
+Thu May  5 20:08:45 2 || port or frame null 
+Thu May  5 20:08:45 2 || port or frame null 
+Thu May  5 20:08:50 2 || [RIP] 	   Update timer 
+Thu May  5 20:08:50 2 || port or frame null 
+Thu May  5 20:08:50 2 || port or frame null 
+Thu May  5 20:08:55 2 || [RIP] 	   Update timer 
+Thu May  5 20:08:55 2 || port or frame null 
+Thu May  5 20:08:55 2 || port or frame null 
+Thu May  5 20:09:00 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:00 2 || port or frame null 
+Thu May  5 20:09:00 2 || port or frame null 
+Thu May  5 20:09:04 2 || 
+ 
+Thu May  5 20:09:04 2 || -- > Port 1 (tap0)	got 359 bytes 
+Thu May  5 20:09:04 2 || [PARSER] 	Failed to parse L3, header not supported 
+Thu May  5 20:09:05 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:05 2 || port or frame null 
+Thu May  5 20:09:05 2 || port or frame null 
+Thu May  5 20:09:10 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:10 2 || port or frame null 
+Thu May  5 20:09:10 2 || port or frame null 
+Thu May  5 20:09:15 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:15 2 || port or frame null 
+Thu May  5 20:09:15 2 || port or frame null 
+Thu May  5 20:09:20 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:20 2 || port or frame null 
+Thu May  5 20:09:20 2 || port or frame null 
+Thu May  5 20:09:25 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:25 2 || port or frame null 
+Thu May  5 20:09:25 2 || port or frame null 
+Thu May  5 20:09:30 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:30 2 || port or frame null 
+Thu May  5 20:09:30 2 || port or frame null 
+Thu May  5 20:09:35 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:35 2 || port or frame null 
+Thu May  5 20:09:35 2 || port or frame null 
+Thu May  5 20:09:40 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:40 2 || port or frame null 
+Thu May  5 20:09:40 2 || port or frame null 
+Thu May  5 20:09:45 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:45 2 || port or frame null 
+Thu May  5 20:09:45 2 || port or frame null 
+Thu May  5 20:09:50 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:50 2 || port or frame null 
+Thu May  5 20:09:50 2 || port or frame null 
+Thu May  5 20:09:55 2 || [RIP] 	   Update timer 
+Thu May  5 20:09:55 2 || port or frame null 
+Thu May  5 20:09:55 2 || port or frame null 
+Thu May  5 20:09:56 2 || 
+ 
+Thu May  5 20:09:56 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:09:56 2 || [R_TABLE]	 routing_table_search: 255.255.255.255 
+Thu May  5 20:09:56 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:09:56 2 || no route found for ip: 255.255.255.255 
+Thu May  5 20:10:00 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:00 2 || port or frame null 
+Thu May  5 20:10:00 2 || port or frame null 
+Thu May  5 20:10:04 2 || 
+ 
+Thu May  5 20:10:04 2 || -- > Port 1 (tap0)	got 350 bytes 
+Thu May  5 20:10:04 2 || [PARSER] 	Failed to parse L3, header not supported 
+Thu May  5 20:10:05 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:05 2 || port or frame null 
+Thu May  5 20:10:05 2 || port or frame null 
+Thu May  5 20:10:10 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:10 2 || port or frame null 
+Thu May  5 20:10:10 2 || port or frame null 
+Thu May  5 20:10:15 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:15 2 || port or frame null 
+Thu May  5 20:10:15 2 || port or frame null 
+Thu May  5 20:10:20 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:20 2 || port or frame null 
+Thu May  5 20:10:20 2 || port or frame null 
+Thu May  5 20:10:23 2 || 
+ 
+Thu May  5 20:10:23 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:10:23 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Thu May  5 20:10:23 2 || [RIP-DEBUG] 	 command       = 2 
+Thu May  5 20:10:23 2 || [RIP-DEBUG] 	 ENTRY  0 
+Thu May  5 20:10:23 2 || [RIP-DEBUG] 	 192.168.0.0 255.255.0.0 
+Thu May  5 20:10:23 2 || [R_TABLE]	 routing_table_search: 192.168.0.0 
+Thu May  5 20:10:23 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:10:23 2 || [R_TABLE] 	 ADD 192.168.0.0\16 port: tap0  ad: 110 
+Thu May  5 20:10:25 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:25 2 || port or frame null 
+Thu May  5 20:10:25 2 || port or frame null 
+Thu May  5 20:10:30 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Thu May  5 20:10:30 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:30 2 || port or frame null 
+Thu May  5 20:10:30 2 || port or frame null 
+Thu May  5 20:10:35 2 || [RIP]	 Found invalid route  
+Thu May  5 20:10:35 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Thu May  5 20:10:35 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:35 2 || port or frame null 
+Thu May  5 20:10:35 2 || port or frame null 
+Thu May  5 20:10:37 2 || [CONFIG] 	Executing: rip  176.16.0.0 
+Thu May  5 20:10:37 2 || [R_TABLE]	 routing_table_search: 176.16.0.0 
+Thu May  5 20:10:37 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:10:37 2 || [R_TABLE] 	 ADD 176.16.0.0\30 port: tap0  ad: 110 
+Thu May  5 20:10:37 2 || Exec OK 
+Thu May  5 20:10:40 2 || [RIP]	 Found flush route  
+Thu May  5 20:10:40 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:40 2 || 	< -- Port 1 (tap0) sending 66 bytes 
+ 
+Thu May  5 20:10:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:40 2 || 	< -- Port 2 (tap1) sending 66 bytes 
+ 
+Thu May  5 20:10:45 2 || [RIP]	 Found flush route  
+Thu May  5 20:10:45 2 || [RIP]	 Timer expired, bey bey route  
+Thu May  5 20:10:45 2 || [R_TABLE]	 Deleted by route 
+Thu May  5 20:10:45 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:45 2 || 	< -- Port 1 (tap0) sending 66 bytes 
+ 
+Thu May  5 20:10:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:45 2 || 	< -- Port 2 (tap1) sending 66 bytes 
+ 
+Thu May  5 20:10:45 2 || [CONFIG] 	Executing: rip  10.0.0.0 
+Thu May  5 20:10:45 2 || [R_TABLE]	 routing_table_search: 10.0.0.0 
+Thu May  5 20:10:45 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:10:45 2 || [R_TABLE] 	 ADD 10.0.0.0\25 port: tap1  ad: 110 
+Thu May  5 20:10:45 2 || Exec OK 
+Thu May  5 20:10:50 2 || 
+ 
+Thu May  5 20:10:50 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:10:50 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Thu May  5 20:10:50 2 || [RIP-DEBUG] 	 command       = 2 
+Thu May  5 20:10:50 2 || [RIP-DEBUG] 	 ENTRY  0 
+Thu May  5 20:10:50 2 || [RIP-DEBUG] 	 192.168.0.0 255.255.0.0 
+Thu May  5 20:10:50 2 || [R_TABLE]	 routing_table_search: 192.168.0.0 
+Thu May  5 20:10:50 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:10:50 2 || [R_TABLE] 	 ADD 192.168.0.0\16 port: tap0  ad: 110 
+Thu May  5 20:10:50 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:50 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:10:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:50 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:10:50 2 || 
+ 
+Thu May  5 20:10:50 2 || -- > Port 1 (tap0)	got 60 bytes 
+Thu May  5 20:10:50 2 || [ARP]	 incoming_arp 
+Thu May  5 20:10:50 2 || [ARP]	 packet is for me 
+Thu May  5 20:10:50 2 || [ARP]	 REPLY 
+Thu May  5 20:10:50 2 || 	< -- Port 1 (tap0) sending 60 bytes 
+ 
+Thu May  5 20:10:55 2 || [RIP] 	   Update timer 
+Thu May  5 20:10:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:55 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:10:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:10:55 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:00 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Thu May  5 20:11:00 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:00 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:00 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:04 2 || 
+ 
+Thu May  5 20:11:04 2 || -- > Port 1 (tap0)	got 350 bytes 
+Thu May  5 20:11:04 2 || [PARSER] 	Failed to parse L3, header not supported 
+Thu May  5 20:11:05 2 || [RIP]	 Found invalid route  
+Thu May  5 20:11:05 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Thu May  5 20:11:05 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:05 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:05 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:10 2 || [RIP]	 Found flush route  
+Thu May  5 20:11:10 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:10 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:10 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:11 2 || 
+ 
+Thu May  5 20:11:11 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:11 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:11 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:11 2 || [ARP]	 Getting mac address.. 
+Thu May  5 20:11:11 2 || 	< -- Port 2 (tap1) sending 60 bytes 
+ 
+Thu May  5 20:11:11 2 || 
+ 
+Thu May  5 20:11:11 2 || -- > Port 2 (tap1)	got 60 bytes 
+Thu May  5 20:11:11 2 || [ARP]	 incoming_arp 
+Thu May  5 20:11:11 2 || [ARP]	 packet is for me 
+Thu May  5 20:11:11 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:11 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:11 2 || 
+ 
+Thu May  5 20:11:11 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:11 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:11 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:11 2 || [ARP]	 Getting mac address.. 
+Thu May  5 20:11:11 2 || 	< -- Port 1 (tap0) sending 60 bytes 
+ 
+Thu May  5 20:11:11 2 || 
+ 
+Thu May  5 20:11:11 2 || -- > Port 1 (tap0)	got 60 bytes 
+Thu May  5 20:11:11 2 || [ARP]	 incoming_arp 
+Thu May  5 20:11:11 2 || [ARP]	 packet is for me 
+Thu May  5 20:11:11 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:11 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:12 2 || 
+ 
+Thu May  5 20:11:12 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:12 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:12 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:12 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:12 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:12 2 || 
+ 
+Thu May  5 20:11:12 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:12 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:12 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:12 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:12 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:13 2 || 
+ 
+Thu May  5 20:11:13 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:13 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:13 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:13 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:13 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:13 2 || 
+ 
+Thu May  5 20:11:13 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:13 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:13 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:13 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:13 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:14 2 || 
+ 
+Thu May  5 20:11:14 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:14 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:14 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:14 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:14 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:14 2 || 
+ 
+Thu May  5 20:11:14 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:14 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:14 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:14 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:14 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:15 2 || [RIP]	 Found flush route  
+Thu May  5 20:11:15 2 || [RIP]	 Timer expired, bey bey route  
+Thu May  5 20:11:15 2 || [R_TABLE]	 Deleted by route 
+Thu May  5 20:11:15 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:15 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:15 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:15 2 || 
+ 
+Thu May  5 20:11:15 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:15 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:15 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:15 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:15 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:15 2 || 
+ 
+Thu May  5 20:11:15 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:15 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:15 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:11:15 2 || no route found for ip: 192.168.0.2 
+Thu May  5 20:11:19 2 || 
+ 
+Thu May  5 20:11:19 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:11:19 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Thu May  5 20:11:19 2 || [RIP-DEBUG] 	 command       = 2 
+Thu May  5 20:11:19 2 || [RIP-DEBUG] 	 ENTRY  0 
+Thu May  5 20:11:19 2 || [RIP-DEBUG] 	 192.168.0.0 255.255.0.0 
+Thu May  5 20:11:19 2 || [R_TABLE]	 routing_table_search: 192.168.0.0 
+Thu May  5 20:11:19 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:11:19 2 || [R_TABLE] 	 ADD 192.168.0.0\16 port: tap0  ad: 110 
+Thu May  5 20:11:20 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:20 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:20 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:21 2 || 
+ 
+Thu May  5 20:11:21 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:21 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:21 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:21 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:21 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:21 2 || 
+ 
+Thu May  5 20:11:21 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:21 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:21 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:21 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:21 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:22 2 || 
+ 
+Thu May  5 20:11:22 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:22 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:22 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:22 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:22 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:22 2 || 
+ 
+Thu May  5 20:11:22 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:22 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:22 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:22 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:22 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:23 2 || 
+ 
+Thu May  5 20:11:23 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:23 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:23 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:23 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:23 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:23 2 || 
+ 
+Thu May  5 20:11:23 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:23 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:23 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:23 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:23 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:24 2 || 
+ 
+Thu May  5 20:11:24 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:24 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:24 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:24 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:24 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:24 2 || 
+ 
+Thu May  5 20:11:24 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:24 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:24 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:24 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:24 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:25 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Thu May  5 20:11:25 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:25 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:25 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:25 2 || 
+ 
+Thu May  5 20:11:25 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:25 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:25 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:25 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:25 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:25 2 || 
+ 
+Thu May  5 20:11:25 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:25 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:25 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:25 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:25 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:28 2 || 
+ 
+Thu May  5 20:11:28 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:28 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:28 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:28 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:28 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:28 2 || 
+ 
+Thu May  5 20:11:28 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:28 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:28 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:28 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:28 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:29 2 || 
+ 
+Thu May  5 20:11:29 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:29 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:29 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:29 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:29 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:29 2 || 
+ 
+Thu May  5 20:11:29 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:29 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:29 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:29 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:29 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:30 2 || [RIP]	 Found invalid route  
+Thu May  5 20:11:30 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Thu May  5 20:11:30 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:30 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:30 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:30 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:30 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:30 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:30 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:30 2 || 
+ 
+Thu May  5 20:11:30 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:30 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:30 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:30 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:30 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:30 2 || 
+ 
+Thu May  5 20:11:30 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:30 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:30 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:30 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:30 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:31 2 || 
+ 
+Thu May  5 20:11:31 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:31 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:31 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:31 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:31 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:31 2 || 
+ 
+Thu May  5 20:11:31 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:31 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:31 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:31 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:31 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:32 2 || 
+ 
+Thu May  5 20:11:32 2 || -- > Port 1 (tap0)	got 98 bytes 
+Thu May  5 20:11:32 2 || [R_TABLE]	 routing_table_search: 10.0.0.2 
+Thu May  5 20:11:32 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:32 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:32 2 || 	< -- Port 2 (tap1) sending 98 bytes 
+ 
+Thu May  5 20:11:32 2 || 
+ 
+Thu May  5 20:11:32 2 || -- > Port 2 (tap1)	got 98 bytes 
+Thu May  5 20:11:32 2 || [R_TABLE]	 routing_table_search: 192.168.0.2 
+Thu May  5 20:11:32 2 || [R_TABLE]	 Found potencial route  
+Thu May  5 20:11:32 2 || [ROUTER] 	 forwarding frame 
+Thu May  5 20:11:32 2 || 	< -- Port 1 (tap0) sending 98 bytes 
+ 
+Thu May  5 20:11:35 2 || [RIP]	 Found flush route  
+Thu May  5 20:11:35 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:35 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:35 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:35 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:35 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:35 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:35 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:40 2 || [RIP]	 Found flush route  
+Thu May  5 20:11:40 2 || [RIP]	 Timer expired, bey bey route  
+Thu May  5 20:11:40 2 || [R_TABLE]	 Deleted by route 
+Thu May  5 20:11:40 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:40 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:40 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:40 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:41 2 || 
+ 
+Thu May  5 20:11:41 2 || -- > Port 1 (tap0)	got 77 bytes 
+Thu May  5 20:11:41 2 || [PARSER] 	Failed to parse L3, header not supported 
+Thu May  5 20:11:45 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:45 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:45 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:45 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:48 2 || 
+ 
+Thu May  5 20:11:48 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:11:48 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Thu May  5 20:11:48 2 || [RIP-DEBUG] 	 command       = 2 
+Thu May  5 20:11:48 2 || [RIP-DEBUG] 	 ENTRY  0 
+Thu May  5 20:11:48 2 || [RIP-DEBUG] 	 192.168.0.0 255.255.0.0 
+Thu May  5 20:11:48 2 || [R_TABLE]	 routing_table_search: 192.168.0.0 
+Thu May  5 20:11:48 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:11:48 2 || [R_TABLE] 	 ADD 192.168.0.0\16 port: tap0  ad: 110 
+Thu May  5 20:11:50 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:50 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:50 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:50 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:11:55 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Thu May  5 20:11:55 2 || [RIP] 	   Update timer 
+Thu May  5 20:11:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:55 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:11:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:55 2 || [RIP]	 Found route with flag 
+Thu May  5 20:11:55 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:00 2 || [RIP]	 Found invalid route  
+Thu May  5 20:12:00 2 || [RIP]	 Timer expired, set metric to 16, update flags  
+Thu May  5 20:12:00 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:00 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:00 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:00 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:04 2 || 
+ 
+Thu May  5 20:12:04 2 || -- > Port 1 (tap0)	got 350 bytes 
+Thu May  5 20:12:04 2 || [PARSER] 	Failed to parse L3, header not supported 
+Thu May  5 20:12:05 2 || [RIP]	 Found flush route  
+Thu May  5 20:12:05 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:05 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:05 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:05 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:10 2 || [RIP]	 Found flush route  
+Thu May  5 20:12:10 2 || [RIP]	 Timer expired, bey bey route  
+Thu May  5 20:12:10 2 || [R_TABLE]	 Deleted by route 
+Thu May  5 20:12:10 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:10 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:10 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:10 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:15 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:15 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:15 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:15 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:17 2 || 
+ 
+Thu May  5 20:12:17 2 || -- > Port 1 (tap0)	got 66 bytes 
+Thu May  5 20:12:17 2 || [RIP-DEBUG] 	 n. of entries = 1 
+Thu May  5 20:12:17 2 || [RIP-DEBUG] 	 command       = 2 
+Thu May  5 20:12:17 2 || [RIP-DEBUG] 	 ENTRY  0 
+Thu May  5 20:12:17 2 || [RIP-DEBUG] 	 192.168.0.0 255.255.0.0 
+Thu May  5 20:12:17 2 || [R_TABLE]	 routing_table_search: 192.168.0.0 
+Thu May  5 20:12:17 2 || [R_TABLE]	 NOT found 
+Thu May  5 20:12:17 2 || [R_TABLE] 	 ADD 192.168.0.0\16 port: tap0  ad: 110 
+Thu May  5 20:12:20 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:20 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:20 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:20 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:25 2 || [RIP]	 Route was not updated for a while, set to invalid  
+Thu May  5 20:12:25 2 || [RIP] 	   Update timer 
+Thu May  5 20:12:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:25 2 || 	< -- Port 1 (tap0) sending 86 bytes 
+ 
+Thu May  5 20:12:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:25 2 || [RIP]	 Found route with flag 
+Thu May  5 20:12:25 2 || 	< -- Port 2 (tap1) sending 86 bytes 
+ 
+Thu May  5 20:12:26 2 || Ctrl C - cya ;)  
